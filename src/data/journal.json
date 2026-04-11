@@ -1,0 +1,35 @@
+[
+  {
+    "id": "journal-001",
+    "plantId": "tomato",
+    "plantName": "Tomato",
+    "datePlanted": "2025-10-15",
+    "method": "transplant",
+    "variety": "Better Boy",
+    "location": "Raised Bed #1",
+    "daysToFruit": 80,
+    "notes": "Transplanted 6-inch seedling from nursery. Added compost and mulched with pine straw.",
+    "images": ["/images/journal/tomato-oct-planting.jpg"],
+    "updates": [
+      { "date": "2025-10-30", "note": "Growing well, about 18 inches tall. Added cage for support." },
+      { "date": "2025-11-20", "note": "First flowers appearing! Fed with tomato fertilizer." },
+      { "date": "2026-01-10", "note": "Harvested first ripe tomatoes! Great flavor." }
+    ]
+  },
+  {
+    "id": "journal-002",
+    "plantId": "banana",
+    "plantName": "Banana (Grand Nain)",
+    "datePlanted": "2025-03-01",
+    "method": "transplant",
+    "variety": "Grand Nain",
+    "location": "South Side of House",
+    "daysToFruit": 365,
+    "notes": "Planted pup from neighbor's established plant. Added extra compost to sandy soil.",
+    "images": ["/images/journal/banana-planting.jpg"],
+    "updates": [
+      { "date": "2025-06-15", "note": "Growing fast in summer heat. About 5 feet tall now." },
+      { "date": "2025-12-01", "note": "Flower stalk emerging! Exciting to see the first bunch forming." }
+    ]
+  }
+]

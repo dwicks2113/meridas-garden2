@@ -1,0 +1,220 @@
+[
+  {
+    "id": "aloe-vera",
+    "name": "Aloe Vera",
+    "scientificName": "Aloe barbadensis miller",
+    "category": "medicinal",
+    "description": "Succulent plant with thick, fleshy leaves containing a soothing gel. One of the most widely used medicinal plants worldwide. Thrives with minimal care in Zone 10b.",
+    "sun": "Full Sun to Partial Shade",
+    "water": "Low",
+    "plantingMonths": ["Feb", "Mar", "Apr", "May"],
+    "daysToBloom": "Mature in 3-4 years; flowers occasionally on tall stalks",
+    "careNotes": "Extremely drought-tolerant. Sandy, well-draining soil essential. Avoid overwatering (causes root rot). Propagate from offsets (pups).",
+    "image": "/images/plants/aloe-vera.jpg",
+    "medicinalUses": ["Burns & sunburn relief", "Skin moisturizer", "Minor wound care", "Digestive aid (juice)"],
+    "recipes": [
+      {
+        "name": "Aloe Vera Burn Relief Gel",
+        "ingredients": ["1 large aloe vera leaf", "1 tsp vitamin E oil (optional)", "2 drops lavender essential oil (optional)"],
+        "instructions": "Cut a mature outer leaf from the plant. Slice lengthwise and scoop out the clear gel with a spoon. Blend until smooth. Mix in vitamin E oil and lavender oil if using. Store in a clean glass jar in the refrigerator for up to 2 weeks. Apply directly to minor burns, sunburn, or irritated skin.",
+        "caution": "For external use only. Avoid the yellow latex layer just under the skin — it can be irritating. Do a patch test first if you have sensitive skin."
+      },
+      {
+        "name": "Aloe Vera Smoothie",
+        "ingredients": ["2 tbsp fresh aloe vera gel (inner clear gel only)", "1 cup coconut water", "1/2 cup frozen mango", "1 tbsp honey", "Juice of 1/2 lime"],
+        "instructions": "Carefully fillet the aloe leaf to extract only the clear inner gel — avoid the yellow latex. Rinse the gel thoroughly. Blend all ingredients until smooth. Serve immediately over ice.",
+        "caution": "Use only the clear inner gel. The yellow latex (aloin) under the skin is a strong laxative and should not be consumed. Start with small amounts if new to consuming aloe."
+      }
+    ]
+  },
+  {
+    "id": "moringa",
+    "name": "Moringa (Drumstick Tree)",
+    "scientificName": "Moringa oleifera",
+    "category": "medicinal",
+    "description": "Fast-growing tropical tree known as the 'miracle tree' for its exceptional nutritional profile. Leaves, flowers, seeds, and pods are all edible and nutrient-dense.",
+    "sun": "Full Sun",
+    "water": "Low",
+    "plantingMonths": ["Mar", "Apr", "May"],
+    "daysToBloom": "Grows rapidly; can reach 10-15 ft in first year. Produces within 8 months.",
+    "careNotes": "Extremely fast-growing and drought-tolerant. Sandy soil is fine. Prune aggressively to keep manageable size and encourage bushy growth. Dies back in freeze but regrows.",
+    "image": "/images/plants/moringa.jpg",
+    "medicinalUses": ["Anti-inflammatory", "Rich in antioxidants", "Blood sugar regulation support", "Nutrient supplement (vitamins A, C, iron, calcium)"],
+    "recipes": [
+      {
+        "name": "Moringa Leaf Tea",
+        "ingredients": ["1-2 tsp dried moringa leaves (or 10-15 fresh leaves)", "1 cup boiling water", "Honey or lemon to taste"],
+        "instructions": "If using fresh leaves, rinse thoroughly. Place leaves in a cup and pour boiling water over them. Steep for 5-10 minutes (longer for stronger tea). Strain and add honey or lemon to taste. Can be enjoyed hot or iced.",
+        "caution": "Start with small amounts. Moringa may interact with blood pressure and diabetes medications. Consult a healthcare provider if pregnant or on medication."
+      },
+      {
+        "name": "Moringa Green Powder",
+        "ingredients": ["Large batch of fresh moringa leaves"],
+        "instructions": "Harvest young, bright green leaves. Wash thoroughly and pat dry. Spread on dehydrator trays or baking sheets. Dry at 115\u00b0F (dehydrator) or lowest oven setting with door cracked until completely crisp (4-8 hours). Crumble or blend into fine powder. Store in airtight jar away from light. Add 1 tsp to smoothies, soups, or sprinkle on food.",
+        "caution": "Avoid moringa root and bark — they contain potentially toxic compounds. Use only leaves, flowers, and seeds."
+      }
+    ]
+  },
+  {
+    "id": "turmeric",
+    "name": "Turmeric",
+    "scientificName": "Curcuma longa",
+    "category": "medicinal",
+    "description": "Tropical rhizome with bright orange flesh, famous for curcumin — a powerful anti-inflammatory compound. Grows beautifully as an ornamental with large tropical leaves.",
+    "sun": "Partial Shade to Full Sun",
+    "water": "Moderate",
+    "plantingMonths": ["Feb", "Mar", "Apr"],
+    "daysToBloom": "8-10 months to harvest rhizomes; ornamental flowers in late summer",
+    "careNotes": "Plant rhizome pieces 2-3 inches deep. Prefers rich, moist soil with good drainage. Goes dormant in winter — harvest when leaves yellow and die back. Mulch heavily.",
+    "image": "/images/plants/turmeric.jpg",
+    "medicinalUses": ["Anti-inflammatory (curcumin)", "Antioxidant", "Joint pain relief", "Digestive support"],
+    "recipes": [
+      {
+        "name": "Golden Milk (Turmeric Latte)",
+        "ingredients": ["1 cup milk (dairy or coconut)", "1 tsp fresh grated turmeric (or 1/2 tsp powder)", "1/2 tsp fresh grated ginger", "1/4 tsp cinnamon", "Pinch of black pepper (enhances curcumin absorption)", "1 tsp honey or maple syrup"],
+        "instructions": "Grate fresh turmeric and ginger (wear gloves — turmeric stains!). Warm milk in a saucepan over medium heat. Add turmeric, ginger, cinnamon, and black pepper. Whisk gently and simmer for 5 minutes (do not boil). Strain into a mug and sweeten with honey. Enjoy warm before bed.",
+        "caution": "Turmeric stains everything — use gloves and dedicated utensils. May interact with blood thinners and gallbladder medications. Consult a doctor if on medication."
+      },
+      {
+        "name": "Turmeric Anti-Inflammatory Paste",
+        "ingredients": ["1/4 cup fresh turmeric, grated", "2 tbsp coconut oil", "1 tsp black pepper"],
+        "instructions": "Combine grated turmeric, coconut oil, and black pepper in a small saucepan. Cook on low heat for 5-7 minutes, stirring constantly, until it forms a paste. Cool and store in a glass jar in the refrigerator for up to 2 weeks. Use 1/2 tsp in smoothies, soups, or warm water daily.",
+        "caution": "Start with small doses. High doses may cause digestive upset. Not recommended during pregnancy in medicinal amounts."
+      }
+    ]
+  },
+  {
+    "id": "lemongrass",
+    "name": "Lemongrass",
+    "scientificName": "Cymbopogon citratus",
+    "category": "medicinal",
+    "description": "Tall, fragrant tropical grass with a strong citrus scent and flavor. Used in cooking and traditional medicine worldwide. Grows vigorously in Florida heat and humidity.",
+    "sun": "Full Sun",
+    "water": "Moderate",
+    "plantingMonths": ["Mar", "Apr", "May"],
+    "daysToBloom": "Ready to harvest stalks in 75-100 days",
+    "careNotes": "Grows in large clumps (3-5 ft tall). Divide clumps every 2-3 years. Cut back in late winter. Very heat and humidity tolerant. Also acts as a mosquito deterrent.",
+    "image": "/images/plants/lemongrass.jpg",
+    "medicinalUses": ["Digestive aid", "Anxiety and stress relief", "Natural mosquito repellent", "Fever reducer (traditional use)"],
+    "recipes": [
+      {
+        "name": "Lemongrass Tea",
+        "ingredients": ["2-3 fresh lemongrass stalks", "4 cups water", "Honey to taste", "Fresh ginger slice (optional)"],
+        "instructions": "Cut lemongrass stalks into 2-inch pieces and bruise them with the back of a knife to release oils. Bring water to a boil in a saucepan. Add lemongrass pieces (and ginger if using). Reduce heat and simmer for 10-15 minutes. Strain into cups and add honey to taste. Can be served hot or chilled over ice.",
+        "caution": "Generally considered safe. May lower blood sugar — monitor levels if diabetic. Avoid in large amounts during pregnancy."
+      },
+      {
+        "name": "Lemongrass Mosquito Repellent Spray",
+        "ingredients": ["1 cup fresh lemongrass leaves, chopped", "2 cups water", "1 tbsp witch hazel", "Spray bottle"],
+        "instructions": "Boil water and add chopped lemongrass leaves. Simmer for 30 minutes. Let cool completely and strain. Add witch hazel and pour into spray bottle. Spray on skin or around outdoor seating areas. Store in refrigerator for up to 1 week.",
+        "caution": "For external use only. Test on small skin area first. Reapply frequently as it's less potent than commercial repellents."
+      }
+    ]
+  },
+  {
+    "id": "ginger",
+    "name": "Ginger",
+    "scientificName": "Zingiber officinale",
+    "category": "medicinal",
+    "description": "Tropical rhizome with spicy, warming flavor. Widely used in cooking and traditional medicine for nausea, digestion, and inflammation. Grows well in Florida's warm, humid climate.",
+    "sun": "Partial Shade to Full Sun",
+    "water": "Moderate",
+    "plantingMonths": ["Feb", "Mar", "Apr"],
+    "daysToBloom": "8-10 months to harvest rhizomes",
+    "careNotes": "Plant rhizome pieces 1-2 inches deep in rich, well-draining soil. Prefers partial shade in hottest months. Goes dormant in winter. Harvest when leaves yellow. Mulch heavily for moisture retention.",
+    "image": "/images/plants/ginger.jpg",
+    "medicinalUses": ["Nausea relief (including morning sickness)", "Anti-inflammatory", "Digestive aid", "Cold and flu symptom relief"],
+    "recipes": [
+      {
+        "name": "Fresh Ginger Honey Throat Soother",
+        "ingredients": ["2-inch piece fresh ginger, sliced thin", "1 cup water", "2 tbsp raw honey", "Juice of 1/2 lemon", "Pinch of cayenne (optional)"],
+        "instructions": "Simmer ginger slices in water for 15-20 minutes. Strain into a mug. Let cool slightly (below 140\u00b0F to preserve honey's properties). Stir in honey and lemon juice. Add cayenne if desired. Sip slowly for sore throat and cold relief.",
+        "caution": "Safe for most people. May interact with blood thinners. Limit to 4g daily. Consult a doctor if pregnant (small amounts for nausea are generally fine)."
+      },
+      {
+        "name": "Ginger Bug (Natural Probiotic Starter)",
+        "ingredients": ["2 tbsp fresh grated ginger", "2 tbsp sugar", "2 cups filtered water (non-chlorinated)", "Glass jar with loose lid"],
+        "instructions": "Combine ginger, sugar, and water in a glass jar. Stir well. Cover loosely and leave at room temperature. Each day for 5-7 days, add 1 tbsp grated ginger and 1 tbsp sugar, stirring well. When it becomes bubbly and fizzy, it's ready. Use 1/4 cup as a starter for homemade ginger ale or fermented sodas.",
+        "caution": "Fermented products contain natural bacteria. Discard if mold appears. Not recommended for immunocompromised individuals."
+      }
+    ]
+  },
+  {
+    "id": "rosemary",
+    "name": "Rosemary",
+    "scientificName": "Salvia rosmarinus",
+    "category": "medicinal",
+    "description": "Woody aromatic herb with needle-like leaves and blue flowers. Used in cooking, medicine, and aromatherapy. Thrives in Florida's sandy, well-drained soil.",
+    "sun": "Full Sun",
+    "water": "Low",
+    "plantingMonths": ["Oct", "Nov", "Dec", "Jan", "Feb"],
+    "daysToBloom": "Established plants bloom in spring; usable leaves within 60-90 days",
+    "careNotes": "Prefers sandy, alkaline soil. Excellent drainage is critical (root rot is main killer). Plant in cool season. Struggles in peak summer humidity. Best in raised beds or containers.",
+    "image": "/images/plants/rosemary.jpg",
+    "medicinalUses": ["Memory and cognitive function support", "Circulation improvement", "Anti-inflammatory", "Hair growth stimulant (topical)"],
+    "recipes": [
+      {
+        "name": "Rosemary Memory & Focus Tea",
+        "ingredients": ["1 sprig fresh rosemary (3-4 inches)", "1 cup boiling water", "Honey to taste"],
+        "instructions": "Bruise the rosemary sprig lightly to release oils. Place in a cup and pour boiling water over it. Steep for 5-10 minutes. Remove sprig and add honey if desired. Drink in the morning for a caffeine-free focus boost.",
+        "caution": "Avoid large medicinal doses during pregnancy. May interact with blood thinners and blood pressure medications."
+      },
+      {
+        "name": "Rosemary Hair Rinse",
+        "ingredients": ["3-4 large sprigs fresh rosemary", "2 cups water", "1 tbsp apple cider vinegar"],
+        "instructions": "Simmer rosemary in water for 20-30 minutes. Let cool completely and strain. Add apple cider vinegar. After shampooing, pour over hair as a final rinse. Do not rinse out. Use 1-2 times per week to promote shine and scalp health.",
+        "caution": "For external use only. Discontinue if scalp irritation occurs."
+      }
+    ]
+  },
+  {
+    "id": "holy-basil",
+    "name": "Holy Basil (Tulsi)",
+    "scientificName": "Ocimum tenuiflorum",
+    "category": "medicinal",
+    "description": "Sacred herb in Ayurvedic medicine known as an adaptogen — helping the body cope with stress. Spicy, clove-like flavor with aromatic purple or green leaves. Loves Florida heat.",
+    "sun": "Full Sun",
+    "water": "Moderate",
+    "plantingMonths": ["Mar", "Apr", "May", "Jun"],
+    "daysToBloom": "60-90 days; flowers continuously once established",
+    "careNotes": "Thrives in heat and humidity — perfect for Florida. Pinch flower buds to extend leaf production. Annual in cooler zones but perennial in Zone 10b. Self-seeds readily.",
+    "image": "/images/plants/holy-basil.jpg",
+    "medicinalUses": ["Adaptogen (stress relief)", "Immune system support", "Anti-anxiety", "Respiratory health"],
+    "recipes": [
+      {
+        "name": "Tulsi Adaptogen Tea",
+        "ingredients": ["Handful of fresh holy basil leaves (15-20 leaves)", "2 cups water", "1 tsp honey", "Fresh ginger slice (optional)"],
+        "instructions": "Bring water to a boil. Add holy basil leaves and ginger. Reduce heat and simmer for 5-10 minutes. Strain into cups. Cool slightly and add honey. Drink 1-2 cups daily for ongoing stress support. Can also be iced for a refreshing summer drink.",
+        "caution": "May lower blood sugar and slow blood clotting. Avoid 2 weeks before surgery. Consult a doctor if on diabetes or blood-thinning medications."
+      }
+    ]
+  },
+  {
+    "id": "neem",
+    "name": "Neem Tree",
+    "scientificName": "Azadirachta indica",
+    "category": "medicinal",
+    "description": "Tropical evergreen tree used for centuries in traditional medicine. Leaves, bark, and seeds all have medicinal properties. Also an excellent natural pesticide for the garden.",
+    "sun": "Full Sun",
+    "water": "Low",
+    "plantingMonths": ["Mar", "Apr", "May"],
+    "daysToBloom": "Fast-growing tree; usable leaves within first year",
+    "careNotes": "Very drought-tolerant once established. Grows quickly to 30-50 ft. Sandy soil is fine. Minimal care needed. Frost-sensitive; protect young trees in rare freeze events.",
+    "image": "/images/plants/neem.jpg",
+    "medicinalUses": ["Natural insecticide/pesticide", "Skin conditions (topical)", "Oral health", "Anti-fungal"],
+    "recipes": [
+      {
+        "name": "Neem Garden Pest Spray",
+        "ingredients": ["1 cup fresh neem leaves", "4 cups water", "1 tsp liquid castile soap"],
+        "instructions": "Blend neem leaves with 2 cups of water until finely chopped. Strain through cheesecloth. Add remaining 2 cups of water and the castile soap. Mix well and pour into spray bottle. Spray on affected garden plants in the evening (neem breaks down in direct sunlight). Reapply after rain.",
+        "caution": "For garden use only — do not apply to skin in this concentration. Do not ingest neem oil or concentrated neem preparations."
+      },
+      {
+        "name": "Neem Leaf Skin Paste",
+        "ingredients": ["Handful of fresh neem leaves", "2 tbsp water or rosewater", "1/2 tsp turmeric powder (optional)"],
+        "instructions": "Wash neem leaves thoroughly. Grind into a paste with water or rosewater using a mortar and pestle or blender. Add turmeric if using. Apply thin layer to affected skin area. Leave on for 15-20 minutes. Rinse with cool water. Use 2-3 times per week.",
+        "caution": "For external use only. Do a patch test first. Avoid on open wounds. Do not use neem products during pregnancy."
+      }
+    ]
+  }
+]
