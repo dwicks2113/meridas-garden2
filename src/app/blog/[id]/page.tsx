@@ -71,26 +71,28 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link
             href="/blog"
-            className="text-garden-green-pale hover:text-white text-sm mb-4 inline-block"
+            className="text-garden-green-pale hover:text-white text-sm mb-5 inline-block"
           >
             ← Back to Blog
           </Link>
-          <div className="mb-4">
-            <BoxerLogo size={70} showButterfly />
+          <div className="flex items-center gap-5">
+            <BoxerLogo size={80} showButterfly />
+            <div>
+              <div className="flex flex-wrap gap-2 mb-2">
+                <span
+                  className={`text-xs font-semibold px-2.5 py-1 rounded-full ${categoryColor(post.category)}`}
+                >
+                  {post.category}
+                </span>
+              </div>
+              <h1 className="text-3xl md:text-4xl font-heading font-bold text-white mb-1">
+                {post.title}
+              </h1>
+              <p className="text-garden-green-pale text-sm">
+                By {post.author} &middot; {formatDate(post.date)}
+              </p>
+            </div>
           </div>
-          <div className="flex flex-wrap gap-2 mb-3">
-            <span
-              className={`text-xs font-semibold px-2.5 py-1 rounded-full ${categoryColor(post.category)}`}
-            >
-              {post.category}
-            </span>
-          </div>
-          <h1 className="text-3xl md:text-4xl font-heading font-bold text-white mb-3">
-            {post.title}
-          </h1>
-          <p className="text-garden-green-pale text-sm">
-            By {post.author} &middot; {formatDate(post.date)}
-          </p>
         </div>
       </section>
 

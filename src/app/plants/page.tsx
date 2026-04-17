@@ -342,17 +342,19 @@ export default function PlantsPage() {
   return (
     <>
       <section className="bg-gradient-to-br from-garden-green-dark to-garden-green py-12 md:py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="flex justify-center mb-3">
-            <BoxerLogo size={80} showButterfly />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center gap-5">
+            <BoxerLogo size={90} showButterfly />
+            <div>
+              <h1 className="text-4xl md:text-5xl font-heading font-bold text-white mb-2">
+                Plant Database
+              </h1>
+              <p className="text-lg text-garden-green-pale max-w-2xl">
+                {initialPlants.length} plants suited for USDA Zone 10b in Clearwater, FL.
+                Search by name or filter by category.
+              </p>
+            </div>
           </div>
-          <h1 className="text-4xl md:text-5xl font-heading font-bold text-white mb-3">
-            Plant Database
-          </h1>
-          <p className="text-lg text-garden-green-pale max-w-2xl mx-auto">
-            {initialPlants.length} plants suited for USDA Zone 10b in Clearwater, FL.
-            Search by name or filter by category.
-          </p>
         </div>
       </section>
       <Suspense fallback={

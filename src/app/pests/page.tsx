@@ -133,17 +133,19 @@ export default function PestsPage() {
     <>
       {/* Hero */}
       <section className="bg-gradient-to-br from-amber-800 to-amber-600 py-12 md:py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="flex justify-center mb-3">
-            <BoxerLogo size={80} showBee />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center gap-5">
+            <BoxerLogo size={90} showBee />
+            <div>
+              <h1 className="text-4xl md:text-5xl font-heading font-bold text-white mb-2">
+                Garden Pests & Diseases
+              </h1>
+              <p className="text-lg text-amber-100 max-w-2xl">
+                {allPests.length} common pests and diseases in Zone 10b — how to identify,
+                treat, and prevent them in your Clearwater garden.
+              </p>
+            </div>
           </div>
-          <h1 className="text-4xl md:text-5xl font-heading font-bold text-white mb-3">
-            Garden Pests & Diseases
-          </h1>
-          <p className="text-lg text-amber-100 max-w-2xl mx-auto">
-            {allPests.length} common pests and diseases in Zone 10b — how to identify,
-            treat, and prevent them in your Clearwater garden.
-          </p>
         </div>
       </section>
 

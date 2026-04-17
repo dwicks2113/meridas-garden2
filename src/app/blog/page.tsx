@@ -105,16 +105,18 @@ export default function BlogPage() {
     <>
       {/* Hero */}
       <section className="bg-gradient-to-br from-garden-green-dark to-garden-green py-12 md:py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="flex justify-center mb-3">
-            <BoxerLogo size={80} showBee showButterfly />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center gap-5">
+            <BoxerLogo size={90} showBee showButterfly />
+            <div>
+              <h1 className="text-4xl md:text-5xl font-heading font-bold text-white mb-2">
+                Garden Blog
+              </h1>
+              <p className="text-lg text-garden-green-pale max-w-2xl">
+                Tips, seasonal guides, recipes, and stories from the garden in Clearwater, FL.
+              </p>
+            </div>
           </div>
-          <h1 className="text-4xl md:text-5xl font-heading font-bold text-white mb-3">
-            Garden Blog
-          </h1>
-          <p className="text-lg text-garden-green-pale max-w-2xl mx-auto">
-            Tips, seasonal guides, recipes, and stories from the garden in Clearwater, FL.
-          </p>
         </div>
       </section>
 
