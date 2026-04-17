@@ -6,7 +6,6 @@ import type { JournalEntry } from "@/lib/types";
 import journalData from "@/data/journal.json";
 import plantsData from "@/data/plants.json";
 import medicinalData from "@/data/medicinal.json";
-import BoxerLogo from "@/components/BoxerLogo";
 
 type Plant = { id: string; name: string };
 
@@ -57,11 +56,11 @@ export default function JournalPage() {
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) {
     const { name, value } = e.target;
+    setForm((prev) => ({ ...prev, [name]: value }));
+    // Auto-fill plantId when selecting from dropdown
     if (name === "plantName") {
       const match = allPlants.find((p) => p.name === value);
       setForm((prev) => ({ ...prev, plantName: value, plantId: match ? match.id : "" }));
-    } else {
-      setForm((prev) => ({ ...prev, [name]: value }));
     }
   }
 
@@ -97,9 +96,6 @@ export default function JournalPage() {
       {/* Hero */}
       <section className="bg-gradient-to-br from-garden-earth-dark to-garden-earth py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="flex justify-center mb-3">
-            <BoxerLogo size={80} showButterfly />
-          </div>
           <h1 className="text-4xl md:text-5xl font-heading font-bold text-white mb-3">
             Planting Journal
           </h1>
@@ -112,7 +108,7 @@ export default function JournalPage() {
       <section className="py-10 md:py-16 bg-garden-cream">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          {/* Success / error banners */}
+          {/* Success banner */}
           {saveStatus === "success" && (
             <div className="mb-6 bg-green-50 border border-green-200 text-green-800 rounded-xl px-5 py-3 flex items-center gap-3">
               <span className="text-xl">✅</span>
@@ -122,15 +118,13 @@ export default function JournalPage() {
           {saveStatus === "error" && (
             <div className="mb-6 bg-red-50 border border-red-200 text-red-800 rounded-xl px-5 py-3 flex items-center gap-3">
               <span className="text-xl">⚠️</span>
-              <p className="text-sm font-medium">Something went wrong saving the entry. Please try again.</p>
+              <p className="text-sm font-medium">Something went wrong. Please try again.</p>
             </div>
           )}
 
-          {/* Header row */}
+          {/* Add Entry button */}
           <div className="mb-6 flex items-center justify-between">
-            <p className="text-sm text-gray-500">
-              {entries.length} {entries.length === 1 ? "entry" : "entries"}
-            </p>
+            <p className="text-sm text-gray-500">{entries.length} {entries.length === 1 ? "entry" : "entries"}</p>
             <button
               onClick={() => setShowForm(!showForm)}
               className={`flex items-center gap-2 px-5 py-2.5 rounded-xl font-medium text-sm transition-colors ${
@@ -165,7 +159,6 @@ export default function JournalPage() {
               </h2>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-
                 {/* Plant Name */}
                 <div className="sm:col-span-2">
                   <label className="block text-sm font-medium text-gray-700 mb-1">
@@ -177,7 +170,7 @@ export default function JournalPage() {
                     value={form.plantName}
                     onChange={handleChange}
                     required
-                    placeholder="e.g. Tomato, Hibiscus, Basil..."
+                    placeholder="e.g. Tomato, Hibiscus..."
                     className="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-garden-green/40"
                   />
                   <datalist id="plant-suggestions">
@@ -185,9 +178,7 @@ export default function JournalPage() {
                       <option key={p.id} value={p.name} />
                     ))}
                   </datalist>
-                  <p className="text-xs text-gray-400 mt-1">
-                    Start typing to see suggestions from your plant database, or enter any name.
-                  </p>
+                  <p className="text-xs text-gray-400 mt-1">Start typing to see plants from your database, or enter any plant name.</p>
                 </div>
 
                 {/* Date Planted */}
@@ -258,7 +249,7 @@ export default function JournalPage() {
                 {/* Days to Fruit */}
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">
-                    Est. Days to Fruit / Bloom <span className="text-gray-400 font-normal">(optional)</span>
+                    Est. Days to Fruit/Bloom <span className="text-gray-400 font-normal">(optional)</span>
                   </label>
                   <input
                     type="number"
@@ -282,7 +273,7 @@ export default function JournalPage() {
                     value={form.notes}
                     onChange={handleChange}
                     rows={3}
-                    placeholder="Soil prep, spacing, where you got the seeds, companion plants, anything you want to remember..."
+                    placeholder="Soil prep, spacing, where you got the seeds, anything you want to remember..."
                     className="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-garden-green/40 resize-none"
                   />
                 </div>
@@ -302,7 +293,9 @@ export default function JournalPage() {
                       </svg>
                       Saving...
                     </>
-                  ) : "Save Entry"}
+                  ) : (
+                    "Save Entry"
+                  )}
                 </button>
                 <button
                   type="button"
@@ -320,9 +313,7 @@ export default function JournalPage() {
             <div className="text-center py-16">
               <p className="text-5xl mb-4">🌱</p>
               <p className="text-gray-500 text-lg mb-2">No journal entries yet.</p>
-              <p className="text-gray-400 text-sm">
-                Click &quot;Add New Entry&quot; above to record your first planting!
-              </p>
+              <p className="text-gray-400 text-sm">Click &quot;Add New Entry&quot; above to record your first planting!</p>
             </div>
           ) : (
             <div className="space-y-6">
@@ -332,10 +323,9 @@ export default function JournalPage() {
 
                 return (
                   <div key={entry.id} className="card overflow-hidden">
-                    <button
-                      onClick={() => setExpandedEntry(isExpanded ? null : entry.id)}
-                      className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-garden-green-pale/20 transition-colors"
-                    >
+                    {/* Header */}
+                    <button onClick={() => setExpandedEntry(isExpanded ? null : entry.id)}
+                      className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-garden-green-pale/20 transition-colors">
                       <div className="flex-1">
                         <div className="flex items-center gap-3 flex-wrap">
                           <h3 className="text-lg font-heading font-bold text-garden-green-dark">
@@ -352,16 +342,15 @@ export default function JournalPage() {
                           {entry.location && <span>📍 {entry.location}</span>}
                         </div>
                       </div>
-                      <svg
-                        className={`w-5 h-5 text-gray-400 transition-transform duration-200 flex-shrink-0 ml-4 ${isExpanded ? "rotate-180" : ""}`}
-                        fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                      >
+                      <svg className={`w-5 h-5 text-gray-400 transition-transform duration-200 flex-shrink-0 ml-4 ${isExpanded ? "rotate-180" : ""}`}
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                       </svg>
                     </button>
 
                     {isExpanded && (
                       <div className="px-6 pb-6 space-y-5 border-t border-garden-earth-pale/40">
+                        {/* Details grid */}
                         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4">
                           <div className="bg-garden-green-pale/50 rounded-lg p-3">
                             <p className="text-xs font-semibold text-gray-600">Location</p>
@@ -383,6 +372,7 @@ export default function JournalPage() {
                           )}
                         </div>
 
+                        {/* Notes */}
                         {entry.notes && (
                           <div>
                             <h4 className="font-semibold text-sm text-gray-700 mb-1">Planting Notes</h4>
@@ -390,6 +380,7 @@ export default function JournalPage() {
                           </div>
                         )}
 
+                        {/* Progress bar for days to fruit */}
                         {entry.daysToFruit && (
                           <div>
                             <div className="flex justify-between text-xs text-gray-500 mb-1">
@@ -397,14 +388,13 @@ export default function JournalPage() {
                               <span>{Math.min(100, Math.round((days / entry.daysToFruit) * 100))}%</span>
                             </div>
                             <div className="w-full bg-gray-200 rounded-full h-2">
-                              <div
-                                className="bg-garden-green rounded-full h-2 transition-all duration-500"
-                                style={{ width: `${Math.min(100, (days / entry.daysToFruit) * 100)}%` }}
-                              />
+                              <div className="bg-garden-green rounded-full h-2 transition-all duration-500"
+                                style={{ width: `${Math.min(100, (days / entry.daysToFruit) * 100)}%` }} />
                             </div>
                           </div>
                         )}
 
+                        {/* Timeline of updates */}
                         {entry.updates && entry.updates.length > 0 && (
                           <div>
                             <h4 className="font-semibold text-sm text-gray-700 mb-3">Growth Timeline</h4>
@@ -427,11 +417,10 @@ export default function JournalPage() {
                           </div>
                         )}
 
+                        {/* Link to plant database */}
                         {entry.plantId && (
-                          <Link
-                            href={`/plants/${entry.plantId}`}
-                            className="inline-flex items-center gap-1 text-sm text-garden-green hover:text-garden-green-dark"
-                          >
+                          <Link href={`/plants/${entry.plantId}`}
+                            className="inline-flex items-center gap-1 text-sm text-garden-green hover:text-garden-green-dark">
                             View in Plant Database
                             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

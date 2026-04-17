@@ -14,9 +14,11 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
 
+    // Read existing entries
     const raw = readFileSync(journalPath, "utf-8");
     const entries = JSON.parse(raw);
 
+    // Build new entry
     const newEntry = {
       id: `entry-${Date.now()}`,
       plantId: plantId || plantName.toLowerCase().replace(/\s+/g, "-"),
@@ -31,7 +33,7 @@ export async function POST(req: NextRequest) {
       updates: [],
     };
 
-    entries.unshift(newEntry);
+    entries.unshift(newEntry); // add to top
     writeFileSync(journalPath, JSON.stringify(entries, null, 2));
 
     return NextResponse.json({ success: true, entry: newEntry });
