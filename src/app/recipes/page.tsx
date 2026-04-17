@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import Link from "next/link";
 import recipesData from "@/data/recipes.json";
 import BoxerLogo from "@/components/BoxerLogo";
+import { useAdmin } from "@/components/AdminContext";
 
 type RecipeType = "herbal-tea" | "tincture" | "salve" | "culinary";
 
@@ -56,6 +57,7 @@ const emptyForm = {
 };
 
 export default function RecipesPage() {
+  const { isAdmin, adminPassword } = useAdmin();
   const [search, setSearch] = useState("");
   const [activeType, setActiveType] = useState<string>("all");
   const [recipes, setRecipes] = useState<Recipe[]>(recipesData as Recipe[]);
@@ -92,7 +94,7 @@ export default function RecipesPage() {
     try {
       const res = await fetch("/api/recipes", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", "x-admin-password": adminPassword },
         body: JSON.stringify(form),
       });
       if (!res.ok) throw new Error("Save failed");
@@ -154,16 +156,18 @@ export default function RecipesPage() {
             onChange={(e) => setSearch(e.target.value)}
             className="flex-1 border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-garden-green"
           />
-          <button
-            onClick={() => { setShowForm(!showForm); setSaveStatus("idle"); }}
-            className="bg-garden-green-dark text-white px-5 py-2 rounded-lg font-semibold hover:bg-garden-green transition-colors whitespace-nowrap"
-          >
-            {showForm ? "✕ Cancel" : "+ Add New Recipe"}
-          </button>
+          {isAdmin && (
+            <button
+              onClick={() => { setShowForm(!showForm); setSaveStatus("idle"); }}
+              className="bg-garden-green-dark text-white px-5 py-2 rounded-lg font-semibold hover:bg-garden-green transition-colors whitespace-nowrap"
+            >
+              {showForm ? "✕ Cancel" : "+ Add New Recipe"}
+            </button>
+          )}
         </div>
 
         {/* Add Recipe Form */}
-        {showForm && (
+        {isAdmin && showForm && (
           <div className="bg-white border border-garden-green/30 rounded-xl shadow-md p-6 mb-8">
             <h2 className="text-xl font-heading font-bold text-garden-green-dark mb-5">Add New Recipe</h2>
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -342,8 +346,8 @@ export default function RecipesPage() {
             {filtered.map((recipe) => {
               const typeInfo = typeLabels[recipe.type] || { label: recipe.type, emoji: "🌱", color: "bg-gray-100 text-gray-700" };
               return (
+                <div key={recipe.id} className="relative flex flex-col">
                 <Link
-                  key={recipe.id}
                   href={`/recipes/${recipe.id}`}
                   className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 flex flex-col"
                 >
@@ -395,6 +399,22 @@ export default function RecipesPage() {
                     </div>
                   </div>
                 </Link>
+                {isAdmin && (
+                  <button
+                    onClick={async () => {
+                      if (!confirm(`Delete "${recipe.name}"?`)) return;
+                      const res = await fetch(`/api/recipes?id=${recipe.id}`, {
+                        method: "DELETE",
+                        headers: { "x-admin-password": adminPassword },
+                      });
+                      if (res.ok) setRecipes((prev) => prev.filter((r) => r.id !== recipe.id));
+                    }}
+                    className="mt-1 text-xs text-red-400 hover:text-red-600 text-center w-full py-1"
+                  >
+                    🗑 Delete
+                  </button>
+                )}
+                </div>
               );
             })}
           </div>

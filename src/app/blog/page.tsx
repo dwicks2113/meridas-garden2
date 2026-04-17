@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import Link from "next/link";
 import blogData from "@/data/blog.json";
 import BoxerLogo from "@/components/BoxerLogo";
+import { useAdmin } from "@/components/AdminContext";
 
 type BlogPost = {
   id: string;
@@ -52,6 +53,7 @@ function categoryColor(cat: string): string {
 }
 
 export default function BlogPage() {
+  const { isAdmin, adminPassword } = useAdmin();
   const [posts, setPosts]           = useState<BlogPost[]>(
     [...(blogData as BlogPost[])].sort(
       (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
@@ -84,7 +86,7 @@ export default function BlogPage() {
     try {
       const res = await fetch("/api/blog", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", "x-admin-password": adminPassword },
         body: JSON.stringify(form),
       });
       if (!res.ok) throw new Error("Save failed");
@@ -157,12 +159,14 @@ export default function BlogPage() {
                 );
               })}
             </div>
-            <button
-              onClick={() => { setShowForm(!showForm); setSaveStatus("idle"); }}
-              className="bg-garden-green-dark text-white px-5 py-2 rounded-lg font-semibold hover:bg-garden-green transition-colors whitespace-nowrap"
-            >
-              {showForm ? "✕ Cancel" : "✏️ Write a Post"}
-            </button>
+            {isAdmin && (
+              <button
+                onClick={() => { setShowForm(!showForm); setSaveStatus("idle"); }}
+                className="bg-garden-green-dark text-white px-5 py-2 rounded-lg font-semibold hover:bg-garden-green transition-colors whitespace-nowrap"
+              >
+                {showForm ? "✕ Cancel" : "✏️ Write a Post"}
+              </button>
+            )}
           </div>
 
           {/* Add post form */}
@@ -287,12 +291,29 @@ export default function BlogPage() {
                       <span className="text-sm text-gray-400">
                         💬 {post.comments.length} comment{post.comments.length !== 1 ? "s" : ""}
                       </span>
-                      <Link
-                        href={`/blog/${post.id}`}
-                        className="text-garden-green hover:text-garden-green-dark text-sm font-medium"
-                      >
-                        Read more →
-                      </Link>
+                      <div className="flex items-center gap-3">
+                        {isAdmin && (
+                          <button
+                            onClick={async () => {
+                              if (!confirm(`Delete "${post.title}"?`)) return;
+                              const res = await fetch(`/api/blog?id=${post.id}`, {
+                                method: "DELETE",
+                                headers: { "x-admin-password": adminPassword },
+                              });
+                              if (res.ok) setPosts((prev) => prev.filter((p) => p.id !== post.id));
+                            }}
+                            className="text-red-400 hover:text-red-600 text-xs font-medium"
+                          >
+                            🗑 Delete
+                          </button>
+                        )}
+                        <Link
+                          href={`/blog/${post.id}`}
+                          className="text-garden-green hover:text-garden-green-dark text-sm font-medium"
+                        >
+                          Read more →
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </article>

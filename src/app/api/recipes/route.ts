@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { readFileSync, writeFileSync } from "fs";
 import { join } from "path";
+import { isAdmin } from "@/lib/adminAuth";
 
 const recipesPath = join(process.cwd(), "src", "data", "recipes.json");
 
@@ -21,6 +22,9 @@ function toSlug(name: string): string {
 }
 
 export async function POST(req: NextRequest) {
+  if (!isAdmin(req)) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
   try {
     const body = await req.json();
 
@@ -90,5 +94,28 @@ export async function POST(req: NextRequest) {
   } catch (err) {
     console.error("Recipe save error:", err);
     return NextResponse.json({ error: "Failed to save recipe" }, { status: 500 });
+  }
+}
+
+export async function DELETE(req: NextRequest) {
+  if (!isAdmin(req)) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+  try {
+    const { searchParams } = new URL(req.url);
+    const id = searchParams.get("id");
+    if (!id) return NextResponse.json({ error: "Missing id" }, { status: 400 });
+
+    const raw     = readFileSync(recipesPath, "utf-8");
+    const entries = JSON.parse(raw) as { id: string }[];
+    const index   = entries.findIndex((e) => e.id === id);
+    if (index === -1) return NextResponse.json({ error: "Recipe not found" }, { status: 404 });
+
+    entries.splice(index, 1);
+    writeFileSync(recipesPath, JSON.stringify(entries, null, 2));
+    return NextResponse.json({ success: true });
+  } catch (err) {
+    console.error("Recipe delete error:", err);
+    return NextResponse.json({ error: "Failed to delete recipe" }, { status: 500 });
   }
 }

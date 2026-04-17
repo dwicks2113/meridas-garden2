@@ -38,8 +38,9 @@ export default function Footer() {
             </p>
           </div>
         </div>
-        <div className="border-t border-garden-green mt-8 pt-6 text-center text-xs">
-          &copy; {new Date().getFullYear()} Merida&apos;s Garden &mdash; Clearwater, FL
+        <div className="border-t border-garden-green mt-8 pt-6 text-center text-xs flex items-center justify-center gap-4">
+          <span>&copy; {new Date().getFullYear()} Merida&apos;s Garden &mdash; Clearwater, FL</span>
+          <Link href="/admin" className="opacity-30 hover:opacity-70 transition-opacity">🔐</Link>
         </div>
       </div>
     </footer>

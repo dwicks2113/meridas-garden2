@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { readFileSync, writeFileSync } from "fs";
 import { join } from "path";
+import { isAdmin } from "@/lib/adminAuth";
 
 const blogPath = join(process.cwd(), "src", "data", "blog.json");
 
@@ -13,6 +14,9 @@ function toSlug(title: string): string {
 }
 
 export async function POST(req: NextRequest) {
+  if (!isAdmin(req)) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
   try {
     const { title, category, excerpt, content } = await req.json();
 
@@ -52,5 +56,28 @@ export async function POST(req: NextRequest) {
   } catch (err) {
     console.error("Blog post save error:", err);
     return NextResponse.json({ error: "Failed to save post" }, { status: 500 });
+  }
+}
+
+export async function DELETE(req: NextRequest) {
+  if (!isAdmin(req)) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+  try {
+    const { searchParams } = new URL(req.url);
+    const id = searchParams.get("id");
+    if (!id) return NextResponse.json({ error: "Missing id" }, { status: 400 });
+
+    const raw     = readFileSync(blogPath, "utf-8");
+    const entries = JSON.parse(raw) as { id: string }[];
+    const index   = entries.findIndex((e) => e.id === id);
+    if (index === -1) return NextResponse.json({ error: "Post not found" }, { status: 404 });
+
+    entries.splice(index, 1);
+    writeFileSync(blogPath, JSON.stringify(entries, null, 2));
+    return NextResponse.json({ success: true });
+  } catch (err) {
+    console.error("Blog delete error:", err);
+    return NextResponse.json({ error: "Failed to delete post" }, { status: 500 });
   }
 }

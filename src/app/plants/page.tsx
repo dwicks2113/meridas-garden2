@@ -8,6 +8,7 @@ import type { Plant, Category } from "@/lib/types";
 import plantsData from "@/data/plants.json";
 import medicinalData from "@/data/medicinal.json";
 import BoxerLogo from "@/components/BoxerLogo";
+import { useAdmin } from "@/components/AdminContext";
 
 const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 const SUN_OPTIONS    = ["Full Sun","Full Sun to Partial Shade","Partial Shade","Full Shade"];
@@ -39,6 +40,7 @@ const initialPlants: Plant[] = [
 ];
 
 function PlantsContent() {
+  const { isAdmin, adminPassword } = useAdmin();
   const searchParams   = useSearchParams();
   const initialCategory = (searchParams.get("category") as Category) || "all";
 
@@ -92,7 +94,7 @@ function PlantsContent() {
     try {
       const res = await fetch("/api/plants", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", "x-admin-password": adminPassword },
         body: JSON.stringify(form),
       });
       if (!res.ok) throw new Error("Save failed");
@@ -134,16 +136,18 @@ function PlantsContent() {
               totalResults={filtered.length}
             />
           </div>
-          <button
-            onClick={() => { setShowForm(!showForm); setSaveStatus("idle"); }}
-            className="sm:self-start bg-garden-green-dark text-white px-5 py-2 rounded-lg font-semibold hover:bg-garden-green transition-colors whitespace-nowrap mt-1"
-          >
-            {showForm ? "✕ Cancel" : "+ Add New Plant"}
-          </button>
+          {isAdmin && (
+            <button
+              onClick={() => { setShowForm(!showForm); setSaveStatus("idle"); }}
+              className="sm:self-start bg-garden-green-dark text-white px-5 py-2 rounded-lg font-semibold hover:bg-garden-green transition-colors whitespace-nowrap mt-1"
+            >
+              {showForm ? "✕ Cancel" : "+ Add New Plant"}
+            </button>
+          )}
         </div>
 
         {/* ── ADD PLANT FORM ── */}
-        {showForm && (
+        {isAdmin && showForm && (
           <div className="bg-white border border-garden-green/30 rounded-xl shadow-md p-6 mb-8">
             <h2 className="text-xl font-heading font-bold text-garden-green-dark mb-5">
               Add New Plant
@@ -319,7 +323,24 @@ function PlantsContent() {
         {filtered.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-4">
             {filtered.map((plant) => (
-              <PlantCard key={plant.id} plant={plant} />
+              <div key={plant.id} className="flex flex-col">
+                <PlantCard plant={plant} />
+                {isAdmin && (
+                  <button
+                    onClick={async () => {
+                      if (!confirm(`Delete "${plant.name}"?`)) return;
+                      const res = await fetch(`/api/plants?id=${plant.id}`, {
+                        method: "DELETE",
+                        headers: { "x-admin-password": adminPassword },
+                      });
+                      if (res.ok) setPlants((prev) => prev.filter((p) => p.id !== plant.id));
+                    }}
+                    className="mt-1 text-xs text-red-400 hover:text-red-600 text-center py-1"
+                  >
+                    🗑 Delete
+                  </button>
+                )}
+              </div>
             ))}
           </div>
         ) : (

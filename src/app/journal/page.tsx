@@ -7,6 +7,7 @@ import journalData from "@/data/journal.json";
 import plantsData from "@/data/plants.json";
 import medicinalData from "@/data/medicinal.json";
 import BoxerLogo from "@/components/BoxerLogo";
+import { useAdmin } from "@/components/AdminContext";
 
 type Plant = { id: string; name: string };
 
@@ -48,6 +49,7 @@ const emptyForm = {
 };
 
 export default function JournalPage() {
+  const { isAdmin, adminPassword } = useAdmin();
   const [entries, setEntries] = useState<JournalEntry[]>(journalData as JournalEntry[]);
   const [expandedEntry, setExpandedEntry] = useState<string | null>(null);
   const [showForm, setShowForm] = useState(false);
@@ -73,7 +75,7 @@ export default function JournalPage() {
     try {
       const res = await fetch("/api/journal", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", "x-admin-password": adminPassword },
         body: JSON.stringify(form),
       });
 
@@ -131,34 +133,36 @@ export default function JournalPage() {
           {/* Add Entry button */}
           <div className="mb-6 flex items-center justify-between">
             <p className="text-sm text-gray-500">{entries.length} {entries.length === 1 ? "entry" : "entries"}</p>
-            <button
-              onClick={() => setShowForm(!showForm)}
-              className={`flex items-center gap-2 px-5 py-2.5 rounded-xl font-medium text-sm transition-colors ${
-                showForm
-                  ? "bg-gray-200 text-gray-700 hover:bg-gray-300"
-                  : "bg-garden-green-dark text-white hover:bg-garden-green"
-              }`}
-            >
-              {showForm ? (
-                <>
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                  Cancel
-                </>
-              ) : (
-                <>
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-                  </svg>
-                  Add New Entry
-                </>
-              )}
-            </button>
+            {isAdmin && (
+              <button
+                onClick={() => setShowForm(!showForm)}
+                className={`flex items-center gap-2 px-5 py-2.5 rounded-xl font-medium text-sm transition-colors ${
+                  showForm
+                    ? "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                    : "bg-garden-green-dark text-white hover:bg-garden-green"
+                }`}
+              >
+                {showForm ? (
+                  <>
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                    Cancel
+                  </>
+                ) : (
+                  <>
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                    </svg>
+                    Add New Entry
+                  </>
+                )}
+              </button>
+            )}
           </div>
 
           {/* Add Entry Form */}
-          {showForm && (
+          {isAdmin && showForm && (
             <form onSubmit={handleSubmit} className="card p-6 mb-8 border-2 border-garden-green/30">
               <h2 className="font-heading font-bold text-garden-green-dark text-xl mb-5">
                 🌱 New Journal Entry
@@ -348,10 +352,28 @@ export default function JournalPage() {
                           {entry.location && <span>📍 {entry.location}</span>}
                         </div>
                       </div>
-                      <svg className={`w-5 h-5 text-gray-400 transition-transform duration-200 flex-shrink-0 ml-4 ${isExpanded ? "rotate-180" : ""}`}
-                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                      </svg>
+                      <div className="flex items-center gap-3 flex-shrink-0 ml-4">
+                        {isAdmin && (
+                          <button
+                            onClick={async (e) => {
+                              e.stopPropagation();
+                              if (!confirm(`Delete entry for "${entry.plantName}"?`)) return;
+                              const res = await fetch(`/api/journal?id=${entry.id}`, {
+                                method: "DELETE",
+                                headers: { "x-admin-password": adminPassword },
+                              });
+                              if (res.ok) setEntries((prev) => prev.filter((en) => en.id !== entry.id));
+                            }}
+                            className="text-xs text-red-400 hover:text-red-600"
+                          >
+                            🗑
+                          </button>
+                        )}
+                        <svg className={`w-5 h-5 text-gray-400 transition-transform duration-200 ${isExpanded ? "rotate-180" : ""}`}
+                          fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </div>
                     </button>
 
                     {isExpanded && (
