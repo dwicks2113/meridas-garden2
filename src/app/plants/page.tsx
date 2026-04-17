@@ -7,6 +7,7 @@ import SearchFilter from "@/components/SearchFilter";
 import type { Plant, Category } from "@/lib/types";
 import plantsData from "@/data/plants.json";
 import medicinalData from "@/data/medicinal.json";
+import BoxerLogo from "@/components/BoxerLogo";
 
 const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 const SUN_OPTIONS    = ["Full Sun","Full Sun to Partial Shade","Partial Shade","Full Shade"];
@@ -342,6 +343,9 @@ export default function PlantsPage() {
     <>
       <section className="bg-gradient-to-br from-garden-green-dark to-garden-green py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="flex justify-center mb-3">
+            <BoxerLogo size={80} showButterfly />
+          </div>
           <h1 className="text-4xl md:text-5xl font-heading font-bold text-white mb-3">
             Plant Database
           </h1>

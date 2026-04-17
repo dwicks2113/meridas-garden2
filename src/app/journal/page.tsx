@@ -6,6 +6,7 @@ import type { JournalEntry } from "@/lib/types";
 import journalData from "@/data/journal.json";
 import plantsData from "@/data/plants.json";
 import medicinalData from "@/data/medicinal.json";
+import BoxerLogo from "@/components/BoxerLogo";
 
 type Plant = { id: string; name: string };
 
@@ -96,6 +97,9 @@ export default function JournalPage() {
       {/* Hero */}
       <section className="bg-gradient-to-br from-garden-earth-dark to-garden-earth py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="flex justify-center mb-3">
+            <BoxerLogo size={80} showButterfly />
+          </div>
           <h1 className="text-4xl md:text-5xl font-heading font-bold text-white mb-3">
             Planting Journal
           </h1>

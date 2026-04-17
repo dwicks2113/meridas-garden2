@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import recipesData from "@/data/recipes.json";
+import BoxerLogo from "@/components/BoxerLogo";
 
 type RecipeType = "herbal-tea" | "tincture" | "salve" | "culinary";
 
@@ -115,6 +116,9 @@ export default function RecipesPage() {
       {/* Header */}
       <div className="bg-gradient-to-br from-garden-green-dark via-garden-green to-teal-600 py-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="flex justify-center mb-3">
+            <BoxerLogo size={80} showBee showButterfly />
+          </div>
           <h1 className="text-4xl md:text-5xl font-heading font-bold text-white mb-3">
             🌿 Garden Recipes
           </h1>

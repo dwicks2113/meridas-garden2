@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import pestsData from "@/data/pests.json";
+import BoxerLogo from "@/components/BoxerLogo";
 
 type Pest = {
   id: string;
@@ -133,6 +134,9 @@ export default function PestsPage() {
       {/* Hero */}
       <section className="bg-gradient-to-br from-amber-800 to-amber-600 py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="flex justify-center mb-3">
+            <BoxerLogo size={80} showBee />
+          </div>
           <h1 className="text-4xl md:text-5xl font-heading font-bold text-white mb-3">
             Garden Pests & Diseases
           </h1>
