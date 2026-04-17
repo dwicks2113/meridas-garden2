@@ -2,11 +2,14 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import BoxerLogo from "@/components/BoxerLogo";
 
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/plants", label: "Plant Database" },
   { href: "/plants?category=medicinal", label: "Medicinal Plants" },
+  { href: "/pests", label: "Pests & Diseases" },
+  { href: "/recipes", label: "Recipes" },
   { href: "/journal", label: "Planting Journal" },
 ];
 
@@ -18,7 +21,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-3">
-            <span className="text-2xl">&#x1F33F;</span>
+            <BoxerLogo size={52} />
             <div>
               <span className="text-lg font-heading font-bold">Merida&apos;s Garden</span>
               <span className="hidden sm:inline text-garden-green-light text-xs ml-2">Clearwater, FL</span>

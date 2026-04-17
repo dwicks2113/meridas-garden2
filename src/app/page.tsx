@@ -2,8 +2,13 @@ import Link from "next/link";
 import type { Plant } from "@/lib/types";
 import plantsData from "@/data/plants.json";
 import medicinalData from "@/data/medicinal.json";
+import pestsData from "@/data/pests.json";
+import recipesData from "@/data/recipes.json";
+import BoxerLogo from "@/components/BoxerLogo";
 
 const allPlants: Plant[] = [...(plantsData as Plant[]), ...(medicinalData as Plant[])];
+const pestCount = pestsData.length;
+const recipeCount = recipesData.length;
 const flowerCount = allPlants.filter((p) => p.category === "flowers").length;
 const edibleCount = allPlants.filter((p) => p.category === "edible-flowers").length;
 const vegCount = allPlants.filter((p) => p.category === "vegetables").length;
@@ -16,6 +21,8 @@ const categories = [
   { name: "Vegetables", count: vegCount, href: "/plants?category=vegetables", color: "from-green-500 to-green-700", desc: "Cool-season and warm-season veggies" },
   { name: "Fruits", count: fruitCount, href: "/plants?category=fruits", color: "from-purple-500 to-purple-700", desc: "Tropical fruits for your backyard" },
   { name: "Medicinal Plants", count: medCount, href: "/plants?category=medicinal", color: "from-teal-500 to-teal-700", desc: "Healing herbs with recipes and uses" },
+  { name: "Pests & Diseases", count: pestCount, href: "/pests", color: "from-amber-600 to-amber-800", desc: "Identify, treat, and prevent common garden pests" },
+  { name: "Garden Recipes", count: recipeCount, href: "/recipes", color: "from-emerald-500 to-emerald-800", desc: "Herbal teas, tinctures, salves, and culinary recipes" },
 ];
 
 const monthTips: Record<string, string> = {
@@ -39,25 +46,34 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-garden-green-dark via-garden-green to-garden-green-light py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-heading font-bold text-white mb-4">
-            Merida&apos;s Garden
-          </h1>
-          <p className="text-xl md:text-2xl text-garden-green-pale mb-2">
-            Clearwater, Florida
-          </p>
-          <p className="text-lg text-garden-green-pale/80 max-w-2xl mx-auto mb-8">
-            A Zone 10b plant database, medicinal herb guide, and planting journal
-            for Clearwater, Florida.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/plants" className="bg-white text-garden-green-dark px-8 py-4 rounded-lg font-semibold text-lg hover:bg-garden-earth-pale transition-colors">
-              Explore Plants
-            </Link>
-            <Link href="/journal" className="bg-garden-green-dark/30 backdrop-blur text-white border border-white/30 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-garden-green-dark/50 transition-colors">
-              My Garden Journal
-            </Link>
+      <section className="bg-gradient-to-br from-garden-green-dark via-garden-green to-garden-green-light py-12 md:py-20">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+            {/* Mascot — left side */}
+            <div className="flex-shrink-0">
+              <BoxerLogo size={220} showBee showButterfly />
+            </div>
+            {/* Text — right side */}
+            <div className="text-center md:text-left">
+              <h1 className="text-4xl md:text-6xl font-heading font-bold text-white mb-3">
+                Merida&apos;s Garden
+              </h1>
+              <p className="text-xl md:text-2xl text-garden-green-pale mb-2">
+                Clearwater, Florida
+              </p>
+              <p className="text-lg text-garden-green-pale/80 max-w-xl mb-8">
+                A Zone 10b plant database, medicinal herb guide, and planting journal
+                for Clearwater, Florida.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <Link href="/plants" className="bg-white text-garden-green-dark px-8 py-4 rounded-lg font-semibold text-lg hover:bg-garden-earth-pale transition-colors">
+                  Explore Plants
+                </Link>
+                <Link href="/journal" className="bg-garden-green-dark/30 backdrop-blur text-white border border-white/30 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-garden-green-dark/50 transition-colors">
+                  My Garden Journal
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>

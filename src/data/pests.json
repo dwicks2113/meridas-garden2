@@ -1,0 +1,495 @@
+[
+  {
+    "id": "aphids",
+    "name": "Aphids",
+    "scientificName": "Aphididae family",
+    "category": "insects",
+    "severity": "moderate",
+    "description": "Tiny soft-bodied insects (1/16–1/8 inch) that cluster on new growth, stems, and undersides of leaves. They come in green, black, yellow, brown, or red. Aphids suck plant sap and reproduce incredibly fast — a single aphid can produce dozens of offspring per week.",
+    "image": "/images/pests/aphids.jpg",
+    "affectedPlants": ["Tomatoes", "Peppers", "Roses", "Hibiscus", "Kale", "Lettuce", "Citrus"],
+    "symptoms": [
+      "Curled, yellowed, or distorted leaves",
+      "Sticky honeydew residue on leaves and stems",
+      "Black sooty mold growing on the honeydew",
+      "Clusters of tiny insects on new growth and undersides of leaves",
+      "Stunted or wilted plant tips"
+    ],
+    "treatments": [
+      {
+        "method": "Blast with water",
+        "type": "organic",
+        "instructions": "Use a strong stream of water from a hose to knock aphids off plants. Do this in the morning so plants dry before nightfall. Repeat every 2-3 days. Very effective for light infestations."
+      },
+      {
+        "method": "Neem oil spray",
+        "type": "organic",
+        "instructions": "Mix 2 tbsp neem oil + 1 tsp dish soap + 1 quart water. Spray thoroughly on all plant surfaces, especially leaf undersides. Apply in early morning or evening — never in direct sun. Reapply every 7 days."
+      },
+      {
+        "method": "Insecticidal soap",
+        "type": "organic",
+        "instructions": "Mix 1-2 tbsp pure castile soap in 1 quart water. Spray directly on aphid clusters. The soap dissolves their protective coating. Must make direct contact to work. Reapply every 4-7 days."
+      },
+      {
+        "method": "Encourage beneficial insects",
+        "type": "prevention",
+        "instructions": "Plant flowers like pentas, firebush, and lantana nearby to attract ladybugs and lacewings — natural aphid predators. A single ladybug can eat 50-60 aphids per day."
+      }
+    ],
+    "prevention": "Avoid over-fertilizing with nitrogen (it produces soft, aphid-attracting growth). Inspect new plants before bringing them home. Check plants weekly, especially new growth.",
+    "quickTip": "A few aphids are normal — only treat when colonies are large or damage appears."
+  },
+  {
+    "id": "whiteflies",
+    "name": "Whiteflies",
+    "scientificName": "Bemisia tabaci / Trialeurodes vaporariorum",
+    "category": "insects",
+    "severity": "high",
+    "description": "Tiny white moth-like insects (1/16 inch) that live in large colonies on leaf undersides. When disturbed, they fly up in a white cloud. A major pest in Florida's warm climate. They suck sap and excrete honeydew, causing sooty mold.",
+    "image": "/images/pests/whiteflies.jpg",
+    "affectedPlants": ["Tomatoes", "Peppers", "Eggplant", "Hibiscus", "Sweet potato", "Citrus", "Beans"],
+    "symptoms": [
+      "Clouds of tiny white insects when plant is shaken",
+      "Yellow, dry, or wilted leaves",
+      "Sticky honeydew on leaf surfaces",
+      "Black sooty mold on leaves",
+      "White powdery clusters on leaf undersides"
+    ],
+    "treatments": [
+      {
+        "method": "Yellow sticky traps",
+        "type": "organic",
+        "instructions": "Hang yellow sticky traps near affected plants. Whiteflies are strongly attracted to yellow. Replace traps when full. Use as monitoring tool AND control method."
+      },
+      {
+        "method": "Neem oil spray",
+        "type": "organic",
+        "instructions": "Mix 2 tbsp neem oil + 1 tsp dish soap + 1 quart water. Spray leaf undersides thoroughly — that's where they live. Apply at dawn or dusk. Repeat weekly for 3-4 weeks to break the life cycle."
+      },
+      {
+        "method": "Insecticidal soap",
+        "type": "organic",
+        "instructions": "Spray pure castile soap solution (1-2 tbsp per quart of water) directly on whitefly clusters on leaf undersides. Must make contact. Reapply every 4-5 days."
+      },
+      {
+        "method": "Spinosad spray",
+        "type": "organic-approved",
+        "instructions": "Spinosad is an organic-approved pesticide derived from soil bacteria. Mix per label instructions and spray affected plants. More potent than soap or neem for heavy infestations. Available at garden centers."
+      }
+    ],
+    "prevention": "Avoid over-fertilizing. Inspect new transplants carefully. Reflective silver mulch repels whiteflies. Remove heavily infested leaves immediately.",
+    "quickTip": "Whiteflies are most problematic in summer. Plant resistant varieties when available."
+  },
+  {
+    "id": "spider-mites",
+    "name": "Spider Mites",
+    "scientificName": "Tetranychus urticae",
+    "category": "arachnids",
+    "severity": "high",
+    "description": "Microscopic arachnids (not insects) that are barely visible to the naked eye. They thrive in hot, dry conditions — Florida's dry winters are prime time. They live in colonies on leaf undersides and produce fine webbing. Can devastate plants rapidly.",
+    "image": "/images/pests/spider-mites.jpg",
+    "affectedPlants": ["Tomatoes", "Peppers", "Beans", "Strawberries", "Roses", "Cucumbers", "Eggplant"],
+    "symptoms": [
+      "Fine webbing on leaves and between stems",
+      "Tiny yellow or white speckles/stippling on leaves (feeding damage)",
+      "Leaves turning bronze, yellow, or gray and dropping",
+      "Visible tiny moving dots on leaf undersides (use magnifying glass)",
+      "Dusty or dirty appearance on leaf undersides"
+    ],
+    "treatments": [
+      {
+        "method": "Water spray",
+        "type": "organic",
+        "instructions": "Spider mites hate humidity. Spray plants with water daily, focusing on leaf undersides. This disrupts colonies and raises humidity. Most effective preventive measure."
+      },
+      {
+        "method": "Neem oil spray",
+        "type": "organic",
+        "instructions": "Mix 2 tbsp neem oil + 1 tsp dish soap + 1 quart water. Apply thoroughly to all leaf surfaces especially undersides. Neem oil disrupts mite reproduction. Apply every 5-7 days for 3 weeks."
+      },
+      {
+        "method": "Rubbing alcohol solution",
+        "type": "organic",
+        "instructions": "Mix 1 part rubbing alcohol to 3 parts water. Wipe leaves with a soft cloth dipped in the solution, or spray directly. Kills mites on contact. Test on a small area first."
+      },
+      {
+        "method": "Predatory mites",
+        "type": "biological",
+        "instructions": "Release predatory mites (Phytoseiulus persimilis or Neoseiulus californicus) available online or at garden centers. They feed exclusively on spider mites without harming plants. Best for greenhouses or enclosed spaces."
+      }
+    ],
+    "prevention": "Keep plants well-watered (mites love stressed, dry plants). Increase humidity around plants. Avoid dusty conditions. Inspect regularly — catching them early is key.",
+    "quickTip": "Do the paper test: hold white paper under a leaf and tap it. Tiny moving dots = spider mites."
+  },
+  {
+    "id": "fungus-gnats",
+    "name": "Fungus Gnats",
+    "scientificName": "Bradysia spp.",
+    "category": "insects",
+    "severity": "low",
+    "description": "Small black flies (1/8 inch) that resemble tiny mosquitoes. Adults are mostly a nuisance; the larvae live in moist soil and feed on roots and organic matter. Serious infestations can stunt or kill young plants. Common in Florida due to year-round warmth.",
+    "image": "/images/pests/fungus-gnats.jpg",
+    "affectedPlants": ["Seedlings", "Herbs", "Container plants", "Vegetables", "Any plant in moist soil"],
+    "symptoms": [
+      "Small black flies hovering around soil and plants",
+      "Flies running across soil surface",
+      "Yellowing, wilting seedlings despite adequate water",
+      "Slow growth or sudden collapse of young plants",
+      "Visible tiny white larvae in soil (use magnifying glass)"
+    ],
+    "treatments": [
+      {
+        "method": "Let soil dry out",
+        "type": "organic",
+        "instructions": "Allow the top 1-2 inches of soil to dry completely between waterings. Larvae need consistently moist soil to survive. This single change often eliminates the problem within 2 weeks."
+      },
+      {
+        "method": "Yellow sticky traps",
+        "type": "organic",
+        "instructions": "Place yellow sticky traps at soil level to capture adult gnats. This breaks the reproductive cycle. Replace every 1-2 weeks. Works well in combination with letting soil dry."
+      },
+      {
+        "method": "Bacillus thuringiensis var. israelensis (BTi)",
+        "type": "organic",
+        "instructions": "BTi is a naturally occurring soil bacteria sold as 'Gnat-off' or mosquito dunks. Mix per label and water into soil. The bacteria kill larvae without harming plants, beneficial insects, or pets. Most effective treatment."
+      },
+      {
+        "method": "Hydrogen peroxide drench",
+        "type": "organic",
+        "instructions": "Mix 1 part 3% hydrogen peroxide with 4 parts water. Water plants normally with this solution. It kills larvae on contact and oxygenates the soil. Use once per week for 2-3 weeks."
+      }
+    ],
+    "prevention": "Avoid overwatering — this is the #1 cause. Use well-draining soil. Cover soil surface with sand (larvae can't survive through it). Add BTi to irrigation water as a preventive.",
+    "quickTip": "Sticky yellow trap near the pot is the fastest way to confirm fungus gnats vs. other flies."
+  },
+  {
+    "id": "scale-insects",
+    "name": "Scale Insects",
+    "scientificName": "Coccoidea superfamily",
+    "category": "insects",
+    "severity": "moderate",
+    "description": "Scale insects look like small bumps or dots on stems and leaves — not like typical insects. They attach to plant tissue and suck sap from underneath a protective waxy shell. Common types in Florida include soft scales, armored scales, and brown soft scale. Hard to spot until infestations are large.",
+    "image": "/images/pests/scale.jpg",
+    "affectedPlants": ["Citrus", "Mango", "Avocado", "Ornamental shrubs", "Ixora", "Hibiscus", "Palms"],
+    "symptoms": [
+      "Bumpy, crusty, or waxy dots on stems and branches",
+      "Yellow leaves and premature leaf drop",
+      "Sticky honeydew dripping from plant",
+      "Black sooty mold on leaves and surfaces below plant",
+      "Twig dieback on heavily infested branches"
+    ],
+    "treatments": [
+      {
+        "method": "Rubbing alcohol on a cotton swab",
+        "type": "organic",
+        "instructions": "For small infestations, dab each scale with a cotton swab soaked in rubbing alcohol. The alcohol penetrates the waxy shell and kills the insect. Tedious but very effective. Follow up with neem oil spray."
+      },
+      {
+        "method": "Horticultural oil spray",
+        "type": "organic",
+        "instructions": "Mix horticultural oil per label instructions and spray thoroughly over all affected surfaces. The oil smothers scales by blocking their breathing pores. Apply in the cooler parts of the day. Do not apply in heat above 90°F."
+      },
+      {
+        "method": "Neem oil spray",
+        "type": "organic",
+        "instructions": "Mix 2 tbsp neem oil + 1 tsp dish soap + 1 quart water. Spray all surfaces, paying special attention to where scales are clustered. Weekly applications for 4-6 weeks needed to break the cycle."
+      },
+      {
+        "method": "Prune heavily infested branches",
+        "type": "mechanical",
+        "instructions": "For severe infestations, prune and bag affected branches before applying sprays. This immediately reduces the pest population. Dispose of prunings — do not compost."
+      }
+    ],
+    "prevention": "Inspect new plants carefully before purchasing. Keep plants healthy (stressed plants are more susceptible). Encourage natural predators like parasitic wasps. Check plants monthly.",
+    "quickTip": "Scrape a bump with your fingernail — if it smears yellow or orange, it's live scale. If it's hollow, it's already dead."
+  },
+  {
+    "id": "caterpillars",
+    "name": "Caterpillars & Hornworms",
+    "scientificName": "Various Lepidoptera larvae",
+    "category": "insects",
+    "severity": "moderate",
+    "description": "Several caterpillar species damage Florida gardens. The tomato hornworm (bright green, up to 4 inches) defoliates tomatoes overnight. Cabbage loopers attack leafy greens. Swallowtail caterpillars eat citrus and parsley. While some are pests, others become beautiful butterflies.",
+    "image": "/images/pests/caterpillars.jpg",
+    "affectedPlants": ["Tomatoes", "Peppers", "Kale", "Cabbage", "Citrus", "Parsley", "Fennel"],
+    "symptoms": [
+      "Large irregular holes in leaves",
+      "Entire leaves or stems completely stripped",
+      "Dark green or black droppings (frass) on leaves and soil below",
+      "Visible caterpillars on plants or nearby soil",
+      "Wilting or collapsed plant sections"
+    ],
+    "treatments": [
+      {
+        "method": "Hand-pick",
+        "type": "organic",
+        "instructions": "The simplest and most effective method. Inspect plants in morning and evening. Drop caterpillars into a bucket of soapy water. Wear gloves with hornworms as they can cause mild skin irritation. Check soil around plants too."
+      },
+      {
+        "method": "Bacillus thuringiensis (Bt)",
+        "type": "organic",
+        "instructions": "Bt is a naturally occurring bacteria that is lethal only to caterpillars (safe for humans, pets, birds, and beneficial insects). Spray onto leaves at the first sign of damage. Caterpillars must eat treated leaves to die. Reapply after rain."
+      },
+      {
+        "method": "Spinosad spray",
+        "type": "organic-approved",
+        "instructions": "Spinosad is highly effective on caterpillars. Mix per label instructions and spray plant thoroughly. Works faster than Bt. Safe for bees when dry. Avoid spraying open flowers to protect pollinators."
+      },
+      {
+        "method": "Encourage parasitic wasps",
+        "type": "biological",
+        "instructions": "Tiny parasitic wasps lay eggs in caterpillars. If you see a hornworm covered in tiny white oval sacks — those are wasp eggs. Leave it alone! The wasps will emerge and kill future generations of pests."
+      }
+    ],
+    "prevention": "Row covers protect young plants. Check undersides of leaves for eggs (tiny round dots). Note: swallowtail caterpillars on citrus/parsley are future beautiful butterflies — consider tolerating light damage.",
+    "quickTip": "Hornworms glow under UV/blacklight at night — great way to find them in the dark!"
+  },
+  {
+    "id": "slugs-snails",
+    "name": "Slugs & Snails",
+    "scientificName": "Gastropoda class",
+    "category": "mollusks",
+    "severity": "moderate",
+    "description": "Slugs and snails are especially active in Florida during the rainy season (June-September) and in irrigated gardens year-round. They feed primarily at night and on cloudy days. Snails have a shell; slugs do not. Both leave a distinctive slime trail. They can devastate seedlings, lettuce, and low-growing plants overnight.",
+    "image": "/images/pests/slugs-snails.jpg",
+    "affectedPlants": ["Lettuce", "Spinach", "Kale", "Seedlings", "Strawberries", "Basil", "Hostas"],
+    "symptoms": [
+      "Irregular ragged holes in leaves (especially at leaf edges)",
+      "Shiny slime trails on leaves, soil, or hard surfaces",
+      "Seedlings cut off at the base or completely missing",
+      "Damage worst after rain or irrigation",
+      "Damage appears overnight (they feed in darkness)"
+    ],
+    "treatments": [
+      {
+        "method": "Beer traps",
+        "type": "organic",
+        "instructions": "Bury a shallow container (like a tuna can) with the rim at soil level. Fill with cheap beer. Slugs and snails are attracted to the yeast, fall in, and drown. Empty and refill every 2-3 days. Highly effective."
+      },
+      {
+        "method": "Diatomaceous earth barrier",
+        "type": "organic",
+        "instructions": "Sprinkle food-grade diatomaceous earth (DE) in a band around vulnerable plants. The microscopic sharp particles damage slugs' and snails' soft bodies. Reapply after rain or heavy irrigation. Works best in dry conditions."
+      },
+      {
+        "method": "Copper tape barrier",
+        "type": "organic",
+        "instructions": "Wrap copper tape around raised beds or pots. Slugs and snails get a mild electric-like shock from copper and won't cross it. Long-lasting solution for containers and raised beds."
+      },
+      {
+        "method": "Iron phosphate bait (Sluggo)",
+        "type": "organic",
+        "instructions": "Iron phosphate baits (sold as Sluggo or Escar-Go) are OMRI-listed organic pellets safe for pets, wildlife, and vegetables. Scatter around affected plants. Slugs eat the bait and die within a few days. Very effective and safe."
+      }
+    ],
+    "prevention": "Water in the morning so soil is dry by evening (slugs need moisture). Avoid heavy mulch right against plant stems. Remove boards, pots, and debris where slugs hide during the day.",
+    "quickTip": "Go out at night with a flashlight — you'll find them in the act. Hand-pick into soapy water."
+  },
+  {
+    "id": "thrips",
+    "name": "Thrips",
+    "scientificName": "Thysanoptera order",
+    "category": "insects",
+    "severity": "moderate",
+    "description": "Tiny slender insects (1/25 inch) that are barely visible without magnification. They rasp leaf and flower surfaces to feed on plant cells. Florida thrips are especially damaging to flowers and fruiting vegetables. They also spread plant viruses, making them doubly dangerous.",
+    "image": "/images/pests/thrips.jpg",
+    "affectedPlants": ["Tomatoes", "Peppers", "Onions", "Flowers", "Roses", "Citrus blossoms", "Beans"],
+    "symptoms": [
+      "Silver or bronze streaking or scarring on leaves",
+      "Distorted, curled, or deformed new growth",
+      "Stippled or streaked flower petals",
+      "Black fecal dots on silvery damaged areas",
+      "Premature flower and fruit drop"
+    ],
+    "treatments": [
+      {
+        "method": "Blue or yellow sticky traps",
+        "type": "organic",
+        "instructions": "Blue sticky traps are especially attractive to thrips (more so than yellow). Hang at plant level. Use both for monitoring and control. Replace when full."
+      },
+      {
+        "method": "Neem oil spray",
+        "type": "organic",
+        "instructions": "Mix 2 tbsp neem oil + 1 tsp dish soap + 1 quart water. Spray all plant surfaces especially growing tips and flower buds where thrips congregate. Apply every 5-7 days."
+      },
+      {
+        "method": "Insecticidal soap",
+        "type": "organic",
+        "instructions": "Castile soap solution (1-2 tbsp per quart water) kills thrips on contact. Spray thoroughly. Multiple applications needed as soap doesn't affect eggs."
+      },
+      {
+        "method": "Spinosad spray",
+        "type": "organic-approved",
+        "instructions": "Spinosad is very effective against thrips and is organic-approved. Apply per label to all plant surfaces. Avoid spraying open flowers during pollinator hours."
+      }
+    ],
+    "prevention": "Remove weeds around the garden (thrips overwinter in weeds). Use reflective mulch which confuses thrips. Avoid over-fertilizing with nitrogen. Inspect new transplants carefully.",
+    "quickTip": "Shake a flower or growing tip over white paper — tiny moving specks are thrips."
+  },
+  {
+    "id": "mealybugs",
+    "name": "Mealybugs",
+    "scientificName": "Pseudococcidae family",
+    "category": "insects",
+    "severity": "moderate",
+    "description": "Soft-bodied insects covered in white waxy powder that forms a cottony, fluffy mass. They cluster in protected areas — leaf joints, stem crevices, and on roots. Very common in Florida on tropical plants and in humid conditions. They excrete honeydew and weaken plants by sucking sap.",
+    "image": "/images/pests/mealybugs.jpg",
+    "affectedPlants": ["Citrus", "Tropical plants", "Succulents", "Basil", "Hibiscus", "Bananas", "Herbs"],
+    "symptoms": [
+      "White cottony or powdery masses in leaf joints and stem crevices",
+      "Stunted, yellowing growth",
+      "Sticky honeydew on leaves and surfaces",
+      "Black sooty mold following honeydew deposits",
+      "Wilting despite adequate watering"
+    ],
+    "treatments": [
+      {
+        "method": "Rubbing alcohol on cotton swab",
+        "type": "organic",
+        "instructions": "Dab each mealybug cluster with a cotton swab or ball soaked in 70% rubbing alcohol. The alcohol instantly kills them by dissolving their waxy coating. Works well for small-to-medium infestations."
+      },
+      {
+        "method": "Neem oil spray",
+        "type": "organic",
+        "instructions": "Mix 2 tbsp neem oil + 1 tsp dish soap + 1 quart water. Spray all surfaces thoroughly, paying attention to stem crevices and leaf joints. Repeat every 7 days for 3-4 weeks."
+      },
+      {
+        "method": "Water blast + soap spray",
+        "type": "organic",
+        "instructions": "First dislodge colonies with a strong water blast, then immediately follow up with insecticidal soap spray. The combination is very effective. Repeat every 5 days."
+      },
+      {
+        "method": "Introduce ladybugs",
+        "type": "biological",
+        "instructions": "Ladybugs and lacewings are voracious mealybug predators. Purchase and release them in your garden in the evening. Plant nectar-rich flowers to encourage them to stay."
+      }
+    ],
+    "prevention": "Inspect new plants before buying — mealybugs often hitchhike on nursery plants. Quarantine new plants for 2 weeks. Avoid over-fertilizing with nitrogen. Keep garden clean of debris.",
+    "quickTip": "Mealybugs on roots are harder to spot — look for wilting plants that don't respond to watering."
+  },
+  {
+    "id": "asian-citrus-psyllid",
+    "name": "Asian Citrus Psyllid",
+    "scientificName": "Diaphorina citri",
+    "category": "insects",
+    "severity": "critical",
+    "description": "A critical pest for anyone growing citrus in Florida. The Asian Citrus Psyllid (ACP) itself causes some damage, but its real danger is spreading Huanglongbing (HLB) — also called citrus greening disease — for which there is NO cure. All Florida citrus growers must be vigilant. Report suspected HLB to the Florida Department of Agriculture.",
+    "image": "/images/pests/asian-citrus-psyllid.jpg",
+    "affectedPlants": ["All citrus varieties", "Orange", "Lemon", "Lime", "Grapefruit", "Kumquat", "Tangerine"],
+    "symptoms": [
+      "Waxy white tubular secretions on new growth (psyllid nymphs)",
+      "Curled or distorted new leaves",
+      "Yellow blotchy mottling on leaves (possible HLB symptom)",
+      "Lopsided, bitter fruit that stays green at the bottom (HLB)",
+      "Overall tree decline and dieback"
+    ],
+    "treatments": [
+      {
+        "method": "Horticultural oil spray",
+        "type": "organic",
+        "instructions": "Apply horticultural oil to all plant surfaces, especially new growth where nymphs feed. Spray every 2-3 weeks during flush (new growth) periods. This smothers nymphs and eggs."
+      },
+      {
+        "method": "Neem oil spray",
+        "type": "organic",
+        "instructions": "Regular neem oil applications (2 tbsp + 1 tsp dish soap per quart water) on all surfaces help suppress psyllid populations, especially targeting new growth flushes."
+      },
+      {
+        "method": "Report to authorities",
+        "type": "legal-requirement",
+        "instructions": "If you suspect HLB (citrus greening disease), contact the Florida Department of Agriculture and Consumer Services (FDACS) at 1-888-397-1517. It is a reportable disease in Florida. Affected trees may need to be removed to protect neighboring citrus."
+      },
+      {
+        "method": "Remove infected trees",
+        "type": "last-resort",
+        "instructions": "Trees confirmed with HLB have no cure and must be removed to prevent spread. Bag and dispose of all material — do not compost. Replace with certified disease-free nursery stock."
+      }
+    ],
+    "prevention": "Buy citrus trees only from licensed, certified Florida nurseries. Avoid moving citrus plant material across county lines. Monitor new growth (flushes) carefully every 2 weeks. Join the Florida Citrus Greening awareness program.",
+    "quickTip": "CRITICAL: Report suspected HLB to FDACS at 1-888-397-1517. Early detection is the only defense."
+  },
+  {
+    "id": "root-rot",
+    "name": "Root Rot (Fungal)",
+    "scientificName": "Phytophthora spp. / Pythium spp.",
+    "category": "fungal",
+    "severity": "high",
+    "description": "Root rot is caused by water mold fungi that thrive in waterlogged, poorly draining soil — extremely common in Florida's sandy but sometimes clay-heavy soils and during the rainy season. It's the #1 killer of plants in containers and low-lying areas. By the time above-ground symptoms appear, root damage is often severe.",
+    "image": "/images/pests/root-rot.jpg",
+    "affectedPlants": ["All plants in poorly drained soil", "Avocado", "Citrus", "Ixora", "Container plants", "Herbs"],
+    "symptoms": [
+      "Wilting despite moist soil",
+      "Yellowing leaves starting from the bottom of the plant",
+      "Brown, mushy roots (healthy roots are white and firm)",
+      "Foul smell from soil",
+      "Sudden plant collapse",
+      "Bark discoloration near soil line"
+    ],
+    "treatments": [
+      {
+        "method": "Improve drainage immediately",
+        "type": "cultural",
+        "instructions": "For container plants: repot into fresh, well-draining mix. Trim all brown mushy roots with sterile scissors. Let roots air-dry for 30-60 minutes. Add perlite to new soil mix (25-30%). For garden beds: add raised beds or amend with coarse sand and compost."
+      },
+      {
+        "method": "Reduce watering drastically",
+        "type": "cultural",
+        "instructions": "Stop watering immediately and let soil dry out as much as the plant can tolerate. In mild cases, improving drainage and reducing water can allow recovery. Never water on a schedule — only when the soil is dry 2 inches down."
+      },
+      {
+        "method": "Hydrogen peroxide soil drench",
+        "type": "organic",
+        "instructions": "Mix 1 part 3% hydrogen peroxide with 2 parts water. Drench the soil around the plant. H2O2 kills anaerobic fungi and adds oxygen to root zone. Use once weekly for 2-3 weeks while improving drainage."
+      },
+      {
+        "method": "Copper fungicide",
+        "type": "chemical",
+        "instructions": "For valuable trees (especially citrus and avocado), copper-based fungicides can help suppress Phytophthora. Apply per label as a soil drench or trunk spray. Best used as a preventive or at first signs of infection."
+      }
+    ],
+    "prevention": "This is all about drainage. Amend sandy soil with compost. Raise beds in low-lying areas. Use well-draining potting mix in containers. Water deeply but infrequently. Never let pots sit in standing water.",
+    "quickTip": "Always check soil moisture 2 inches deep before watering. If it's still moist — don't water."
+  },
+  {
+    "id": "powdery-mildew",
+    "name": "Powdery Mildew",
+    "scientificName": "Erysiphales order",
+    "category": "fungal",
+    "severity": "moderate",
+    "description": "A fungal disease that coats leaves, stems, and flowers with a white or gray powdery substance. Unlike most fungi, it thrives in warm, dry conditions with high humidity — exactly like Florida's winters. It rarely kills plants but weakens them, reduces yields, and looks terrible.",
+    "image": "/images/pests/powdery-mildew.jpg",
+    "affectedPlants": ["Squash", "Cucumbers", "Melons", "Roses", "Tomatoes", "Peppers", "Mangoes"],
+    "symptoms": [
+      "White or gray powdery spots on leaf surfaces",
+      "Powdery coating spreading to cover entire leaves",
+      "Yellowing and curling of affected leaves",
+      "Distorted new growth",
+      "Premature leaf drop in severe cases"
+    ],
+    "treatments": [
+      {
+        "method": "Baking soda spray",
+        "type": "organic",
+        "instructions": "Mix 1 tbsp baking soda + 1 tsp dish soap + 1 tbsp horticultural oil in 1 gallon of water. Spray all surfaces including undersides. The alkaline solution changes leaf pH, killing the fungus. Apply every 7-14 days."
+      },
+      {
+        "method": "Diluted milk spray",
+        "type": "organic",
+        "instructions": "Mix 40% fresh milk with 60% water and spray on affected leaves. Studies show this is as effective as some fungicides. The proteins in milk create conditions hostile to the fungus when exposed to sunlight. Reapply weekly."
+      },
+      {
+        "method": "Neem oil spray",
+        "type": "organic",
+        "instructions": "Neem oil has antifungal properties. Mix 2 tbsp neem + 1 tsp dish soap per quart water. Spray all surfaces. Apply every 7-10 days as both treatment and prevention."
+      },
+      {
+        "method": "Remove affected tissue",
+        "type": "mechanical",
+        "instructions": "Immediately remove and bag heavily affected leaves. Do NOT compost them — the spores will spread. This slows the spread significantly when combined with spray treatments."
+      }
+    ],
+    "prevention": "Space plants for good air circulation. Avoid wetting leaves when watering (use drip irrigation or water at the base). Choose resistant varieties. Avoid excess nitrogen fertilizer.",
+    "quickTip": "Powdery mildew spores spread by wind — once you see it on one plant, check neighbors immediately."
+  }
+]
