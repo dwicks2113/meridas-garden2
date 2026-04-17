@@ -10,6 +10,7 @@ const navLinks = [
   { href: "/plants?category=medicinal", label: "Medicinal Plants" },
   { href: "/pests", label: "Pests & Diseases" },
   { href: "/recipes", label: "Recipes" },
+  { href: "/blog",    label: "Blog"            },
   { href: "/journal", label: "Planting Journal" },
 ];
 

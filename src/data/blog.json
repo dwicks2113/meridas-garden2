@@ -1,59 +1,79 @@
 [
   {
-    "slug": "getting-started-zone-10b",
-    "title": "Getting Started with Zone 10b Gardening in Clearwater",
-    "date": "2026-04-01",
-    "author": "Debbie",
-    "excerpt": "Everything you need to know to start your garden in Clearwater, FL. From understanding our unique climate to picking your first plants.",
-    "content": [
-      "If you're new to gardening in Clearwater, Florida, welcome to one of the most rewarding growing zones in the country! USDA Zone 10b means our minimum winter temperatures stay between 35-40 degrees Fahrenheit, which opens the door to an incredible variety of tropical and subtropical plants.",
-      "The first thing to understand is that our growing calendar is flipped compared to northern states. While they're planting tomatoes in May, we plant ours in October. Our 'summer' is actually too hot for many vegetables, but it's when our tropical fruits like mangoes and papayas really shine.",
-      "Start with the basics: good sandy soil amended with compost, a reliable irrigation system (afternoon thunderstorms help but aren't enough), and mulch, mulch, mulch. The Florida sun is intense, and mulch is your best friend for retaining moisture and keeping roots cool.",
-      "For beginners, I recommend starting with these foolproof Zone 10b plants: Swiss chard (grows nearly year-round), pentas (flowers that attract butterflies), a citrus tree (nothing beats homegrown oranges), and lemongrass (practically indestructible and makes great tea).",
-      "Check out the Plant Database on this site to explore all the options, and use the Planting Journal to track your progress. Happy gardening!"
-    ],
-    "tags": ["beginner", "zone-10b", "getting-started"],
+    "id": "welcome-to-meridas-garden",
+    "title": "Welcome to Merida's Garden!",
+    "date": "2026-04-17",
+    "author": "Merida",
+    "category": "General",
+    "excerpt": "After years of growing plants in Clearwater's beautiful subtropical climate, I finally have a place to share everything I've learned about Zone 10b gardening.",
+    "content": "After years of growing plants in Clearwater's beautiful subtropical climate, I finally have a place to share everything I've learned about Zone 10b gardening.\n\nLiving in Zone 10b is an absolute gift for gardeners. We get to grow things that most of the country can only dream about — mangoes, papayas, lemongrass, turmeric, and tropical flowers that bloom year-round. But it comes with its own set of challenges too: intense summer heat, hurricane season, and pests that thrive in our warm, humid air.\n\nThis blog is where I'll share seasonal planting tips, what's working (and what isn't) in my own garden, recipes I'm making from my harvests, and lessons learned the hard way so you don't have to!\n\nI hope this little corner of the internet becomes a useful resource for everyone gardening in the Clearwater area and across Zone 10b. Happy growing!",
+    "image": "/images/blog/welcome.jpg",
     "comments": [
-      { "id": "c1", "author": "Maria", "date": "2026-04-02", "text": "Great intro! I just moved to Clearwater and had no idea the growing season was so different here." },
-      { "id": "c2", "author": "Jim", "date": "2026-04-03", "text": "Swiss chard is definitely the way to go for beginners. Mine has been going strong for 8 months!" }
+      {
+        "id": "comment-001",
+        "name": "Sandra K.",
+        "date": "2026-04-17",
+        "text": "So excited you started this! I've been gardening in Safety Harbor for 10 years and I'm always looking for local advice. Can't wait to read more!"
+      },
+      {
+        "id": "comment-002",
+        "name": "Tom R.",
+        "date": "2026-04-18",
+        "text": "Love the plant database! Finally a resource focused on what actually grows here. The pest section is going to save my tomatoes this fall."
+      }
     ]
   },
   {
-    "slug": "medicinal-herbs-florida-garden",
-    "title": "5 Medicinal Herbs Every Florida Garden Should Have",
-    "date": "2026-03-20",
-    "author": "Debbie",
-    "excerpt": "These five medicinal plants thrive in Zone 10b and can help with everything from sunburn to stress. Plus they're beautiful in the garden.",
-    "content": [
-      "One of the things I love most about gardening in Zone 10b is that so many medicinal plants absolutely thrive here. Our warm, humid climate is perfect for tropical herbs that people in northern zones can only dream about growing outdoors.",
-      "Here are my top 5 picks for medicinal herbs in the Clearwater garden:",
-      "1. ALOE VERA - This is the plant everyone should have. Sunburn from a beach day? Snap off a leaf and apply the gel directly. It also makes a refreshing smoothie ingredient. Aloe practically takes care of itself in our sandy soil.",
-      "2. TURMERIC - Plant the rhizomes in spring and by winter you'll be harvesting bright orange roots. Golden milk made with fresh turmeric is on another level compared to store-bought powder. The plants are gorgeous too, with large tropical leaves.",
-      "3. LEMONGRASS - Doubles as a culinary herb and a natural mosquito deterrent (and we definitely need that in Florida!). The tea is incredibly calming, and the stalks are essential for Thai cooking.",
-      "4. HOLY BASIL (TULSI) - This adaptogen herb for stress relief grows like a weed here. I have it in several spots around the garden. The tea is wonderful and it's considered sacred in Ayurvedic medicine.",
-      "5. GINGER - Another rhizome that loves our climate. Fresh ginger tea with honey is my go-to for cold season, and the plants add lovely tropical foliage to shady spots.",
-      "Visit the Medicinal Plants section of the Plant Database for detailed growing info and recipes for each of these herbs."
-    ],
-    "tags": ["medicinal", "herbs", "recipes"],
+    "id": "april-planting-guide",
+    "title": "April in Zone 10b: What to Plant Right Now",
+    "date": "2026-04-10",
+    "author": "Merida",
+    "category": "Planting Tips",
+    "excerpt": "April marks the real turning point in our growing season. Cool-season crops are wrapping up and it's time to transition to the heat-lovers that will carry us through summer.",
+    "content": "April marks the real turning point in our growing season here in Clearwater. The nights are warm, the days are getting hot, and any remaining cool-season crops are bolting fast. It's time to transition to the heat-lovers.\n\n**What to plant now:**\n\nHeat-loving herbs are your best friends this month. Lemongrass, basil, holy basil (tulsi), and rosemary all love the April heat. Get them in the ground now before summer really cranks up.\n\nFor vegetables, okra is absolutely perfect for April planting — it thrives in heat that would wilt anything else. Sweet potatoes, Malabar spinach, and Moringa are also excellent choices.\n\nTropical plants in general love going in now: bananas, papayas, and ginger are all wonderful right now. The warm soil helps them establish quickly.\n\n**What to hold off on:**\n\nPeppers and tomatoes can still go in during the first week of April, but after mid-month the heat becomes too intense for good fruit set. Wait until September for your fall tomato crop.\n\n**My tip this week:** Mulch, mulch, mulch! A 3-inch layer of mulch around everything will save you enormous amounts of watering time once June arrives. I use a mix of wood chips and sugarcane mulch.",
+    "image": "/images/blog/april-planting.jpg",
     "comments": [
-      { "id": "c3", "author": "Sandra", "date": "2026-03-22", "text": "I had no idea you could grow turmeric in Florida! Ordering rhizomes now." }
+      {
+        "id": "comment-003",
+        "name": "Lisa M.",
+        "date": "2026-04-11",
+        "text": "The mulching tip is so true! I skipped it last year and really struggled in July. Never again."
+      }
     ]
   },
   {
-    "slug": "spring-planting-guide-2026",
-    "title": "Spring 2026 Planting Guide for Clearwater",
-    "date": "2026-03-10",
-    "author": "Debbie",
-    "excerpt": "What to plant this spring in Zone 10b, what to harvest, and how to prepare your garden for the hot months ahead.",
-    "content": [
-      "Spring is one of the most exciting times in a Zone 10b garden. The cool-season crops are finishing up, and it's time to transition to warm-season planting.",
-      "WHAT TO PLANT NOW (March-April): This is the sweet spot for heat-loving plants. Get your peppers, okra, and sweet potato slips in the ground. Plant tropical fruits like papaya, banana, and passion fruit. All your medicinal herbs (turmeric, ginger, lemongrass, holy basil) should go in now too.",
-      "WHAT TO HARVEST: If you planted cool-season crops in the fall, now is harvest time! Pull those carrots, cut that lettuce, and enjoy your last spinach before it bolts in the warming temperatures.",
-      "PREPARE FOR SUMMER: By May, the real heat arrives. Get your irrigation system checked, stock up on mulch, and make sure your tropical plants are well-established before the dog days hit.",
-      "One of my favorite things to do in spring is plant a new fruit tree. This year I'm adding a lychee tree to the yard. They take a few years to fruit but the wait is so worth it.",
-      "Remember to check the Planting Journal to log everything you're putting in the ground. Future you will thank present you for keeping good records!"
-    ],
-    "tags": ["spring", "planting-guide", "2026"],
+    "id": "lemongrass-tea-harvest",
+    "title": "My Lemongrass Harvest & Favorite Tea Recipe",
+    "date": "2026-04-05",
+    "author": "Merida",
+    "category": "Recipes",
+    "excerpt": "My lemongrass has exploded this spring and I've been harvesting weekly. Here's how I harvest without hurting the plant, and my absolute favorite tea recipe.",
+    "content": "My lemongrass clump has grown enormous this spring after I divided it in February. I'm now harvesting stalks every week, and I cannot keep up with how much lemongrass tea I'm drinking — not that I'm complaining!\n\n**How I harvest lemongrass without harming the plant:**\n\nAlways harvest from the outside of the clump, leaving the young inner shoots alone. Grasp a stalk firmly near the base and pull with a slight twisting motion — it usually snaps off cleanly at the root. I only take about 1/3 of the stalks at a time so the plant keeps producing.\n\nI use the bottom 6 inches of each stalk (the white/pale green part) for cooking and tea. The green tops I throw in compost or use to deter cats from my garden beds.\n\n**My favorite lemongrass and ginger digestive tea:**\n\nThis is my daily morning ritual. I bruise 3-4 lemongrass stalks by pressing them with the back of a knife, slice up some fresh ginger from the garden, and simmer everything in 3 cups of water for 10 minutes. Add a squeeze of lime and raw honey. It's absolutely delicious hot or poured over ice.\n\nYou can find the full recipe in the Recipes section of this site. Growing your own lemongrass truly makes it taste even better!",
+    "image": "/images/blog/lemongrass.jpg",
     "comments": []
+  },
+  {
+    "id": "fighting-fungus-gnats",
+    "title": "Winning the War Against Fungus Gnats",
+    "date": "2026-03-28",
+    "author": "Merida",
+    "category": "Pests & Diseases",
+    "excerpt": "Fungus gnats nearly wiped out my seedling tray last month. Here's exactly what I did to get rid of them without harsh chemicals.",
+    "content": "Last month I noticed tiny flies hovering around my seedling trays and potted herbs inside the house. Fungus gnats — one of the most frustrating pests for container gardeners.\n\nThe adult gnats are mostly harmless, but it's the larvae living in the soil that cause real damage. They feed on roots and can wipe out seedlings surprisingly fast.\n\n**What worked for me:**\n\nFirst, I let the soil dry out more between waterings. Fungus gnat larvae need moisture to survive, so simply watering less eliminated most of the problem within two weeks. This sounds obvious but it's really the most important step.\n\nFor the adults, yellow sticky traps placed near the pots catch them effectively. I replaced them weekly.\n\nFor the larvae in the soil, I used a diluted neem oil drench — 2 tablespoons of neem oil, a few drops of dish soap, mixed into a gallon of water, poured directly onto the soil. I did this twice a week for three weeks.\n\nFinally, I added a thin layer of sand on top of the potting mix. The sand dries out quickly and makes it harder for female gnats to lay eggs.\n\n**What didn't work:** Cinnamon powder on the soil surface. I see this recommended everywhere but it made no difference for me.\n\nCheck out the full Pests & Diseases section for more treatment details!",
+    "image": "/images/blog/fungus-gnats.jpg",
+    "comments": [
+      {
+        "id": "comment-004",
+        "name": "Paul W.",
+        "date": "2026-03-29",
+        "text": "The neem oil drench is the only thing that actually works in my experience too. Great article!"
+      },
+      {
+        "id": "comment-005",
+        "name": "Angela D.",
+        "date": "2026-03-30",
+        "text": "Thank you for mentioning that cinnamon doesn't work — I wasted two weeks on that myth. Trying the sand layer trick this weekend."
+      }
+    ]
   }
 ]
