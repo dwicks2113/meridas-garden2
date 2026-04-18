@@ -66,7 +66,7 @@ export default function HomePage() {
                 for Clearwater, Florida.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                <Link href="/plants" className="bg-white text-garden-green-dark px-8 py-4 rounded-lg font-semibold text-lg hover:bg-garden-earth-pale transition-colors">
+                <Link href="/plants" className="bg-garden-earth-pale text-garden-green-dark px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white transition-colors">
                   Explore Plants
                 </Link>
                 <Link href="/blog" className="bg-garden-green-dark/30 backdrop-blur text-white border border-white/30 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-garden-green-dark/50 transition-colors">
