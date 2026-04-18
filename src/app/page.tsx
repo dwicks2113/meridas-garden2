@@ -4,11 +4,13 @@ import plantsData from "@/data/plants.json";
 import medicinalData from "@/data/medicinal.json";
 import pestsData from "@/data/pests.json";
 import recipesData from "@/data/recipes.json";
+import butterfliesData from "@/data/butterflies.json";
 import BoxerLogo from "@/components/BoxerLogo";
 
 const allPlants: Plant[] = [...(plantsData as Plant[]), ...(medicinalData as Plant[])];
 const pestCount = pestsData.length;
 const recipeCount = recipesData.length;
+const butterflyCount = butterfliesData.length;
 const flowerCount = allPlants.filter((p) => p.category === "flowers").length;
 const edibleCount = allPlants.filter((p) => p.category === "edible-flowers").length;
 const vegCount = allPlants.filter((p) => p.category === "vegetables").length;
@@ -21,6 +23,7 @@ const categories = [
   { name: "Vegetables", count: vegCount, href: "/plants?category=vegetables", color: "from-green-500 to-green-700", desc: "Cool-season and warm-season veggies" },
   { name: "Fruits", count: fruitCount, href: "/plants?category=fruits", color: "from-purple-500 to-purple-700", desc: "Tropical fruits for your backyard" },
   { name: "Medicinal Plants", count: medCount, href: "/plants?category=medicinal", color: "from-teal-500 to-teal-700", desc: "Healing herbs with recipes and uses" },
+  { name: "Butterflies", count: butterflyCount, href: "/butterflies", color: "from-indigo-400 to-indigo-600", desc: "Butterflies of Zone 10b with host & nectar plants" },
   { name: "Pests & Diseases", count: pestCount, href: "/pests", color: "from-amber-600 to-amber-800", desc: "Identify, treat, and prevent common garden pests" },
   { name: "Garden Recipes", count: recipeCount, href: "/recipes", color: "from-emerald-500 to-emerald-800", desc: "Herbal teas, tinctures, salves, and culinary recipes" },
 ];
@@ -151,6 +154,59 @@ export default function HomePage() {
               <div className="text-3xl mb-3">&#x1F4C5;</div>
               <h3 className="font-heading font-bold text-garden-green-dark mb-2">Two Growing Seasons</h3>
               <p className="text-sm text-gray-600">Cool-season veggies Oct-Apr, warm-season tropicals year-round.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Butterfly Feature */}
+      <section className="py-16 bg-gradient-to-br from-indigo-50 via-white to-garden-green-pale/30">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            {/* Text */}
+            <div>
+              <span className="inline-block text-xs font-semibold text-indigo-700 bg-indigo-100 px-3 py-1 rounded-full mb-4">
+                NEW 🦋
+              </span>
+              <h2 className="section-heading">Butterflies of Zone 10b</h2>
+              <p className="text-gray-700 leading-relaxed mb-5">
+                Meet the {butterflyCount} butterflies commonly found in Pinellas County gardens — including
+                Florida&apos;s state butterfly, the Zebra Longwing. Each profile shows both the adult
+                and caterpillar forms, plus the host and nectar plants you can grow to welcome them.
+              </p>
+              <Link
+                href="/butterflies"
+                className="inline-flex items-center gap-2 bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition-colors"
+              >
+                Explore Butterflies &rarr;
+              </Link>
+            </div>
+
+            {/* Preview cards */}
+            <div className="grid grid-cols-2 gap-4">
+              {butterfliesData.slice(0, 4).map((b) => (
+                <Link
+                  key={b.id}
+                  href={`/butterflies/${b.id}`}
+                  className="group bg-white rounded-xl shadow-sm hover:shadow-md overflow-hidden border border-garden-earth-pale/60 transition-all"
+                >
+                  <div className="h-28 bg-garden-green-pale/30 overflow-hidden">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={b.image}
+                      alt={b.name}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                      onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }}
+                    />
+                  </div>
+                  <div className="p-3">
+                    <p className="text-sm font-heading font-bold text-garden-green-dark leading-tight">
+                      {b.name}
+                    </p>
+                    <p className="text-xs italic text-gray-500 truncate">{b.scientificName}</p>
+                  </div>
+                </Link>
+              ))}
             </div>
           </div>
         </div>

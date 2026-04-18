@@ -1,0 +1,597 @@
+[
+  {
+    "id": "zebra-longwing",
+    "name": "Zebra Longwing",
+    "scientificName": "Heliconius charithonia",
+    "family": "Nymphalidae",
+    "wingspan": "3.0–4.0 in",
+    "description": "Florida's official state butterfly. Slow, gliding flight with long black wings striped in pale yellow. Roosts communally at night and is unusual in eating pollen, which gives it a long adult lifespan of up to six months.",
+    "image": "/images/butterflies/zebra-longwing.jpg",
+    "caterpillar": {
+      "description": "White body with long black spines and black spots; feeds exclusively on passionvine leaves.",
+      "image": "/images/butterflies/zebra-longwing-caterpillar.jpg"
+    },
+    "hostPlants": [
+      { "name": "Passion Vine", "plantId": "passion-fruit" },
+      { "name": "Corky-stem Passionvine (Passiflora suberosa)" }
+    ],
+    "nectarPlants": [
+      { "name": "Lantana", "plantId": "lantana" },
+      { "name": "Pentas", "plantId": "pentas" },
+      { "name": "Firebush", "plantId": "firebush" },
+      { "name": "Scarlet Sage", "plantId": "scarlet-sage" }
+    ],
+    "bestSeasons": ["Spring", "Summer", "Fall", "Winter"],
+    "notes": "Common year-round in Pinellas County. Loves dappled shade and edges of wooded yards."
+  },
+  {
+    "id": "monarch",
+    "name": "Monarch",
+    "scientificName": "Danaus plexippus",
+    "family": "Nymphalidae",
+    "wingspan": "3.5–4.0 in",
+    "description": "The iconic orange-and-black butterfly, famous for its multi-generation migration. Florida populations are partially resident thanks to year-round milkweed. Unmistakable, but compare with the similar Queen and Viceroy.",
+    "image": "/images/butterflies/monarch.jpg",
+    "caterpillar": {
+      "description": "Bold yellow, black, and white bands with short black filaments at both ends. Only eats milkweed.",
+      "image": "/images/butterflies/monarch-caterpillar.jpg"
+    },
+    "hostPlants": [
+      { "name": "Tropical Milkweed", "plantId": "tropical-milkweed" },
+      { "name": "Native Milkweeds (Asclepias spp.)" }
+    ],
+    "nectarPlants": [
+      { "name": "Pentas", "plantId": "pentas" },
+      { "name": "Lantana", "plantId": "lantana" },
+      { "name": "Firebush", "plantId": "firebush" },
+      { "name": "Blanket Flower", "plantId": "blanket-flower" },
+      { "name": "Tropical Milkweed", "plantId": "tropical-milkweed" }
+    ],
+    "bestSeasons": ["Spring", "Fall", "Winter"],
+    "notes": "Cut tropical milkweed back to 6 inches in late October to help prevent OE parasite buildup."
+  },
+  {
+    "id": "queen",
+    "name": "Queen",
+    "scientificName": "Danaus gilippus",
+    "family": "Nymphalidae",
+    "wingspan": "3.1–3.8 in",
+    "description": "Milkweed cousin to the Monarch — deeper mahogany-orange with fewer black veins on top. Males have a scent patch on the hindwing. Year-round resident in south Florida.",
+    "image": "/images/butterflies/queen.jpg",
+    "caterpillar": {
+      "description": "Similar to Monarch but has three pairs of filaments (Monarch only has two) and creamier banding.",
+      "image": "/images/butterflies/queen-caterpillar.jpg"
+    },
+    "hostPlants": [
+      { "name": "Tropical Milkweed", "plantId": "tropical-milkweed" },
+      { "name": "Native Milkweeds" }
+    ],
+    "nectarPlants": [
+      { "name": "Pentas", "plantId": "pentas" },
+      { "name": "Lantana", "plantId": "lantana" },
+      { "name": "Blanket Flower", "plantId": "blanket-flower" },
+      { "name": "Mist Flower (Conoclinium)" }
+    ],
+    "bestSeasons": ["Spring", "Summer", "Fall"],
+    "notes": "Frequently outnumbers Monarchs in suburban Clearwater gardens."
+  },
+  {
+    "id": "gulf-fritillary",
+    "name": "Gulf Fritillary",
+    "scientificName": "Dione vanillae (Agraulis vanillae)",
+    "family": "Nymphalidae",
+    "wingspan": "2.5–3.8 in",
+    "description": "Bright orange above with black markings; underside is spectacular, with large silver spots on a brown background. Fast, nervous flyer. A dependable year-round resident.",
+    "image": "/images/butterflies/gulf-fritillary.jpg",
+    "caterpillar": {
+      "description": "Orange body with rows of long, branched black spines. Harmless despite the spiny look.",
+      "image": "/images/butterflies/gulf-fritillary-caterpillar.jpg"
+    },
+    "hostPlants": [
+      { "name": "Passion Fruit Vine", "plantId": "passion-fruit" },
+      { "name": "Maypop (Passiflora incarnata)" },
+      { "name": "Corky-stem Passionvine" }
+    ],
+    "nectarPlants": [
+      { "name": "Lantana", "plantId": "lantana" },
+      { "name": "Pentas", "plantId": "pentas" },
+      { "name": "Firebush", "plantId": "firebush" },
+      { "name": "Blanket Flower", "plantId": "blanket-flower" }
+    ],
+    "bestSeasons": ["Spring", "Summer", "Fall"],
+    "notes": "Will completely strip passionvines — plant extras just for the caterpillars."
+  },
+  {
+    "id": "julia-heliconian",
+    "name": "Julia Heliconian",
+    "scientificName": "Dryas iulia",
+    "family": "Nymphalidae",
+    "wingspan": "3.0–3.6 in",
+    "description": "Long-winged, bright orange butterfly with a black bar on the forewing of males. Floats gracefully through the garden, often with Zebra Longwings and Gulf Fritillaries.",
+    "image": "/images/butterflies/julia-heliconian.jpg",
+    "caterpillar": {
+      "description": "Brown and cream with long dark branched spines along the body.",
+      "image": "/images/butterflies/julia-heliconian-caterpillar.jpg"
+    },
+    "hostPlants": [
+      { "name": "Passion Fruit Vine", "plantId": "passion-fruit" },
+      { "name": "Corky-stem Passionvine" }
+    ],
+    "nectarPlants": [
+      { "name": "Lantana", "plantId": "lantana" },
+      { "name": "Pentas", "plantId": "pentas" },
+      { "name": "Firebush", "plantId": "firebush" }
+    ],
+    "bestSeasons": ["Spring", "Summer", "Fall"],
+    "notes": "Males are brighter orange; females more muted and washed with brown."
+  },
+  {
+    "id": "giant-swallowtail",
+    "name": "Giant Swallowtail",
+    "scientificName": "Papilio cresphontes",
+    "family": "Papilionidae",
+    "wingspan": "4.0–6.5 in",
+    "description": "North America's largest butterfly — huge black wings with bold yellow bands that cross to form an X on the upper surface. Distinctive sailing flight. A Clearwater backyard regular wherever citrus grows.",
+    "image": "/images/butterflies/giant-swallowtail.jpg",
+    "caterpillar": {
+      "description": "Famously mimics a bird dropping — brown and white, glossy. When threatened, it extrudes an orange 'osmeterium' that smells strongly of citrus.",
+      "image": "/images/butterflies/giant-swallowtail-caterpillar.jpg"
+    },
+    "hostPlants": [
+      { "name": "Citrus (lemon, lime, orange)", "plantId": "citrus" },
+      { "name": "Wild Lime / Hercules' Club" }
+    ],
+    "nectarPlants": [
+      { "name": "Lantana", "plantId": "lantana" },
+      { "name": "Pentas", "plantId": "pentas" },
+      { "name": "Firebush", "plantId": "firebush" },
+      { "name": "Scarlet Sage", "plantId": "scarlet-sage" }
+    ],
+    "bestSeasons": ["Spring", "Summer", "Fall"],
+    "notes": "Caterpillars (called 'orange dogs') are often found on backyard citrus — leave a few leaves for them."
+  },
+  {
+    "id": "eastern-tiger-swallowtail",
+    "name": "Eastern Tiger Swallowtail",
+    "scientificName": "Papilio glaucus",
+    "family": "Papilionidae",
+    "wingspan": "3.5–5.5 in",
+    "description": "Large yellow butterfly with bold black tiger stripes. Females come in a yellow form and a dark black form that mimics the toxic Pipevine Swallowtail.",
+    "image": "/images/butterflies/eastern-tiger-swallowtail.jpg",
+    "caterpillar": {
+      "description": "Plump green caterpillar with two large yellow-and-black eyespots behind the head — a classic 'snake mimic' look.",
+      "image": "/images/butterflies/eastern-tiger-swallowtail-caterpillar.jpg"
+    },
+    "hostPlants": [
+      { "name": "Sweetbay Magnolia" },
+      { "name": "Tulip Tree" },
+      { "name": "Wild Cherry" }
+    ],
+    "nectarPlants": [
+      { "name": "Pentas", "plantId": "pentas" },
+      { "name": "Lantana", "plantId": "lantana" },
+      { "name": "Firebush", "plantId": "firebush" },
+      { "name": "Ixora", "plantId": "ixora" }
+    ],
+    "bestSeasons": ["Spring", "Summer", "Fall"],
+    "notes": "Less common in urban Pinellas than swallowtails like Giant or Black, but drops by to nectar."
+  },
+  {
+    "id": "black-swallowtail",
+    "name": "Black Swallowtail",
+    "scientificName": "Papilio polyxenes",
+    "family": "Papilionidae",
+    "wingspan": "2.75–4.0 in",
+    "description": "Black with two rows of yellow spots and iridescent blue on the hindwing. Often called the 'parsley worm' butterfly for its kitchen-garden host plants.",
+    "image": "/images/butterflies/black-swallowtail.jpg",
+    "caterpillar": {
+      "description": "Green with black bands and yellow spots — unmistakable on herbs. Plant extra parsley, dill, and fennel to share.",
+      "image": "/images/butterflies/black-swallowtail-caterpillar.jpg"
+    },
+    "hostPlants": [
+      { "name": "Parsley" },
+      { "name": "Dill" },
+      { "name": "Fennel" },
+      { "name": "Carrot tops", "plantId": "carrot" }
+    ],
+    "nectarPlants": [
+      { "name": "Pentas", "plantId": "pentas" },
+      { "name": "Lantana", "plantId": "lantana" },
+      { "name": "Scarlet Sage", "plantId": "scarlet-sage" }
+    ],
+    "bestSeasons": ["Spring", "Summer", "Fall"],
+    "notes": "Grow a small 'caterpillar patch' of parsley/dill/fennel if you want both herbs and butterflies."
+  },
+  {
+    "id": "polydamas-swallowtail",
+    "name": "Polydamas Swallowtail",
+    "scientificName": "Battus polydamas",
+    "family": "Papilionidae",
+    "wingspan": "3.5–4.75 in",
+    "description": "The 'tailless swallowtail' — velvety black with a yellow band across both wings and no tail. A south Florida specialty; caterpillars are toxic to predators from eating Dutchman's pipe.",
+    "image": "/images/butterflies/polydamas-swallowtail.jpg",
+    "caterpillar": {
+      "description": "Dark red-brown to black with rows of orange-red fleshy tubercles. Feeds communally in small groups on Aristolochia.",
+      "image": "/images/butterflies/polydamas-swallowtail-caterpillar.jpg"
+    },
+    "hostPlants": [
+      { "name": "Dutchman's Pipe (Aristolochia spp.)" },
+      { "name": "Pipevine (non-toxic native A. serpentaria or A. pentandra preferred)" }
+    ],
+    "nectarPlants": [
+      { "name": "Pentas", "plantId": "pentas" },
+      { "name": "Lantana", "plantId": "lantana" },
+      { "name": "Ixora", "plantId": "ixora" }
+    ],
+    "bestSeasons": ["Spring", "Summer", "Fall"],
+    "notes": "Avoid giant/exotic Aristolochia gigantea — flowers trap and kill this butterfly's caterpillars."
+  },
+  {
+    "id": "palamedes-swallowtail",
+    "name": "Palamedes Swallowtail",
+    "scientificName": "Papilio palamedes",
+    "family": "Papilionidae",
+    "wingspan": "4.5–5.5 in",
+    "description": "Large dark swallowtail with a bright yellow band across each wing and a yellow stripe along the body. Common in wooded and wetland edges of Pinellas County.",
+    "image": "/images/butterflies/palamedes-swallowtail.jpg",
+    "caterpillar": {
+      "description": "Green with two large false eyespots; matures into a brown pre-pupal form before chrysalis.",
+      "image": "/images/butterflies/palamedes-swallowtail-caterpillar.jpg"
+    },
+    "hostPlants": [
+      { "name": "Red Bay" },
+      { "name": "Swamp Bay" },
+      { "name": "Sassafras" }
+    ],
+    "nectarPlants": [
+      { "name": "Pentas", "plantId": "pentas" },
+      { "name": "Firebush", "plantId": "firebush" },
+      { "name": "Lantana", "plantId": "lantana" }
+    ],
+    "bestSeasons": ["Spring", "Summer", "Fall"],
+    "notes": "Populations have declined with laurel wilt disease impacting red bays — any healthy bay tree helps."
+  },
+  {
+    "id": "spicebush-swallowtail",
+    "name": "Spicebush Swallowtail",
+    "scientificName": "Papilio troilus",
+    "family": "Papilionidae",
+    "wingspan": "3.5–4.5 in",
+    "description": "Dark swallowtail with striking blue-green iridescent clouds on the hindwings (green in males, blue in females). Mimics the toxic Pipevine Swallowtail.",
+    "image": "/images/butterflies/spicebush-swallowtail.jpg",
+    "caterpillar": {
+      "description": "Green (later turning yellow/orange) with two enormous false eyespots — one of the most beloved 'snake caterpillars.'",
+      "image": "/images/butterflies/spicebush-swallowtail-caterpillar.jpg"
+    },
+    "hostPlants": [
+      { "name": "Red Bay" },
+      { "name": "Spicebush" },
+      { "name": "Sassafras" },
+      { "name": "Camphor tree (introduced)" }
+    ],
+    "nectarPlants": [
+      { "name": "Pentas", "plantId": "pentas" },
+      { "name": "Lantana", "plantId": "lantana" },
+      { "name": "Firebush", "plantId": "firebush" }
+    ],
+    "bestSeasons": ["Spring", "Summer", "Fall"]
+  },
+  {
+    "id": "cloudless-sulphur",
+    "name": "Cloudless Sulphur",
+    "scientificName": "Phoebis sennae",
+    "family": "Pieridae",
+    "wingspan": "2.25–3.0 in",
+    "description": "Large, fast-flying butterfly in pure lemon yellow (males) or pale greenish-yellow with faint markings (females). Very common and often migrates through Florida in large numbers.",
+    "image": "/images/butterflies/cloudless-sulphur.jpg",
+    "caterpillar": {
+      "description": "Either green with a yellow side stripe (on leaves) or yellow with black bands (on flowers) — color depends on which part of the cassia it eats.",
+      "image": "/images/butterflies/cloudless-sulphur-caterpillar.jpg"
+    },
+    "hostPlants": [
+      { "name": "Cassia / Senna species" },
+      { "name": "Partridge Pea" }
+    ],
+    "nectarPlants": [
+      { "name": "Pentas", "plantId": "pentas" },
+      { "name": "Firebush", "plantId": "firebush" },
+      { "name": "Lantana", "plantId": "lantana" },
+      { "name": "Scarlet Sage", "plantId": "scarlet-sage" }
+    ],
+    "bestSeasons": ["Spring", "Summer", "Fall"],
+    "notes": "Favors deep, red, tubular flowers — a good reason to grow firebush."
+  },
+  {
+    "id": "orange-barred-sulphur",
+    "name": "Orange-barred Sulphur",
+    "scientificName": "Phoebis philea",
+    "family": "Pieridae",
+    "wingspan": "2.75–3.5 in",
+    "description": "Larger and more golden than the Cloudless Sulphur, with a bright orange bar across the upper forewing and orange along the hindwing margin of males.",
+    "image": "/images/butterflies/orange-barred-sulphur.jpg",
+    "caterpillar": {
+      "description": "Green with a yellow lateral stripe, or yellow-orange when feeding on cassia flowers.",
+      "image": "/images/butterflies/orange-barred-sulphur-caterpillar.jpg"
+    },
+    "hostPlants": [
+      { "name": "Cassia / Senna species" }
+    ],
+    "nectarPlants": [
+      { "name": "Pentas", "plantId": "pentas" },
+      { "name": "Firebush", "plantId": "firebush" },
+      { "name": "Ixora", "plantId": "ixora" },
+      { "name": "Lantana", "plantId": "lantana" }
+    ],
+    "bestSeasons": ["Spring", "Summer", "Fall"]
+  },
+  {
+    "id": "white-peacock",
+    "name": "White Peacock",
+    "scientificName": "Anartia jatrophae",
+    "family": "Nymphalidae",
+    "wingspan": "2.0–2.75 in",
+    "description": "Soft white with faint orange lines and two prominent black eyespots on each wing. Low, fluttering flight close to the ground in open, damp areas and lawn edges.",
+    "image": "/images/butterflies/white-peacock.jpg",
+    "caterpillar": {
+      "description": "Black with silvery-white spots and branched spines; harmless.",
+      "image": "/images/butterflies/white-peacock-caterpillar.jpg"
+    },
+    "hostPlants": [
+      { "name": "Frogfruit (Phyla nodiflora)" },
+      { "name": "Water Hyssop (Bacopa monnieri)" }
+    ],
+    "nectarPlants": [
+      { "name": "Lantana", "plantId": "lantana" },
+      { "name": "Pentas", "plantId": "pentas" },
+      { "name": "Blue Daze", "plantId": "blue-daze" }
+    ],
+    "bestSeasons": ["Spring", "Summer", "Fall", "Winter"],
+    "notes": "Plant frogfruit as a low-water Florida lawn alternative and you'll get White Peacocks constantly."
+  },
+  {
+    "id": "atala",
+    "name": "Atala",
+    "scientificName": "Eumaeus atala",
+    "family": "Lycaenidae",
+    "wingspan": "1.5–2.0 in",
+    "description": "A small, jewel-like butterfly — velvety black wings dusted with iridescent blue-green, and a bright orange-red abdomen. Once feared extinct in Florida; now recovering thanks to native coontie plantings.",
+    "image": "/images/butterflies/atala.jpg",
+    "caterpillar": {
+      "description": "Bright red-orange with twin rows of yellow spots — shockingly colorful, warning predators it's toxic.",
+      "image": "/images/butterflies/atala-caterpillar.jpg"
+    },
+    "hostPlants": [
+      { "name": "Coontie (Zamia integrifolia)" }
+    ],
+    "nectarPlants": [
+      { "name": "Lantana", "plantId": "lantana" },
+      { "name": "Pentas", "plantId": "pentas" },
+      { "name": "Firebush", "plantId": "firebush" }
+    ],
+    "bestSeasons": ["Spring", "Summer", "Fall"],
+    "notes": "More common on the east coast of Florida but spreading — plant coontie and they may find you."
+  },
+  {
+    "id": "painted-lady",
+    "name": "Painted Lady",
+    "scientificName": "Vanessa cardui",
+    "family": "Nymphalidae",
+    "wingspan": "2.0–2.9 in",
+    "description": "Orange and black with white spots on the forewing tips and four small eyespots on the hindwing underside. One of the world's most widespread butterflies.",
+    "image": "/images/butterflies/painted-lady.jpg",
+    "caterpillar": {
+      "description": "Dark with yellow side stripes and short branched spines; builds a silk 'tent' on host leaves.",
+      "image": "/images/butterflies/painted-lady-caterpillar.jpg"
+    },
+    "hostPlants": [
+      { "name": "Thistles" },
+      { "name": "Hollyhock" },
+      { "name": "Malvaceae (mallow family)" }
+    ],
+    "nectarPlants": [
+      { "name": "Pentas", "plantId": "pentas" },
+      { "name": "Lantana", "plantId": "lantana" },
+      { "name": "Blanket Flower", "plantId": "blanket-flower" }
+    ],
+    "bestSeasons": ["Spring", "Fall"]
+  },
+  {
+    "id": "american-lady",
+    "name": "American Lady",
+    "scientificName": "Vanessa virginiensis",
+    "family": "Nymphalidae",
+    "wingspan": "1.75–2.6 in",
+    "description": "Very similar to Painted Lady but with two large eyespots on the hindwing underside (Painted Lady has four small ones). Warm orange with rich patterning.",
+    "image": "/images/butterflies/american-lady.jpg",
+    "caterpillar": {
+      "description": "Black with thin yellow bands and rows of branched black spines dotted with white.",
+      "image": "/images/butterflies/american-lady-caterpillar.jpg"
+    },
+    "hostPlants": [
+      { "name": "Cudweed (Pseudognaphalium)" },
+      { "name": "Everlasting" },
+      { "name": "Pearly Everlasting" }
+    ],
+    "nectarPlants": [
+      { "name": "Pentas", "plantId": "pentas" },
+      { "name": "Blanket Flower", "plantId": "blanket-flower" },
+      { "name": "Lantana", "plantId": "lantana" }
+    ],
+    "bestSeasons": ["Spring", "Summer", "Fall"]
+  },
+  {
+    "id": "red-admiral",
+    "name": "Red Admiral",
+    "scientificName": "Vanessa atalanta",
+    "family": "Nymphalidae",
+    "wingspan": "1.75–3.0 in",
+    "description": "Dark with a bold red-orange band across each wing and white spots on the forewing tips. Fast, territorial flyer often seen perched on fences or tree trunks.",
+    "image": "/images/butterflies/red-admiral.jpg",
+    "caterpillar": {
+      "description": "Variable — usually black with white dots and yellow sides, spiny. Rolls nettle leaves into a shelter.",
+      "image": "/images/butterflies/red-admiral-caterpillar.jpg"
+    },
+    "hostPlants": [
+      { "name": "Nettles" },
+      { "name": "False Nettle (Boehmeria)" },
+      { "name": "Pellitory" }
+    ],
+    "nectarPlants": [
+      { "name": "Pentas", "plantId": "pentas" },
+      { "name": "Lantana", "plantId": "lantana" },
+      { "name": "Fallen fruit (figs, citrus)", "plantId": "fig" }
+    ],
+    "bestSeasons": ["Spring", "Summer", "Fall"]
+  },
+  {
+    "id": "viceroy",
+    "name": "Viceroy",
+    "scientificName": "Limenitis archippus",
+    "family": "Nymphalidae",
+    "wingspan": "2.6–3.25 in",
+    "description": "A Monarch mimic — orange with black veins, but with an extra black line arcing across the hindwing and a slightly smaller size. Flap-and-glide flight.",
+    "image": "/images/butterflies/viceroy.jpg",
+    "caterpillar": {
+      "description": "Mottled white, brown, and olive — another bird-dropping mimic. Feeds on willow and poplar.",
+      "image": "/images/butterflies/viceroy-caterpillar.jpg"
+    },
+    "hostPlants": [
+      { "name": "Willow" },
+      { "name": "Poplar" },
+      { "name": "Cottonwood" }
+    ],
+    "nectarPlants": [
+      { "name": "Lantana", "plantId": "lantana" },
+      { "name": "Pentas", "plantId": "pentas" },
+      { "name": "Blanket Flower", "plantId": "blanket-flower" }
+    ],
+    "bestSeasons": ["Spring", "Summer", "Fall"]
+  },
+  {
+    "id": "great-southern-white",
+    "name": "Great Southern White",
+    "scientificName": "Ascia monuste",
+    "family": "Pieridae",
+    "wingspan": "1.75–2.5 in",
+    "description": "Chalky white with a zigzag black border on the forewing. Antennae tips are turquoise-blue — diagnostic. Very common in coastal Pinellas.",
+    "image": "/images/butterflies/great-southern-white.jpg",
+    "caterpillar": {
+      "description": "Yellow-green with four narrow yellow lines down the back and a row of tiny black spots.",
+      "image": "/images/butterflies/great-southern-white-caterpillar.jpg"
+    },
+    "hostPlants": [
+      { "name": "Kale", "plantId": "kale" },
+      { "name": "Collard Greens", "plantId": "collard-greens" },
+      { "name": "Broccoli", "plantId": "broccoli" },
+      { "name": "Arugula", "plantId": "arugula" },
+      { "name": "Radish", "plantId": "radish" },
+      { "name": "Saltwort and native mustards" }
+    ],
+    "nectarPlants": [
+      { "name": "Lantana", "plantId": "lantana" },
+      { "name": "Pentas", "plantId": "pentas" },
+      { "name": "Scarlet Sage", "plantId": "scarlet-sage" }
+    ],
+    "bestSeasons": ["Spring", "Summer", "Fall", "Winter"],
+    "notes": "Caterpillars can strip backyard brassicas — consider row cover over edible crops if you don't want to share."
+  },
+  {
+    "id": "cassius-blue",
+    "name": "Cassius Blue",
+    "scientificName": "Leptotes cassius",
+    "family": "Lycaenidae",
+    "wingspan": "0.75–1.1 in",
+    "description": "Tiny, pale blue butterfly (paler in females). Underside is banded brown and white with two small eyespots. Very fast, often overlooked.",
+    "image": "/images/butterflies/cassius-blue.jpg",
+    "caterpillar": {
+      "description": "Short, flattened, slug-like caterpillar — green with pink or brown tints. Often tended by ants.",
+      "image": "/images/butterflies/cassius-blue-caterpillar.jpg"
+    },
+    "hostPlants": [
+      { "name": "Plumbago", "plantId": "plumbago" },
+      { "name": "Legumes (various)" },
+      { "name": "Leadwort" }
+    ],
+    "nectarPlants": [
+      { "name": "Plumbago", "plantId": "plumbago" },
+      { "name": "Lantana", "plantId": "lantana" },
+      { "name": "Pentas", "plantId": "pentas" }
+    ],
+    "bestSeasons": ["Spring", "Summer", "Fall", "Winter"],
+    "notes": "If you grow plumbago, look closely — you almost certainly have Cassius Blues."
+  },
+  {
+    "id": "gray-hairstreak",
+    "name": "Gray Hairstreak",
+    "scientificName": "Strymon melinus",
+    "family": "Lycaenidae",
+    "wingspan": "0.9–1.4 in",
+    "description": "Small gray butterfly with an orange and black eyespot near delicate hair-like tails on each hindwing — a classic 'false head' mimic.",
+    "image": "/images/butterflies/gray-hairstreak.jpg",
+    "caterpillar": {
+      "description": "Small, slug-like, highly variable in color — green, pink, brown — often matching its host flower.",
+      "image": "/images/butterflies/gray-hairstreak-caterpillar.jpg"
+    },
+    "hostPlants": [
+      { "name": "Many legumes (beans, peas)" },
+      { "name": "Green Beans", "plantId": "green-beans" },
+      { "name": "Mallows" }
+    ],
+    "nectarPlants": [
+      { "name": "Lantana", "plantId": "lantana" },
+      { "name": "Pentas", "plantId": "pentas" },
+      { "name": "Blanket Flower", "plantId": "blanket-flower" }
+    ],
+    "bestSeasons": ["Spring", "Summer", "Fall"]
+  },
+  {
+    "id": "long-tailed-skipper",
+    "name": "Long-tailed Skipper",
+    "scientificName": "Urbanus proteus",
+    "family": "Hesperiidae",
+    "wingspan": "1.75–2.4 in",
+    "description": "Brown with iridescent blue-green sheen on the body and wing bases, plus long tail-like extensions on the hindwings. Chunky 'skipper' body and fast, darting flight.",
+    "image": "/images/butterflies/long-tailed-skipper.jpg",
+    "caterpillar": {
+      "description": "Often called the 'bean leafroller' — yellow-green with dark head, folds leaves together as a shelter.",
+      "image": "/images/butterflies/long-tailed-skipper-caterpillar.jpg"
+    },
+    "hostPlants": [
+      { "name": "Green Beans", "plantId": "green-beans" },
+      { "name": "Snow Peas", "plantId": "snow-peas" },
+      { "name": "Pigeon Peas", "plantId": "pigeon-peas" },
+      { "name": "Wisteria and other legumes" }
+    ],
+    "nectarPlants": [
+      { "name": "Lantana", "plantId": "lantana" },
+      { "name": "Pentas", "plantId": "pentas" },
+      { "name": "Firebush", "plantId": "firebush" }
+    ],
+    "bestSeasons": ["Spring", "Summer", "Fall"]
+  },
+  {
+    "id": "common-buckeye",
+    "name": "Common Buckeye",
+    "scientificName": "Junonia coenia",
+    "family": "Nymphalidae",
+    "wingspan": "2.0–2.75 in",
+    "description": "Brown with stunning multicolor eyespots — two on the forewing and two on the hindwing — ringed in black, yellow, and iridescent blue. Often basks on bare ground.",
+    "image": "/images/butterflies/common-buckeye.jpg",
+    "caterpillar": {
+      "description": "Black with orange-and-cream side stripes and rows of short branched spines — tipped with iridescent blue at the base.",
+      "image": "/images/butterflies/common-buckeye-caterpillar.jpg"
+    },
+    "hostPlants": [
+      { "name": "Plantains (Plantago)" },
+      { "name": "Snapdragons" },
+      { "name": "Toadflax" },
+      { "name": "Twinflower" }
+    ],
+    "nectarPlants": [
+      { "name": "Pentas", "plantId": "pentas" },
+      { "name": "Lantana", "plantId": "lantana" },
+      { "name": "Blanket Flower", "plantId": "blanket-flower" }
+    ],
+    "bestSeasons": ["Spring", "Summer", "Fall"]
+  }
+]

@@ -8,6 +8,7 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "/plants", label: "Plant Database" },
   { href: "/plants?category=medicinal", label: "Medicinal Plants" },
+  { href: "/butterflies", label: "Butterflies" },
   { href: "/pests", label: "Pests & Diseases" },
   { href: "/recipes", label: "Recipes" },
   { href: "/blog",    label: "Blog"            },
