@@ -28,3 +28,31 @@
     @apply text-3xl md:text-4xl font-heading font-bold text-garden-green-dark mb-4;
   }
 }
+
+@media print {
+  /* Hide site chrome and anything explicitly marked no-print */
+  header, footer, nav, .no-print { display: none !important; }
+
+  /* Clean, ink-friendly background */
+  html, body { background: #ffffff !important; color: #000000 !important; }
+
+  /* Let the content use the full printable width */
+  main, section, .max-w-4xl, .max-w-5xl, .max-w-6xl, .max-w-7xl {
+    max-width: 100% !important;
+    box-shadow: none !important;
+  }
+
+  /* Avoid splitting cards awkwardly across pages */
+  .rounded-2xl, .rounded-xl, .shadow-sm, .shadow-md {
+    box-shadow: none !important;
+    border: 1px solid #e5e7eb !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Keep images reasonable when printed */
+  img { max-width: 100% !important; height: auto !important; }
+
+  /* Hide link underlines/URLs to keep recipes neat */
+  a { color: inherit !important; text-decoration: none !important; }
+}

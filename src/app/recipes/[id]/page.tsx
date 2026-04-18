@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import recipesData from "@/data/recipes.json";
+import PrintButton from "@/components/PrintButton";
 
 interface Recipe {
   id: string;
@@ -47,11 +48,12 @@ export default function RecipeDetailPage({ params }: { params: { id: string } })
   return (
     <div className="min-h-screen bg-garden-cream">
       {/* Back nav */}
-      <div className="bg-white border-b border-gray-200 py-3">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="no-print bg-white border-b border-gray-200 py-3">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
           <Link href="/recipes" className="text-garden-green hover:text-garden-green-dark text-sm font-medium flex items-center gap-1">
             ← Back to Recipes
           </Link>
+          <PrintButton />
         </div>
       </div>
 
@@ -215,7 +217,7 @@ export default function RecipeDetailPage({ params }: { params: { id: string } })
         </div>
 
         {/* Back link */}
-        <div className="mt-10 text-center">
+        <div className="no-print mt-10 text-center">
           <Link href="/recipes"
             className="inline-flex items-center gap-2 bg-garden-green-dark text-white px-6 py-3 rounded-lg font-semibold hover:bg-garden-green transition-colors">
             ← Browse All Recipes

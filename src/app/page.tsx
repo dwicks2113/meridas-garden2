@@ -69,8 +69,8 @@ export default function HomePage() {
                 <Link href="/plants" className="bg-white text-garden-green-dark px-8 py-4 rounded-lg font-semibold text-lg hover:bg-garden-earth-pale transition-colors">
                   Explore Plants
                 </Link>
-                <Link href="/journal" className="bg-garden-green-dark/30 backdrop-blur text-white border border-white/30 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-garden-green-dark/50 transition-colors">
-                  My Garden Journal
+                <Link href="/blog" className="bg-garden-green-dark/30 backdrop-blur text-white border border-white/30 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-garden-green-dark/50 transition-colors">
+                  My Garden Blog
                 </Link>
               </div>
             </div>
