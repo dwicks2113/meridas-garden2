@@ -123,6 +123,25 @@ export default function ButterfliesPage() {
           ))}
         </div>
 
+        {/* Garden planning promo */}
+        <div className="mb-6 bg-gradient-to-r from-garden-green-dark to-garden-green rounded-xl p-5 text-white flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <div>
+            <p className="font-heading font-bold text-lg mb-1">
+              🌻 Ready to bring butterflies to your garden?
+            </p>
+            <p className="text-garden-green-pale text-sm">
+              Check out our ready-made pollinator garden plans — layouts, plant
+              lists, and which butterflies each plan attracts.
+            </p>
+          </div>
+          <Link
+            href="/garden-planning"
+            className="flex-shrink-0 inline-flex items-center gap-2 bg-white text-garden-green-dark px-5 py-2.5 rounded-lg font-semibold hover:bg-garden-earth-pale transition-colors whitespace-nowrap"
+          >
+            View Garden Plans &rarr;
+          </Link>
+        </div>
+
         {/* Count */}
         <p className="text-sm text-gray-600 mb-4">
           Showing {filtered.length} {filtered.length === 1 ? "butterfly" : "butterflies"}

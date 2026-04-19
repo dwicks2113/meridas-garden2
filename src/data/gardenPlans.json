@@ -1,0 +1,135 @@
+[
+  {
+    "id": "pollinator-patio",
+    "name": "Pollinator Patio Pot",
+    "focus": "both",
+    "size": "small",
+    "sizeLabel": "Small (containers, ~4×4 ft)",
+    "difficulty": "beginner",
+    "sun": "Full sun (6+ hrs)",
+    "water": "Moderate",
+    "description": "A compact container-garden plan for apartment balconies, small patios, or a sunny corner. Five carefully chosen plants deliver year-round blooms and attract butterflies and bees without any in-ground planting.",
+    "dimensions": { "width": 100, "height": 100, "unit": "percent" },
+    "plants": [
+      { "plantId": "pentas",            "displayName": "Pentas",            "count": 1, "x": 22, "y": 30, "color": "#EC4899", "role": "nectar" },
+      { "plantId": "lantana",           "displayName": "Lantana",           "count": 1, "x": 72, "y": 30, "color": "#F59E0B", "role": "nectar" },
+      { "plantId": "tropical-milkweed", "displayName": "Tropical Milkweed", "count": 1, "x": 50, "y": 55, "color": "#F97316", "role": "host" },
+      { "plantId": "scarlet-sage",      "displayName": "Scarlet Sage",      "count": 1, "x": 22, "y": 78, "color": "#DC2626", "role": "nectar" },
+      { "plantId": "rosemary",          "displayName": "Rosemary",          "count": 1, "x": 72, "y": 78, "color": "#7C3AED", "role": "herb"   }
+    ],
+    "attractsButterflies": ["monarch", "queen", "cloudless-sulphur", "gulf-fritillary", "cassius-blue"],
+    "attractsBees": ["honeybee", "eastern-bumblebee", "metallic-green-sweat-bee", "leafcutter-bee"],
+    "tips": [
+      "Use pots at least 14 inches wide for milkweed and lantana so roots can spread.",
+      "Group pots together — pollinators find flower clusters faster than scattered plants.",
+      "Deadhead pentas and lantana weekly to keep blooms coming."
+    ],
+    "notes": "This is the easiest way to start — if you only have a balcony, do this plan."
+  },
+  {
+    "id": "butterfly-border",
+    "name": "Butterfly Border Bed",
+    "focus": "butterflies",
+    "size": "medium",
+    "sizeLabel": "Medium (~10×4 ft border)",
+    "difficulty": "easy",
+    "sun": "Full sun to light shade",
+    "water": "Low to moderate",
+    "description": "A 10-foot-long border designed as a butterfly buffet — with structure in back, nectar in the middle, and short bloomers at the front. Includes host plants so caterpillars have food too.",
+    "dimensions": { "width": 100, "height": 100, "unit": "percent" },
+    "plants": [
+      { "plantId": "firebush",          "displayName": "Firebush",          "count": 1, "x": 12, "y": 20, "color": "#DC2626", "role": "structure" },
+      { "plantId": "passion-fruit",     "displayName": "Passion Vine",      "count": 1, "x": 50, "y": 15, "color": "#7C3AED", "role": "host"      },
+      { "plantId": "firebush",          "displayName": "Firebush",          "count": 1, "x": 88, "y": 20, "color": "#DC2626", "role": "structure" },
+      { "plantId": "tropical-milkweed", "displayName": "Tropical Milkweed", "count": 2, "x": 25, "y": 45, "color": "#F97316", "role": "host"      },
+      { "plantId": "tropical-milkweed", "displayName": "Tropical Milkweed", "count": 2, "x": 75, "y": 45, "color": "#F97316", "role": "host"      },
+      { "plantId": "pentas",            "displayName": "Pentas (drift)",    "count": 3, "x": 50, "y": 50, "color": "#EC4899", "role": "nectar"    },
+      { "plantId": "lantana",           "displayName": "Lantana",           "count": 1, "x": 20, "y": 72, "color": "#F59E0B", "role": "nectar"    },
+      { "plantId": "scarlet-sage",      "displayName": "Scarlet Sage",      "count": 1, "x": 50, "y": 75, "color": "#B91C1C", "role": "nectar"    },
+      { "plantId": "blanket-flower",    "displayName": "Blanket Flower",    "count": 2, "x": 80, "y": 72, "color": "#EA580C", "role": "nectar"    },
+      { "plantId": "blue-daze",         "displayName": "Blue Daze",         "count": 3, "x": 35, "y": 90, "color": "#3B82F6", "role": "ground"    },
+      { "plantId": "portulaca",         "displayName": "Portulaca",         "count": 3, "x": 65, "y": 90, "color": "#F43F5E", "role": "ground"    }
+    ],
+    "attractsButterflies": ["monarch", "queen", "zebra-longwing", "gulf-fritillary", "julia-heliconian", "giant-swallowtail", "cloudless-sulphur", "cassius-blue", "white-peacock", "common-buckeye"],
+    "attractsBees": ["honeybee", "eastern-bumblebee", "eastern-carpenter-bee", "metallic-green-sweat-bee"],
+    "tips": [
+      "Stake a simple trellis behind the passion vine — it'll climb 8+ feet.",
+      "Expect the tropical milkweed to be stripped by monarch caterpillars — plant at least 4 plants so you have some left.",
+      "Plant pentas and scarlet sage in drifts of 3–5 for stronger visual impact and better pollinator visitation.",
+      "Cut tropical milkweed back to 6 inches in late October to help break the OE parasite cycle."
+    ]
+  },
+  {
+    "id": "pollinator-meadow",
+    "name": "Full Pollinator Meadow",
+    "focus": "both",
+    "size": "large",
+    "sizeLabel": "Large (~15×15 ft)",
+    "difficulty": "intermediate",
+    "sun": "Full sun",
+    "water": "Low once established",
+    "description": "A meadow-style plan that fills a sunny back corner with year-round color and maximum pollinator diversity. Designed in drifts rather than neat rows — the way pollinators evolved to forage.",
+    "dimensions": { "width": 100, "height": 100, "unit": "percent" },
+    "plants": [
+      { "plantId": "firebush",          "displayName": "Firebush",          "count": 2, "x": 15, "y": 12, "color": "#DC2626", "role": "structure" },
+      { "plantId": "ixora",             "displayName": "Ixora",             "count": 1, "x": 50, "y": 10, "color": "#F97316", "role": "structure" },
+      { "plantId": "firebush",          "displayName": "Firebush",          "count": 2, "x": 85, "y": 12, "color": "#DC2626", "role": "structure" },
+      { "plantId": "passion-fruit",     "displayName": "Passion Vine (trellis)", "count": 1, "x": 50, "y": 28, "color": "#7C3AED", "role": "host" },
+      { "plantId": "tropical-milkweed", "displayName": "Tropical Milkweed", "count": 5, "x": 22, "y": 38, "color": "#F97316", "role": "host"      },
+      { "plantId": "tropical-milkweed", "displayName": "Tropical Milkweed", "count": 5, "x": 78, "y": 38, "color": "#F97316", "role": "host"      },
+      { "plantId": "pentas",            "displayName": "Pentas (drift)",    "count": 5, "x": 35, "y": 55, "color": "#EC4899", "role": "nectar"    },
+      { "plantId": "scarlet-sage",      "displayName": "Scarlet Sage",      "count": 4, "x": 65, "y": 55, "color": "#B91C1C", "role": "nectar"    },
+      { "plantId": "lantana",           "displayName": "Lantana (drift)",   "count": 5, "x": 18, "y": 68, "color": "#F59E0B", "role": "nectar"    },
+      { "plantId": "plumbago",          "displayName": "Plumbago",          "count": 2, "x": 50, "y": 70, "color": "#3B82F6", "role": "host"      },
+      { "plantId": "blanket-flower",    "displayName": "Blanket Flower",    "count": 5, "x": 82, "y": 68, "color": "#EA580C", "role": "nectar"    },
+      { "plantId": "coreopsis",         "displayName": "Coreopsis",         "count": 5, "x": 30, "y": 85, "color": "#FACC15", "role": "nectar"    },
+      { "plantId": "blue-daze",         "displayName": "Blue Daze",         "count": 4, "x": 55, "y": 88, "color": "#3B82F6", "role": "ground"    },
+      { "plantId": "portulaca",         "displayName": "Portulaca",         "count": 4, "x": 78, "y": 88, "color": "#F43F5E", "role": "ground"    }
+    ],
+    "attractsButterflies": ["monarch", "queen", "zebra-longwing", "gulf-fritillary", "julia-heliconian", "giant-swallowtail", "black-swallowtail", "cloudless-sulphur", "orange-barred-sulphur", "cassius-blue", "gray-hairstreak", "white-peacock", "common-buckeye", "painted-lady", "american-lady"],
+    "attractsBees": ["honeybee", "eastern-bumblebee", "eastern-carpenter-bee", "metallic-green-sweat-bee", "leafcutter-bee", "mason-bee", "long-horned-bee", "digger-bee", "small-carpenter-bee"],
+    "tips": [
+      "Leave one small bare patch of well-drained soil unmulched — ground-nesting bees (70% of native bees) need it.",
+      "Skip fall cleanup: leave plant stems 12 inches tall over winter for small carpenter bees to nest in.",
+      "Don't use herbicides or broad-spectrum pesticides anywhere within 20 feet of this bed.",
+      "Mulch lightly so ground-dwelling bees can still access soil. A 1-inch mulch layer is plenty."
+    ],
+    "notes": "If you can only do one plan, and you have the space — do this one."
+  },
+  {
+    "id": "edible-pollinator",
+    "name": "Edible + Pollinator Combo",
+    "focus": "both",
+    "size": "medium",
+    "sizeLabel": "Medium (~8×8 ft raised bed)",
+    "difficulty": "easy",
+    "sun": "Full sun",
+    "water": "Moderate to high (edibles)",
+    "description": "Pairs vegetables that need pollinators with the plants that attract them. Especially designed to bring in buzz-pollinating bumblebees (essential for tomatoes, peppers, eggplants) and squash bees.",
+    "dimensions": { "width": 100, "height": 100, "unit": "percent" },
+    "plants": [
+      { "plantId": "tomato",                 "displayName": "Tomato",                 "count": 2, "x": 20, "y": 22, "color": "#DC2626", "role": "edible"   },
+      { "plantId": "pepper",                 "displayName": "Pepper",                 "count": 2, "x": 50, "y": 22, "color": "#F59E0B", "role": "edible"   },
+      { "plantId": "eggplant",               "displayName": "Eggplant",               "count": 1, "x": 80, "y": 22, "color": "#7C3AED", "role": "edible"   },
+      { "plantId": "borage",                 "displayName": "Borage",                 "count": 2, "x": 15, "y": 45, "color": "#3B82F6", "role": "nectar"   },
+      { "plantId": "holy-basil",             "displayName": "Holy Basil (Tulsi)",     "count": 2, "x": 40, "y": 45, "color": "#A855F7", "role": "nectar"   },
+      { "plantId": "mexican-mint-marigold",  "displayName": "Mexican Mint Marigold",  "count": 1, "x": 65, "y": 45, "color": "#FACC15", "role": "nectar"   },
+      { "plantId": "nasturtium",             "displayName": "Nasturtium",             "count": 3, "x": 88, "y": 45, "color": "#F97316", "role": "nectar"   },
+      { "plantId": "squash",                 "displayName": "Squash",                 "count": 2, "x": 25, "y": 70, "color": "#FDE047", "role": "edible"   },
+      { "plantId": "pigeon-peas",            "displayName": "Pigeon Peas",            "count": 1, "x": 55, "y": 70, "color": "#84CC16", "role": "host"     },
+      { "plantId": "rosemary",               "displayName": "Rosemary",               "count": 1, "x": 82, "y": 70, "color": "#7C3AED", "role": "nectar"   },
+      { "plantId": "lantana",                "displayName": "Lantana",                "count": 2, "x": 25, "y": 90, "color": "#F59E0B", "role": "nectar"   },
+      { "plantId": "edible-hibiscus",        "displayName": "Roselle",                "count": 1, "x": 55, "y": 90, "color": "#DC2626", "role": "edible"   },
+      { "plantId": "scarlet-sage",           "displayName": "Scarlet Sage",           "count": 1, "x": 82, "y": 90, "color": "#B91C1C", "role": "nectar"   }
+    ],
+    "attractsButterflies": ["black-swallowtail", "cloudless-sulphur", "long-tailed-skipper", "gray-hairstreak", "cassius-blue", "great-southern-white"],
+    "attractsBees": ["honeybee", "eastern-bumblebee", "eastern-carpenter-bee", "squash-bee", "mason-bee", "leafcutter-bee", "small-carpenter-bee"],
+    "tips": [
+      "Bumblebees do the buzz-pollination your tomatoes, peppers, and eggplant need. No bumblebees = fewer fruits.",
+      "Leave at least one squash flower open at dawn — male squash bees often sleep inside overnight.",
+      "Interplanting herbs and flowers with vegetables confuses pests and keeps pollinators coming even between vegetable blooms.",
+      "Skip the insecticides entirely in this bed — the bees doing your pollination are very sensitive."
+    ],
+    "notes": "A dual-purpose plan: grow food and support the pollinators that make that food possible."
+  }
+]

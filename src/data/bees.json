@@ -1,0 +1,193 @@
+[
+  {
+    "id": "honeybee",
+    "name": "European Honeybee",
+    "scientificName": "Apis mellifera",
+    "type": "social",
+    "native": false,
+    "size": "0.4–0.6 in",
+    "description": "The familiar golden-and-black striped bee introduced from Europe. Lives in large hives of 20,000+ workers. Excellent generalist pollinator — visits nearly any flower with accessible nectar and pollen.",
+    "image": "/images/bees/honeybee.jpg",
+    "activeSeasons": ["Spring", "Summer", "Fall", "Winter"],
+    "favoritePlants": [
+      { "name": "Lantana", "plantId": "lantana" },
+      { "name": "Pentas", "plantId": "pentas" },
+      { "name": "Firebush", "plantId": "firebush" },
+      { "name": "Rosemary", "plantId": "rosemary" },
+      { "name": "Citrus", "plantId": "citrus" },
+      { "name": "Holy Basil", "plantId": "holy-basil" }
+    ],
+    "notes": "Avoid broad-spectrum pesticides even when hive is not nearby — honeybees forage up to 3 miles.",
+    "funFact": "A single honeybee visits 50–100 flowers per foraging trip."
+  },
+  {
+    "id": "eastern-bumblebee",
+    "name": "Common Eastern Bumblebee",
+    "scientificName": "Bombus impatiens",
+    "type": "social",
+    "native": true,
+    "size": "0.5–0.9 in",
+    "description": "Chunky, fuzzy black-and-yellow bee with a distinctive buzz. Lives in small underground colonies (50–500 bees). Can 'buzz pollinate' — vibrating flowers to release pollen — which is critical for tomatoes, peppers, and eggplants.",
+    "image": "/images/bees/eastern-bumblebee.jpg",
+    "activeSeasons": ["Spring", "Summer", "Fall"],
+    "favoritePlants": [
+      { "name": "Tomato (buzz pollination)", "plantId": "tomato" },
+      { "name": "Pepper (buzz pollination)", "plantId": "pepper" },
+      { "name": "Eggplant (buzz pollination)", "plantId": "eggplant" },
+      { "name": "Blanket Flower", "plantId": "blanket-flower" },
+      { "name": "Scarlet Sage", "plantId": "scarlet-sage" },
+      { "name": "Pentas", "plantId": "pentas" }
+    ],
+    "funFact": "Bumblebees can fly in cooler temperatures than most bees — they warm up by shivering their flight muscles."
+  },
+  {
+    "id": "eastern-carpenter-bee",
+    "name": "Eastern Carpenter Bee",
+    "scientificName": "Xylocopa virginica",
+    "type": "solitary",
+    "native": true,
+    "size": "0.8–1.0 in",
+    "description": "Very large, black bee with a shiny, hairless abdomen (often confused with bumblebees, which are fuzzy all over). Burrows into unpainted wood to nest. Males are territorial but have no stinger.",
+    "image": "/images/bees/eastern-carpenter-bee.jpg",
+    "activeSeasons": ["Spring", "Summer", "Fall"],
+    "favoritePlants": [
+      { "name": "Passion Fruit", "plantId": "passion-fruit" },
+      { "name": "Bougainvillea", "plantId": "bougainvillea" },
+      { "name": "Scarlet Sage", "plantId": "scarlet-sage" },
+      { "name": "Pentas", "plantId": "pentas" },
+      { "name": "Blue Daze", "plantId": "blue-daze" }
+    ],
+    "notes": "Sometimes 'steals' nectar by slitting the side of tubular flowers — the plant still benefits from other visitors.",
+    "funFact": "Males guard territory by hovering and 'bluff-charging' intruders — but they can't sting."
+  },
+  {
+    "id": "metallic-green-sweat-bee",
+    "name": "Metallic Green Sweat Bee",
+    "scientificName": "Agapostemon splendens",
+    "type": "solitary",
+    "native": true,
+    "size": "0.3–0.5 in",
+    "description": "A jewel of the garden — brilliant metallic green head and thorax (males have a yellow-and-black striped abdomen; females are solid green). Nests in the ground in loose colonies.",
+    "image": "/images/bees/metallic-green-sweat-bee.jpg",
+    "activeSeasons": ["Spring", "Summer", "Fall"],
+    "favoritePlants": [
+      { "name": "Coreopsis", "plantId": "coreopsis" },
+      { "name": "Blanket Flower", "plantId": "blanket-flower" },
+      { "name": "Lantana", "plantId": "lantana" },
+      { "name": "Portulaca", "plantId": "portulaca" }
+    ],
+    "funFact": "Named 'sweat bees' because some species are attracted to the salt in human perspiration on hot days."
+  },
+  {
+    "id": "leafcutter-bee",
+    "name": "Leafcutter Bee",
+    "scientificName": "Megachile spp.",
+    "type": "solitary",
+    "native": true,
+    "size": "0.3–0.5 in",
+    "description": "Small dark bee with a large head and jaws for cutting perfect circles out of leaves to build her nest cells. Carries pollen on her belly hairs instead of back legs — gives her a golden-tummy look.",
+    "image": "/images/bees/leafcutter-bee.jpg",
+    "activeSeasons": ["Spring", "Summer", "Fall"],
+    "favoritePlants": [
+      { "name": "Legumes / Beans", "plantId": "green-beans" },
+      { "name": "Snow Peas", "plantId": "snow-peas" },
+      { "name": "Coreopsis", "plantId": "coreopsis" },
+      { "name": "Blanket Flower", "plantId": "blanket-flower" }
+    ],
+    "notes": "The circular holes you see in rose or redbud leaves are usually leafcutter bees — not a pest; a sign of a healthy garden.",
+    "funFact": "Each nest cell is a tiny green 'cigar' rolled from leaf pieces, stocked with pollen and one egg."
+  },
+  {
+    "id": "mason-bee",
+    "name": "Mason Bee",
+    "scientificName": "Osmia spp.",
+    "type": "solitary",
+    "native": true,
+    "size": "0.3–0.5 in",
+    "description": "Compact, dark bees with a slight metallic blue or green sheen. Named for their habit of sealing nest holes with mud. One of the most efficient pollinators — a single mason bee does the work of ~100 honeybees in an orchard.",
+    "image": "/images/bees/mason-bee.jpg",
+    "activeSeasons": ["Spring", "Summer"],
+    "favoritePlants": [
+      { "name": "Citrus", "plantId": "citrus" },
+      { "name": "Guava", "plantId": "guava" },
+      { "name": "Mango", "plantId": "mango" },
+      { "name": "Blueberries" }
+    ],
+    "notes": "Install a mason bee house (6-inch tubes, 5/16 inch diameter) in a warm, east-facing spot to host them.",
+    "funFact": "Docile — males have no stinger and females only sting if squeezed."
+  },
+  {
+    "id": "squash-bee",
+    "name": "Squash Bee",
+    "scientificName": "Peponapis pruinosa",
+    "type": "solitary",
+    "native": true,
+    "size": "0.5–0.6 in",
+    "description": "A specialist that pollinates only squash, pumpkin, and gourd flowers. Males spend the night inside closed squash blossoms. Often confused for honeybees but stouter and faster.",
+    "image": "/images/bees/squash-bee.jpg",
+    "activeSeasons": ["Summer", "Fall"],
+    "favoritePlants": [
+      { "name": "Squash / Zucchini", "plantId": "squash" },
+      { "name": "Calabaza", "plantId": "calabaza" },
+      { "name": "Luffa", "plantId": "luffa" },
+      { "name": "Bitter Melon", "plantId": "bitter-melon" }
+    ],
+    "notes": "Active at dawn — most squash flowers close by mid-morning. If you grow squash, you almost certainly have them.",
+    "funFact": "They evolved alongside squash in the Americas, long before honeybees were introduced."
+  },
+  {
+    "id": "long-horned-bee",
+    "name": "Long-horned Bee",
+    "scientificName": "Melissodes spp.",
+    "type": "solitary",
+    "native": true,
+    "size": "0.4–0.6 in",
+    "description": "Fuzzy tan bees with very long antennae (males, especially). Specialists on sunflower-family flowers. Ground nesters — often in small loose colonies in bare sandy soil.",
+    "image": "/images/bees/long-horned-bee.jpg",
+    "activeSeasons": ["Summer", "Fall"],
+    "favoritePlants": [
+      { "name": "Coreopsis", "plantId": "coreopsis" },
+      { "name": "Blanket Flower", "plantId": "blanket-flower" },
+      { "name": "Sunflowers" },
+      { "name": "Marigolds" }
+    ],
+    "funFact": "Males often cluster together at night, clinging to a plant stem in groups of 5–20 — a charming 'bee sleepover.'"
+  },
+  {
+    "id": "small-carpenter-bee",
+    "name": "Small Carpenter Bee",
+    "scientificName": "Ceratina spp.",
+    "type": "solitary",
+    "native": true,
+    "size": "0.15–0.3 in",
+    "description": "Tiny, shiny dark blue-black bees — often mistaken for flies. Hollow out the pith of dead plant stems to make nests. Very important pollinators of small-flowered plants.",
+    "image": "/images/bees/small-carpenter-bee.jpg",
+    "activeSeasons": ["Spring", "Summer", "Fall"],
+    "favoritePlants": [
+      { "name": "Holy Basil", "plantId": "holy-basil" },
+      { "name": "Lemongrass", "plantId": "lemongrass" },
+      { "name": "Scarlet Sage", "plantId": "scarlet-sage" },
+      { "name": "Many small-flowered herbs" }
+    ],
+    "notes": "Leave old stems of plants like raspberry canes or sunflower stalks standing 12 inches tall over winter — they'll nest inside."
+  },
+  {
+    "id": "digger-bee",
+    "name": "Digger Bee",
+    "scientificName": "Anthophora spp.",
+    "type": "solitary",
+    "native": true,
+    "size": "0.4–0.7 in",
+    "description": "Fast-flying, fuzzy bees that look like small bumblebees but fly with a higher-pitched buzz. Excavate burrows in well-drained soil — you may see small conical mounds in spring lawn edges.",
+    "image": "/images/bees/digger-bee.jpg",
+    "activeSeasons": ["Spring", "Summer"],
+    "favoritePlants": [
+      { "name": "Scarlet Sage", "plantId": "scarlet-sage" },
+      { "name": "Pentas", "plantId": "pentas" },
+      { "name": "Blue Daze", "plantId": "blue-daze" },
+      { "name": "Plumbago", "plantId": "plumbago" }
+    ],
+    "notes": "Leave a small patch of bare, well-drained soil somewhere in the garden for them to nest.",
+    "funFact": "Despite having a nest in the ground, they're docile and very rarely sting."
+  }
+]

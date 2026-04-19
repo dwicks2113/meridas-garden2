@@ -5,6 +5,8 @@ import medicinalData from "@/data/medicinal.json";
 import pestsData from "@/data/pests.json";
 import recipesData from "@/data/recipes.json";
 import butterfliesData from "@/data/butterflies.json";
+import beesData from "@/data/bees.json";
+import gardenPlansData from "@/data/gardenPlans.json";
 import BoxerLogo from "@/components/BoxerLogo";
 import SafeImage from "@/components/SafeImage";
 
@@ -12,6 +14,8 @@ const allPlants: Plant[] = [...(plantsData as Plant[]), ...(medicinalData as Pla
 const pestCount = pestsData.length;
 const recipeCount = recipesData.length;
 const butterflyCount = butterfliesData.length;
+const beeCount = beesData.length;
+const gardenPlanCount = gardenPlansData.length;
 const flowerCount = allPlants.filter((p) => p.category === "flowers").length;
 const edibleCount = allPlants.filter((p) => p.category === "edible-flowers").length;
 const vegCount = allPlants.filter((p) => p.category === "vegetables").length;
@@ -25,6 +29,8 @@ const categories = [
   { name: "Fruits", count: fruitCount, href: "/plants?category=fruits", color: "from-purple-500 to-purple-700", desc: "Tropical fruits for your backyard" },
   { name: "Medicinal Plants", count: medCount, href: "/plants?category=medicinal", color: "from-teal-500 to-teal-700", desc: "Healing herbs with recipes and uses" },
   { name: "Butterflies", count: butterflyCount, href: "/butterflies", color: "from-indigo-400 to-indigo-600", desc: "Butterflies of Zone 10b with host & nectar plants" },
+  { name: "Bees", count: beeCount, href: "/bees", color: "from-amber-400 to-yellow-500", desc: "Honeybees, bumblebees, and native bees — and the plants they love" },
+  { name: "Garden Plans", count: gardenPlanCount, href: "/garden-planning", color: "from-garden-green to-garden-green-dark", desc: "Pollinator garden layouts with plant lists — big or small" },
   { name: "Pests & Diseases", count: pestCount, href: "/pests", color: "from-amber-600 to-amber-800", desc: "Identify, treat, and prevent common garden pests" },
   { name: "Garden Recipes", count: recipeCount, href: "/recipes", color: "from-emerald-500 to-emerald-800", desc: "Herbal teas, tinctures, salves, and culinary recipes" },
 ];
@@ -207,6 +213,106 @@ export default function HomePage() {
                 </Link>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Bee Feature */}
+      <section className="py-16 bg-gradient-to-br from-amber-50 via-yellow-50 to-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            {/* Preview cards */}
+            <div className="grid grid-cols-2 gap-4 order-2 lg:order-1">
+              {beesData.slice(0, 4).map((b) => (
+                <Link
+                  key={b.id}
+                  href={`/bees/${b.id}`}
+                  className="group bg-white rounded-xl shadow-sm hover:shadow-md overflow-hidden border border-amber-200/60 transition-all"
+                >
+                  <div className="h-28 bg-amber-50 overflow-hidden">
+                    <SafeImage
+                      src={b.image}
+                      alt={b.name}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                    />
+                  </div>
+                  <div className="p-3">
+                    <p className="text-sm font-heading font-bold text-garden-green-dark leading-tight">
+                      {b.name}
+                    </p>
+                    <p className="text-xs italic text-gray-500 truncate">{b.scientificName}</p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+
+            {/* Text */}
+            <div className="order-1 lg:order-2">
+              <span className="inline-block text-xs font-semibold text-amber-800 bg-amber-100 px-3 py-1 rounded-full mb-4">
+                NEW 🐝
+              </span>
+              <h2 className="section-heading">Bees of Zone 10b</h2>
+              <p className="text-gray-700 leading-relaxed mb-5">
+                Beyond the honeybee — meet {beeCount} bee species that call Pinellas
+                County home, from buzz-pollinating bumblebees to tiny metallic green
+                sweat bees. Most of Florida&apos;s native bees are solitary, stingless,
+                and essential to a thriving garden.
+              </p>
+              <Link
+                href="/bees"
+                className="inline-flex items-center gap-2 bg-amber-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-amber-700 transition-colors"
+              >
+                Meet the Bees &rarr;
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Garden Planning Feature */}
+      <section className="py-16 bg-gradient-to-br from-garden-green-dark via-garden-green to-garden-green-light">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <span className="inline-block text-xs font-semibold text-white bg-garden-green-dark/50 backdrop-blur px-3 py-1 rounded-full mb-4 border border-white/30">
+              NEW 🌻
+            </span>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-3">
+              Plan a Pollinator Garden
+            </h2>
+            <p className="text-garden-green-pale text-lg max-w-2xl mx-auto">
+              {gardenPlanCount} ready-made garden layouts — from a 4&times;4 ft balcony
+              container to a full 15&times;15 ft meadow. Each plan shows you
+              exactly what to plant, where, and which butterflies and bees
+              it will bring in.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+            {gardenPlansData.map((p) => (
+              <Link
+                key={p.id}
+                href={`/garden-planning/${p.id}`}
+                className="group bg-white/95 backdrop-blur rounded-xl shadow-sm hover:shadow-xl transition-all p-5 border border-white/40"
+              >
+                <h3 className="font-heading font-bold text-garden-green-dark mb-2 group-hover:text-garden-green transition-colors">
+                  {p.name}
+                </h3>
+                <p className="text-xs text-gray-500 mb-3">{p.sizeLabel}</p>
+                <p className="text-sm text-gray-700 line-clamp-3 mb-3">{p.description}</p>
+                <p className="text-xs text-garden-green-dark font-semibold group-hover:translate-x-0.5 transition-transform inline-block">
+                  View plan &rarr;
+                </p>
+              </Link>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <Link
+              href="/garden-planning"
+              className="inline-flex items-center gap-2 bg-white text-garden-green-dark px-6 py-3 rounded-lg font-semibold hover:bg-garden-earth-pale transition-colors shadow-md"
+            >
+              Browse All Garden Plans &rarr;
+            </Link>
           </div>
         </div>
       </section>
