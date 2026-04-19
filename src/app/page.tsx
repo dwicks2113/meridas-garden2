@@ -6,6 +6,7 @@ import pestsData from "@/data/pests.json";
 import recipesData from "@/data/recipes.json";
 import butterfliesData from "@/data/butterflies.json";
 import BoxerLogo from "@/components/BoxerLogo";
+import SafeImage from "@/components/SafeImage";
 
 const allPlants: Plant[] = [...(plantsData as Plant[]), ...(medicinalData as Plant[])];
 const pestCount = pestsData.length;
@@ -191,12 +192,10 @@ export default function HomePage() {
                   className="group bg-white rounded-xl shadow-sm hover:shadow-md overflow-hidden border border-garden-earth-pale/60 transition-all"
                 >
                   <div className="h-28 bg-garden-green-pale/30 overflow-hidden">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
+                    <SafeImage
                       src={b.image}
                       alt={b.name}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform"
-                      onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }}
                     />
                   </div>
                   <div className="p-3">

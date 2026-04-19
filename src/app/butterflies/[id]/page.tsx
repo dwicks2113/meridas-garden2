@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import butterfliesData from "@/data/butterflies.json";
+import SafeImage from "@/components/SafeImage";
 
 interface PlantRef {
   name: string;
@@ -85,24 +86,20 @@ export default function ButterflyDetailPage({ params }: { params: { id: string }
           {/* Photos: adult + caterpillar */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-gray-100">
             <div className="relative h-64 md:h-80 bg-garden-green-pale/30">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <SafeImage
                 src={butterfly.image}
                 alt={butterfly.name}
                 className="w-full h-full object-cover"
-                onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }}
               />
               <span className="absolute top-3 left-3 bg-white/90 text-garden-green-dark text-xs font-semibold px-3 py-1 rounded-full">
                 Adult
               </span>
             </div>
             <div className="relative h-64 md:h-80 bg-garden-earth-pale/40">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <SafeImage
                 src={butterfly.caterpillar.image}
                 alt={`${butterfly.name} caterpillar`}
                 className="w-full h-full object-cover"
-                onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }}
               />
               <span className="absolute top-3 left-3 bg-white/90 text-garden-earth-dark text-xs font-semibold px-3 py-1 rounded-full">
                 Caterpillar
