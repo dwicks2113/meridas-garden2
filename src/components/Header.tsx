@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import BoxerLogo from "@/components/BoxerLogo";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -24,12 +23,8 @@ export default function Header() {
     <header className="bg-garden-green-dark text-white sticky top-0 z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="flex items-center gap-3">
-            <BoxerLogo size={52} />
-            <div>
-              <span className="text-lg font-heading font-bold">Merida&apos;s Garden</span>
-              <span className="hidden sm:inline text-garden-green-light text-xs ml-2">Clearwater, FL</span>
-            </div>
+          <Link href="/" className="text-lg font-heading font-bold">
+            Merida&apos;s Garden
           </Link>
 
           <nav className="hidden md:flex items-center gap-6">
