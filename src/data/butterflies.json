@@ -381,7 +381,7 @@
     "family": "Papilionidae",
     "wingspan": "3.5–4.75 in",
     "description": "The 'tailless swallowtail' — velvety black with a yellow band across both wings and no tail. A south Florida specialty; caterpillars are toxic to predators from eating Dutchman's pipe.",
-    "image": "/images/butterflies/polydamas-swallowtail.jpg",
+    "image": "/images/butterflies/polydamas-swallowtail.webp",
     "caterpillar": {
       "description": "Dark red-brown to black with rows of orange-red fleshy tubercles. Feeds communally in small groups on Aristolochia.",
       "image": "/images/butterflies/polydamas-swallowtail-caterpillar.jpg"
@@ -422,7 +422,7 @@
     "family": "Papilionidae",
     "wingspan": "4.5–5.5 in",
     "description": "Large dark swallowtail with a bright yellow band across each wing and a yellow stripe along the body. Common in wooded and wetland edges of Pinellas County.",
-    "image": "/images/butterflies/palamedes-swallowtail.jpg",
+    "image": "/images/butterflies/palamedes-swallowtail.webp",
     "caterpillar": {
       "description": "Green with two large false eyespots; matures into a brown pre-pupal form before chrysalis.",
       "image": "/images/butterflies/palamedes-swallowtail-caterpillar.jpg"
@@ -998,7 +998,7 @@
     "family": "Hesperiidae",
     "wingspan": "1.75–2.4 in",
     "description": "Brown with iridescent blue-green sheen on the body and wing bases, plus long tail-like extensions on the hindwings. Chunky 'skipper' body and fast, darting flight.",
-    "image": "/images/butterflies/long-tailed-skipper.jpg",
+    "image": "/images/butterflies/long-tailed-skipper.webp",
     "caterpillar": {
       "description": "Often called the 'bean leafroller' — yellow-green with dark head, folds leaves together as a shelter.",
       "image": "/images/butterflies/long-tailed-skipper-caterpillar.jpg"
