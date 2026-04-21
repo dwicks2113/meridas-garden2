@@ -9,7 +9,7 @@
     "image": "/images/butterflies/zebra-longwing.jpg",
     "caterpillar": {
       "description": "White body with long black spines and black spots; feeds exclusively on passionvine leaves.",
-      "image": "/images/butterflies/zebra-longwing-caterpillar.jpg"
+      "image": "/images/butterflies/zebra-longwing-caterpillar.webp"
     },
     "hostPlants": [
       {
@@ -106,7 +106,7 @@
     "image": "/images/butterflies/queen.jpg",
     "caterpillar": {
       "description": "Similar to Monarch but has three pairs of filaments (Monarch only has two) and creamier banding.",
-      "image": "/images/butterflies/queen-caterpillar.jpg"
+      "image": "/images/butterflies/queen-caterpillar.webp"
     },
     "hostPlants": [
       {
@@ -151,7 +151,7 @@
     "image": "/images/butterflies/gulf-fritillary.jpg",
     "caterpillar": {
       "description": "Orange body with rows of long, branched black spines. Harmless despite the spiny look.",
-      "image": "/images/butterflies/gulf-fritillary-caterpillar.jpg"
+      "image": "/images/butterflies/gulf-fritillary-caterpillar.webp"
     },
     "hostPlants": [
       {
@@ -200,7 +200,7 @@
     "image": "/images/butterflies/julia-heliconian.jpg",
     "caterpillar": {
       "description": "Brown and cream with long dark branched spines along the body.",
-      "image": "/images/butterflies/julia-heliconian-caterpillar.jpg"
+      "image": "/images/butterflies/julia-heliconian-caterpillar.webp"
     },
     "hostPlants": [
       {
@@ -242,7 +242,7 @@
     "image": "/images/butterflies/giant-swallowtail.jpg",
     "caterpillar": {
       "description": "Famously mimics a bird dropping — brown and white, glossy. When threatened, it extrudes an orange 'osmeterium' that smells strongly of citrus.",
-      "image": "/images/butterflies/giant-swallowtail-caterpillar.jpg"
+      "image": "/images/butterflies/giant-swallowtail-caterpillar.webp"
     },
     "hostPlants": [
       {
@@ -288,7 +288,7 @@
     "image": "/images/butterflies/eastern-tiger-swallowtail.jpg",
     "caterpillar": {
       "description": "Plump green caterpillar with two large yellow-and-black eyespots behind the head — a classic 'snake mimic' look.",
-      "image": "/images/butterflies/eastern-tiger-swallowtail-caterpillar.jpg"
+      "image": "/images/butterflies/eastern-tiger-swallowtail-caterpillar.webp"
     },
     "hostPlants": [
       {
@@ -384,7 +384,7 @@
     "image": "/images/butterflies/polydamas-swallowtail.webp",
     "caterpillar": {
       "description": "Dark red-brown to black with rows of orange-red fleshy tubercles. Feeds communally in small groups on Aristolochia.",
-      "image": "/images/butterflies/polydamas-swallowtail-caterpillar.jpg"
+      "image": "/images/butterflies/polydamas-swallowtail-caterpillar.webp"
     },
     "hostPlants": [
       {
@@ -425,7 +425,7 @@
     "image": "/images/butterflies/palamedes-swallowtail.webp",
     "caterpillar": {
       "description": "Green with two large false eyespots; matures into a brown pre-pupal form before chrysalis.",
-      "image": "/images/butterflies/palamedes-swallowtail-caterpillar.jpg"
+      "image": "/images/butterflies/palamedes-swallowtail-caterpillar.webp"
     },
     "hostPlants": [
       {
@@ -469,7 +469,7 @@
     "image": "/images/butterflies/spicebush-swallowtail.jpg",
     "caterpillar": {
       "description": "Green (later turning yellow/orange) with two enormous false eyespots — one of the most beloved 'snake caterpillars.'",
-      "image": "/images/butterflies/spicebush-swallowtail-caterpillar.jpg"
+      "image": "/images/butterflies/spicebush-swallowtail-caterpillar.webp"
     },
     "hostPlants": [
       {
@@ -515,7 +515,7 @@
     "image": "/images/butterflies/cloudless-sulphur.jpg",
     "caterpillar": {
       "description": "Either green with a yellow side stripe (on leaves) or yellow with black bands (on flowers) — color depends on which part of the cassia it eats.",
-      "image": "/images/butterflies/cloudless-sulphur-caterpillar.jpg"
+      "image": "/images/butterflies/cloudless-sulphur-caterpillar.webp"
     },
     "hostPlants": [
       {
@@ -560,7 +560,7 @@
     "image": "/images/butterflies/orange-barred-sulphur.jpg",
     "caterpillar": {
       "description": "Green with a yellow lateral stripe, or yellow-orange when feeding on cassia flowers.",
-      "image": "/images/butterflies/orange-barred-sulphur-caterpillar.jpg"
+      "image": "/images/butterflies/orange-barred-sulphur-caterpillar.webp"
     },
     "hostPlants": [
       {
@@ -601,7 +601,7 @@
     "image": "/images/butterflies/white-peacock.jpg",
     "caterpillar": {
       "description": "Black with silvery-white spots and branched spines; harmless.",
-      "image": "/images/butterflies/white-peacock-caterpillar.jpg"
+      "image": "/images/butterflies/white-peacock-caterpillar.webp"
     },
     "hostPlants": [
       {
@@ -643,7 +643,7 @@
     "image": "/images/butterflies/atala.jpg",
     "caterpillar": {
       "description": "Bright red-orange with twin rows of yellow spots — shockingly colorful, warning predators it's toxic.",
-      "image": "/images/butterflies/atala-caterpillar.jpg"
+      "image": "/images/butterflies/atala-caterpillar.webp"
     },
     "hostPlants": [
       {
@@ -681,7 +681,7 @@
     "image": "/images/butterflies/painted-lady.jpg",
     "caterpillar": {
       "description": "Dark with yellow side stripes and short branched spines; builds a silk 'tent' on host leaves.",
-      "image": "/images/butterflies/painted-lady-caterpillar.jpg"
+      "image": "/images/butterflies/painted-lady-caterpillar.webp"
     },
     "hostPlants": [
       {
@@ -723,7 +723,7 @@
     "image": "/images/butterflies/american-lady.jpg",
     "caterpillar": {
       "description": "Black with thin yellow bands and rows of branched black spines dotted with white.",
-      "image": "/images/butterflies/american-lady-caterpillar.jpg"
+      "image": "/images/butterflies/american-lady-caterpillar.webp"
     },
     "hostPlants": [
       {
@@ -766,7 +766,7 @@
     "image": "/images/butterflies/red-admiral.jpg",
     "caterpillar": {
       "description": "Variable — usually black with white dots and yellow sides, spiny. Rolls nettle leaves into a shelter.",
-      "image": "/images/butterflies/red-admiral-caterpillar.jpg"
+      "image": "/images/butterflies/red-admiral-caterpillar.webp"
     },
     "hostPlants": [
       {
@@ -809,7 +809,7 @@
     "image": "/images/butterflies/viceroy.jpg",
     "caterpillar": {
       "description": "Mottled white, brown, and olive — another bird-dropping mimic. Feeds on willow and poplar.",
-      "image": "/images/butterflies/viceroy-caterpillar.jpg"
+      "image": "/images/butterflies/viceroy-caterpillar.webp"
     },
     "hostPlants": [
       {
@@ -852,7 +852,7 @@
     "image": "/images/butterflies/great-southern-white.jpg",
     "caterpillar": {
       "description": "Yellow-green with four narrow yellow lines down the back and a row of tiny black spots.",
-      "image": "/images/butterflies/great-southern-white-caterpillar.jpg"
+      "image": "/images/butterflies/great-southern-white-caterpillar.webp"
     },
     "hostPlants": [
       {
@@ -911,7 +911,7 @@
     "image": "/images/butterflies/cassius-blue.jpg",
     "caterpillar": {
       "description": "Short, flattened, slug-like caterpillar — green with pink or brown tints. Often tended by ants.",
-      "image": "/images/butterflies/cassius-blue-caterpillar.jpg"
+      "image": "/images/butterflies/cassius-blue-caterpillar.webp"
     },
     "hostPlants": [
       {
@@ -954,10 +954,10 @@
     "family": "Lycaenidae",
     "wingspan": "0.9–1.4 in",
     "description": "Small gray butterfly with an orange and black eyespot near delicate hair-like tails on each hindwing — a classic 'false head' mimic.",
-    "image": "/images/butterflies/gray-hairstreak.jpg",
+    "image": "/images/butterflies/gray-hairstreak.webp",
     "caterpillar": {
       "description": "Small, slug-like, highly variable in color — green, pink, brown — often matching its host flower.",
-      "image": "/images/butterflies/gray-hairstreak-caterpillar.jpg"
+      "image": "/images/butterflies/gray-hairstreak-caterpillar.webp"
     },
     "hostPlants": [
       {
@@ -1001,7 +1001,7 @@
     "image": "/images/butterflies/long-tailed-skipper.webp",
     "caterpillar": {
       "description": "Often called the 'bean leafroller' — yellow-green with dark head, folds leaves together as a shelter.",
-      "image": "/images/butterflies/long-tailed-skipper-caterpillar.jpg"
+      "image": "/images/butterflies/long-tailed-skipper-caterpillar.webp"
     },
     "hostPlants": [
       {
@@ -1050,7 +1050,7 @@
     "image": "/images/butterflies/common-buckeye.jpg",
     "caterpillar": {
       "description": "Black with orange-and-cream side stripes and rows of short branched spines — tipped with iridescent blue at the base.",
-      "image": "/images/butterflies/common-buckeye-caterpillar.jpg"
+      "image": "/images/butterflies/common-buckeye-caterpillar.webp"
     },
     "hostPlants": [
       {
