@@ -1,9 +1,27 @@
 import { NextRequest, NextResponse } from "next/server";
-import { readFileSync, writeFileSync } from "fs";
-import { join } from "path";
 import { isAdmin } from "@/lib/adminAuth";
+import { updateRepoJson } from "@/lib/repoStorage";
 
-const blogPath = join(process.cwd(), "src", "data", "blog.json");
+const BLOG_REPO_PATH = "src/data/blog.json";
+
+interface BlogComment {
+  id: string;
+  name: string;
+  date: string;
+  text: string;
+}
+
+interface BlogPost {
+  id: string;
+  title: string;
+  date: string;
+  author: string;
+  category: string;
+  excerpt: string;
+  content: string;
+  image: string;
+  comments: BlogComment[];
+}
 
 function toSlug(title: string): string {
   return title
@@ -24,38 +42,41 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
 
-    const raw     = readFileSync(blogPath, "utf-8");
-    const entries = JSON.parse(raw);
+    let savedPost: BlogPost | null = null;
 
-    // Unique slug ID
-    const baseId = toSlug(title) || `post-${Date.now()}`;
-    const existingIds = new Set(entries.map((e: { id: string }) => e.id));
-    let newId = baseId;
-    let counter = 2;
-    while (existingIds.has(newId)) newId = `${baseId}-${counter++}`;
+    await updateRepoJson<BlogPost[]>(
+      BLOG_REPO_PATH,
+      (entries) => {
+        const baseId = toSlug(title) || `post-${Date.now()}`;
+        const existingIds = new Set(entries.map((e) => e.id));
+        let newId = baseId;
+        let counter = 2;
+        while (existingIds.has(newId)) newId = `${baseId}-${counter++}`;
 
-    const today = new Date().toISOString().split("T")[0];
+        const today = new Date().toISOString().split("T")[0];
 
-    const newPost = {
-      id:       newId,
-      title:    title.trim(),
-      date:     today,
-      author:   "Merida",
-      category,
-      excerpt:  excerpt.trim(),
-      content:  content.trim(),
-      image:    `/images/blog/${newId}.jpg`,
-      comments: [],
-    };
+        const newPost: BlogPost = {
+          id:       newId,
+          title:    title.trim(),
+          date:     today,
+          author:   "Merida",
+          category,
+          excerpt:  excerpt.trim(),
+          content:  content.trim(),
+          image:    `/images/blog/${newId}.jpg`,
+          comments: [],
+        };
+        savedPost = newPost;
+        return [newPost, ...entries];
+      },
+      `Add blog post: ${title.trim()}`
+    );
 
-    // Prepend so newest shows first
-    entries.unshift(newPost);
-    writeFileSync(blogPath, JSON.stringify(entries, null, 2));
-
-    return NextResponse.json({ success: true, post: newPost });
+    return NextResponse.json({ success: true, post: savedPost });
   } catch (err) {
     console.error("Blog post save error:", err);
-    return NextResponse.json({ error: "Failed to save post" }, { status: 500 });
+    const message = err instanceof Error ? err.message : "Failed to save post";
+    return NextResponse.json({ error: message }, { status: 500 });
   }
 }
 
@@ -68,16 +89,26 @@ export async function DELETE(req: NextRequest) {
     const id = searchParams.get("id");
     if (!id) return NextResponse.json({ error: "Missing id" }, { status: 400 });
 
-    const raw     = readFileSync(blogPath, "utf-8");
-    const entries = JSON.parse(raw) as { id: string }[];
-    const index   = entries.findIndex((e) => e.id === id);
-    if (index === -1) return NextResponse.json({ error: "Post not found" }, { status: 404 });
+    let found = false;
 
-    entries.splice(index, 1);
-    writeFileSync(blogPath, JSON.stringify(entries, null, 2));
+    await updateRepoJson<BlogPost[]>(
+      BLOG_REPO_PATH,
+      (entries) => {
+        const index = entries.findIndex((e) => e.id === id);
+        if (index === -1) return entries;
+        found = true;
+        const next = [...entries];
+        next.splice(index, 1);
+        return next;
+      },
+      `Delete blog post: ${id}`
+    );
+
+    if (!found) return NextResponse.json({ error: "Post not found" }, { status: 404 });
     return NextResponse.json({ success: true });
   } catch (err) {
     console.error("Blog delete error:", err);
-    return NextResponse.json({ error: "Failed to delete post" }, { status: 500 });
+    const message = err instanceof Error ? err.message : "Failed to delete post";
+    return NextResponse.json({ error: message }, { status: 500 });
   }
 }

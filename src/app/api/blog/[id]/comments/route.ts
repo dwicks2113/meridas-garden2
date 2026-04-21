@@ -1,8 +1,26 @@
 import { NextRequest, NextResponse } from "next/server";
-import { readFileSync, writeFileSync } from "fs";
-import { join } from "path";
+import { updateRepoJson } from "@/lib/repoStorage";
 
-const blogPath = join(process.cwd(), "src", "data", "blog.json");
+const BLOG_REPO_PATH = "src/data/blog.json";
+
+interface BlogComment {
+  id: string;
+  name: string;
+  date: string;
+  text: string;
+}
+
+interface BlogPost {
+  id: string;
+  title: string;
+  date: string;
+  author: string;
+  category: string;
+  excerpt: string;
+  content: string;
+  image: string;
+  comments: BlogComment[];
+}
 
 export async function POST(
   req: NextRequest,
@@ -15,28 +33,37 @@ export async function POST(
       return NextResponse.json({ error: "Name and comment text are required" }, { status: 400 });
     }
 
-    const raw     = readFileSync(blogPath, "utf-8");
-    const entries = JSON.parse(raw);
-
-    const postIndex = entries.findIndex((p: { id: string }) => p.id === params.id);
-    if (postIndex === -1) {
-      return NextResponse.json({ error: "Post not found" }, { status: 404 });
-    }
-
     const today = new Date().toISOString().split("T")[0];
-    const newComment = {
+    const newComment: BlogComment = {
       id:   `comment-${Date.now()}`,
       name: name.trim(),
       date: today,
       text: text.trim(),
     };
 
-    entries[postIndex].comments.push(newComment);
-    writeFileSync(blogPath, JSON.stringify(entries, null, 2));
+    let postFound = false;
+
+    await updateRepoJson<BlogPost[]>(
+      BLOG_REPO_PATH,
+      (entries) => {
+        const idx = entries.findIndex((p) => p.id === params.id);
+        if (idx === -1) return entries;
+        postFound = true;
+        const next = [...entries];
+        next[idx] = { ...next[idx], comments: [...next[idx].comments, newComment] };
+        return next;
+      },
+      `Comment on ${params.id}: by ${name.trim()}`
+    );
+
+    if (!postFound) {
+      return NextResponse.json({ error: "Post not found" }, { status: 404 });
+    }
 
     return NextResponse.json({ success: true, comment: newComment });
   } catch (err) {
     console.error("Comment save error:", err);
-    return NextResponse.json({ error: "Failed to save comment" }, { status: 500 });
+    const message = err instanceof Error ? err.message : "Failed to save comment";
+    return NextResponse.json({ error: message }, { status: 500 });
   }
 }

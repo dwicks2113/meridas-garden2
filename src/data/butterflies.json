@@ -12,16 +12,38 @@
       "image": "/images/butterflies/zebra-longwing-caterpillar.jpg"
     },
     "hostPlants": [
-      { "name": "Passion Vine", "plantId": "passion-fruit" },
-      { "name": "Corky-stem Passionvine (Passiflora suberosa)" }
+      {
+        "name": "Passion Vine",
+        "plantId": "passion-fruit"
+      },
+      {
+        "name": "Corky-stem Passionvine (Passiflora suberosa)"
+      }
     ],
     "nectarPlants": [
-      { "name": "Lantana", "plantId": "lantana" },
-      { "name": "Pentas", "plantId": "pentas" },
-      { "name": "Firebush", "plantId": "firebush" },
-      { "name": "Scarlet Sage", "plantId": "scarlet-sage" }
+      {
+        "name": "Lantana",
+        "plantId": "lantana"
+      },
+      {
+        "name": "Pentas",
+        "plantId": "pentas"
+      },
+      {
+        "name": "Firebush",
+        "plantId": "firebush"
+      },
+      {
+        "name": "Scarlet Sage",
+        "plantId": "scarlet-sage"
+      }
     ],
-    "bestSeasons": ["Spring", "Summer", "Fall", "Winter"],
+    "bestSeasons": [
+      "Spring",
+      "Summer",
+      "Fall",
+      "Winter"
+    ],
     "notes": "Common year-round in Pinellas County. Loves dappled shade and edges of wooded yards."
   },
   {
@@ -37,17 +59,41 @@
       "image": "/images/butterflies/monarch-caterpillar.jpg"
     },
     "hostPlants": [
-      { "name": "Tropical Milkweed", "plantId": "tropical-milkweed" },
-      { "name": "Native Milkweeds (Asclepias spp.)" }
+      {
+        "name": "Tropical Milkweed",
+        "plantId": "tropical-milkweed"
+      },
+      {
+        "name": "Native Milkweeds (Asclepias spp.)"
+      }
     ],
     "nectarPlants": [
-      { "name": "Pentas", "plantId": "pentas" },
-      { "name": "Lantana", "plantId": "lantana" },
-      { "name": "Firebush", "plantId": "firebush" },
-      { "name": "Blanket Flower", "plantId": "blanket-flower" },
-      { "name": "Tropical Milkweed", "plantId": "tropical-milkweed" }
+      {
+        "name": "Pentas",
+        "plantId": "pentas"
+      },
+      {
+        "name": "Lantana",
+        "plantId": "lantana"
+      },
+      {
+        "name": "Firebush",
+        "plantId": "firebush"
+      },
+      {
+        "name": "Blanket Flower",
+        "plantId": "blanket-flower"
+      },
+      {
+        "name": "Tropical Milkweed",
+        "plantId": "tropical-milkweed"
+      }
     ],
-    "bestSeasons": ["Spring", "Fall", "Winter"],
+    "bestSeasons": [
+      "Spring",
+      "Fall",
+      "Winter"
+    ],
     "notes": "Cut tropical milkweed back to 6 inches in late October to help prevent OE parasite buildup."
   },
   {
@@ -63,16 +109,36 @@
       "image": "/images/butterflies/queen-caterpillar.jpg"
     },
     "hostPlants": [
-      { "name": "Tropical Milkweed", "plantId": "tropical-milkweed" },
-      { "name": "Native Milkweeds" }
+      {
+        "name": "Tropical Milkweed",
+        "plantId": "tropical-milkweed"
+      },
+      {
+        "name": "Native Milkweeds"
+      }
     ],
     "nectarPlants": [
-      { "name": "Pentas", "plantId": "pentas" },
-      { "name": "Lantana", "plantId": "lantana" },
-      { "name": "Blanket Flower", "plantId": "blanket-flower" },
-      { "name": "Mist Flower (Conoclinium)" }
+      {
+        "name": "Pentas",
+        "plantId": "pentas"
+      },
+      {
+        "name": "Lantana",
+        "plantId": "lantana"
+      },
+      {
+        "name": "Blanket Flower",
+        "plantId": "blanket-flower"
+      },
+      {
+        "name": "Mist Flower (Conoclinium)"
+      }
     ],
-    "bestSeasons": ["Spring", "Summer", "Fall"],
+    "bestSeasons": [
+      "Spring",
+      "Summer",
+      "Fall"
+    ],
     "notes": "Frequently outnumbers Monarchs in suburban Clearwater gardens."
   },
   {
@@ -88,17 +154,40 @@
       "image": "/images/butterflies/gulf-fritillary-caterpillar.jpg"
     },
     "hostPlants": [
-      { "name": "Passion Fruit Vine", "plantId": "passion-fruit" },
-      { "name": "Maypop (Passiflora incarnata)" },
-      { "name": "Corky-stem Passionvine" }
+      {
+        "name": "Passion Fruit Vine",
+        "plantId": "passion-fruit"
+      },
+      {
+        "name": "Maypop (Passiflora incarnata)"
+      },
+      {
+        "name": "Corky-stem Passionvine"
+      }
     ],
     "nectarPlants": [
-      { "name": "Lantana", "plantId": "lantana" },
-      { "name": "Pentas", "plantId": "pentas" },
-      { "name": "Firebush", "plantId": "firebush" },
-      { "name": "Blanket Flower", "plantId": "blanket-flower" }
+      {
+        "name": "Lantana",
+        "plantId": "lantana"
+      },
+      {
+        "name": "Pentas",
+        "plantId": "pentas"
+      },
+      {
+        "name": "Firebush",
+        "plantId": "firebush"
+      },
+      {
+        "name": "Blanket Flower",
+        "plantId": "blanket-flower"
+      }
     ],
-    "bestSeasons": ["Spring", "Summer", "Fall"],
+    "bestSeasons": [
+      "Spring",
+      "Summer",
+      "Fall"
+    ],
     "notes": "Will completely strip passionvines — plant extras just for the caterpillars."
   },
   {
@@ -114,15 +203,33 @@
       "image": "/images/butterflies/julia-heliconian-caterpillar.jpg"
     },
     "hostPlants": [
-      { "name": "Passion Fruit Vine", "plantId": "passion-fruit" },
-      { "name": "Corky-stem Passionvine" }
+      {
+        "name": "Passion Fruit Vine",
+        "plantId": "passion-fruit"
+      },
+      {
+        "name": "Corky-stem Passionvine"
+      }
     ],
     "nectarPlants": [
-      { "name": "Lantana", "plantId": "lantana" },
-      { "name": "Pentas", "plantId": "pentas" },
-      { "name": "Firebush", "plantId": "firebush" }
+      {
+        "name": "Lantana",
+        "plantId": "lantana"
+      },
+      {
+        "name": "Pentas",
+        "plantId": "pentas"
+      },
+      {
+        "name": "Firebush",
+        "plantId": "firebush"
+      }
     ],
-    "bestSeasons": ["Spring", "Summer", "Fall"],
+    "bestSeasons": [
+      "Spring",
+      "Summer",
+      "Fall"
+    ],
     "notes": "Males are brighter orange; females more muted and washed with brown."
   },
   {
@@ -138,16 +245,37 @@
       "image": "/images/butterflies/giant-swallowtail-caterpillar.jpg"
     },
     "hostPlants": [
-      { "name": "Citrus (lemon, lime, orange)", "plantId": "citrus" },
-      { "name": "Wild Lime / Hercules' Club" }
+      {
+        "name": "Citrus (lemon, lime, orange)",
+        "plantId": "citrus"
+      },
+      {
+        "name": "Wild Lime / Hercules' Club"
+      }
     ],
     "nectarPlants": [
-      { "name": "Lantana", "plantId": "lantana" },
-      { "name": "Pentas", "plantId": "pentas" },
-      { "name": "Firebush", "plantId": "firebush" },
-      { "name": "Scarlet Sage", "plantId": "scarlet-sage" }
+      {
+        "name": "Lantana",
+        "plantId": "lantana"
+      },
+      {
+        "name": "Pentas",
+        "plantId": "pentas"
+      },
+      {
+        "name": "Firebush",
+        "plantId": "firebush"
+      },
+      {
+        "name": "Scarlet Sage",
+        "plantId": "scarlet-sage"
+      }
     ],
-    "bestSeasons": ["Spring", "Summer", "Fall"],
+    "bestSeasons": [
+      "Spring",
+      "Summer",
+      "Fall"
+    ],
     "notes": "Caterpillars (called 'orange dogs') are often found on backyard citrus — leave a few leaves for them."
   },
   {
@@ -163,17 +291,39 @@
       "image": "/images/butterflies/eastern-tiger-swallowtail-caterpillar.jpg"
     },
     "hostPlants": [
-      { "name": "Sweetbay Magnolia" },
-      { "name": "Tulip Tree" },
-      { "name": "Wild Cherry" }
+      {
+        "name": "Sweetbay Magnolia"
+      },
+      {
+        "name": "Tulip Tree"
+      },
+      {
+        "name": "Wild Cherry"
+      }
     ],
     "nectarPlants": [
-      { "name": "Pentas", "plantId": "pentas" },
-      { "name": "Lantana", "plantId": "lantana" },
-      { "name": "Firebush", "plantId": "firebush" },
-      { "name": "Ixora", "plantId": "ixora" }
+      {
+        "name": "Pentas",
+        "plantId": "pentas"
+      },
+      {
+        "name": "Lantana",
+        "plantId": "lantana"
+      },
+      {
+        "name": "Firebush",
+        "plantId": "firebush"
+      },
+      {
+        "name": "Ixora",
+        "plantId": "ixora"
+      }
     ],
-    "bestSeasons": ["Spring", "Summer", "Fall"],
+    "bestSeasons": [
+      "Spring",
+      "Summer",
+      "Fall"
+    ],
     "notes": "Less common in urban Pinellas than swallowtails like Giant or Black, but drops by to nectar."
   },
   {
@@ -189,17 +339,39 @@
       "image": "/images/butterflies/black-swallowtail-caterpillar.jpg"
     },
     "hostPlants": [
-      { "name": "Parsley" },
-      { "name": "Dill" },
-      { "name": "Fennel" },
-      { "name": "Carrot tops", "plantId": "carrot" }
+      {
+        "name": "Parsley"
+      },
+      {
+        "name": "Dill"
+      },
+      {
+        "name": "Fennel"
+      },
+      {
+        "name": "Carrot tops",
+        "plantId": "carrot"
+      }
     ],
     "nectarPlants": [
-      { "name": "Pentas", "plantId": "pentas" },
-      { "name": "Lantana", "plantId": "lantana" },
-      { "name": "Scarlet Sage", "plantId": "scarlet-sage" }
+      {
+        "name": "Pentas",
+        "plantId": "pentas"
+      },
+      {
+        "name": "Lantana",
+        "plantId": "lantana"
+      },
+      {
+        "name": "Scarlet Sage",
+        "plantId": "scarlet-sage"
+      }
     ],
-    "bestSeasons": ["Spring", "Summer", "Fall"],
+    "bestSeasons": [
+      "Spring",
+      "Summer",
+      "Fall"
+    ],
     "notes": "Grow a small 'caterpillar patch' of parsley/dill/fennel if you want both herbs and butterflies."
   },
   {
@@ -215,15 +387,32 @@
       "image": "/images/butterflies/polydamas-swallowtail-caterpillar.jpg"
     },
     "hostPlants": [
-      { "name": "Dutchman's Pipe (Aristolochia spp.)" },
-      { "name": "Pipevine (non-toxic native A. serpentaria or A. pentandra preferred)" }
+      {
+        "name": "Dutchman's Pipe (Aristolochia spp.)"
+      },
+      {
+        "name": "Pipevine (non-toxic native A. serpentaria or A. pentandra preferred)"
+      }
     ],
     "nectarPlants": [
-      { "name": "Pentas", "plantId": "pentas" },
-      { "name": "Lantana", "plantId": "lantana" },
-      { "name": "Ixora", "plantId": "ixora" }
+      {
+        "name": "Pentas",
+        "plantId": "pentas"
+      },
+      {
+        "name": "Lantana",
+        "plantId": "lantana"
+      },
+      {
+        "name": "Ixora",
+        "plantId": "ixora"
+      }
     ],
-    "bestSeasons": ["Spring", "Summer", "Fall"],
+    "bestSeasons": [
+      "Spring",
+      "Summer",
+      "Fall"
+    ],
     "notes": "Avoid giant/exotic Aristolochia gigantea — flowers trap and kill this butterfly's caterpillars."
   },
   {
@@ -239,16 +428,35 @@
       "image": "/images/butterflies/palamedes-swallowtail-caterpillar.jpg"
     },
     "hostPlants": [
-      { "name": "Red Bay" },
-      { "name": "Swamp Bay" },
-      { "name": "Sassafras" }
+      {
+        "name": "Red Bay"
+      },
+      {
+        "name": "Swamp Bay"
+      },
+      {
+        "name": "Sassafras"
+      }
     ],
     "nectarPlants": [
-      { "name": "Pentas", "plantId": "pentas" },
-      { "name": "Firebush", "plantId": "firebush" },
-      { "name": "Lantana", "plantId": "lantana" }
+      {
+        "name": "Pentas",
+        "plantId": "pentas"
+      },
+      {
+        "name": "Firebush",
+        "plantId": "firebush"
+      },
+      {
+        "name": "Lantana",
+        "plantId": "lantana"
+      }
     ],
-    "bestSeasons": ["Spring", "Summer", "Fall"],
+    "bestSeasons": [
+      "Spring",
+      "Summer",
+      "Fall"
+    ],
     "notes": "Populations have declined with laurel wilt disease impacting red bays — any healthy bay tree helps."
   },
   {
@@ -264,17 +472,38 @@
       "image": "/images/butterflies/spicebush-swallowtail-caterpillar.jpg"
     },
     "hostPlants": [
-      { "name": "Red Bay" },
-      { "name": "Spicebush" },
-      { "name": "Sassafras" },
-      { "name": "Camphor tree (introduced)" }
+      {
+        "name": "Red Bay"
+      },
+      {
+        "name": "Spicebush"
+      },
+      {
+        "name": "Sassafras"
+      },
+      {
+        "name": "Camphor tree (introduced)"
+      }
     ],
     "nectarPlants": [
-      { "name": "Pentas", "plantId": "pentas" },
-      { "name": "Lantana", "plantId": "lantana" },
-      { "name": "Firebush", "plantId": "firebush" }
+      {
+        "name": "Pentas",
+        "plantId": "pentas"
+      },
+      {
+        "name": "Lantana",
+        "plantId": "lantana"
+      },
+      {
+        "name": "Firebush",
+        "plantId": "firebush"
+      }
     ],
-    "bestSeasons": ["Spring", "Summer", "Fall"]
+    "bestSeasons": [
+      "Spring",
+      "Summer",
+      "Fall"
+    ]
   },
   {
     "id": "cloudless-sulphur",
@@ -289,16 +518,36 @@
       "image": "/images/butterflies/cloudless-sulphur-caterpillar.jpg"
     },
     "hostPlants": [
-      { "name": "Cassia / Senna species" },
-      { "name": "Partridge Pea" }
+      {
+        "name": "Cassia / Senna species"
+      },
+      {
+        "name": "Partridge Pea"
+      }
     ],
     "nectarPlants": [
-      { "name": "Pentas", "plantId": "pentas" },
-      { "name": "Firebush", "plantId": "firebush" },
-      { "name": "Lantana", "plantId": "lantana" },
-      { "name": "Scarlet Sage", "plantId": "scarlet-sage" }
+      {
+        "name": "Pentas",
+        "plantId": "pentas"
+      },
+      {
+        "name": "Firebush",
+        "plantId": "firebush"
+      },
+      {
+        "name": "Lantana",
+        "plantId": "lantana"
+      },
+      {
+        "name": "Scarlet Sage",
+        "plantId": "scarlet-sage"
+      }
     ],
-    "bestSeasons": ["Spring", "Summer", "Fall"],
+    "bestSeasons": [
+      "Spring",
+      "Summer",
+      "Fall"
+    ],
     "notes": "Favors deep, red, tubular flowers — a good reason to grow firebush."
   },
   {
@@ -314,15 +563,33 @@
       "image": "/images/butterflies/orange-barred-sulphur-caterpillar.jpg"
     },
     "hostPlants": [
-      { "name": "Cassia / Senna species" }
+      {
+        "name": "Cassia / Senna species"
+      }
     ],
     "nectarPlants": [
-      { "name": "Pentas", "plantId": "pentas" },
-      { "name": "Firebush", "plantId": "firebush" },
-      { "name": "Ixora", "plantId": "ixora" },
-      { "name": "Lantana", "plantId": "lantana" }
+      {
+        "name": "Pentas",
+        "plantId": "pentas"
+      },
+      {
+        "name": "Firebush",
+        "plantId": "firebush"
+      },
+      {
+        "name": "Ixora",
+        "plantId": "ixora"
+      },
+      {
+        "name": "Lantana",
+        "plantId": "lantana"
+      }
     ],
-    "bestSeasons": ["Spring", "Summer", "Fall"]
+    "bestSeasons": [
+      "Spring",
+      "Summer",
+      "Fall"
+    ]
   },
   {
     "id": "white-peacock",
@@ -337,15 +604,33 @@
       "image": "/images/butterflies/white-peacock-caterpillar.jpg"
     },
     "hostPlants": [
-      { "name": "Frogfruit (Phyla nodiflora)" },
-      { "name": "Water Hyssop (Bacopa monnieri)" }
+      {
+        "name": "Frogfruit (Phyla nodiflora)"
+      },
+      {
+        "name": "Water Hyssop (Bacopa monnieri)"
+      }
     ],
     "nectarPlants": [
-      { "name": "Lantana", "plantId": "lantana" },
-      { "name": "Pentas", "plantId": "pentas" },
-      { "name": "Blue Daze", "plantId": "blue-daze" }
+      {
+        "name": "Lantana",
+        "plantId": "lantana"
+      },
+      {
+        "name": "Pentas",
+        "plantId": "pentas"
+      },
+      {
+        "name": "Blue Daze",
+        "plantId": "blue-daze"
+      }
     ],
-    "bestSeasons": ["Spring", "Summer", "Fall", "Winter"],
+    "bestSeasons": [
+      "Spring",
+      "Summer",
+      "Fall",
+      "Winter"
+    ],
     "notes": "Plant frogfruit as a low-water Florida lawn alternative and you'll get White Peacocks constantly."
   },
   {
@@ -361,14 +646,29 @@
       "image": "/images/butterflies/atala-caterpillar.jpg"
     },
     "hostPlants": [
-      { "name": "Coontie (Zamia integrifolia)" }
+      {
+        "name": "Coontie (Zamia integrifolia)"
+      }
     ],
     "nectarPlants": [
-      { "name": "Lantana", "plantId": "lantana" },
-      { "name": "Pentas", "plantId": "pentas" },
-      { "name": "Firebush", "plantId": "firebush" }
+      {
+        "name": "Lantana",
+        "plantId": "lantana"
+      },
+      {
+        "name": "Pentas",
+        "plantId": "pentas"
+      },
+      {
+        "name": "Firebush",
+        "plantId": "firebush"
+      }
     ],
-    "bestSeasons": ["Spring", "Summer", "Fall"],
+    "bestSeasons": [
+      "Spring",
+      "Summer",
+      "Fall"
+    ],
     "notes": "More common on the east coast of Florida but spreading — plant coontie and they may find you."
   },
   {
@@ -384,16 +684,34 @@
       "image": "/images/butterflies/painted-lady-caterpillar.jpg"
     },
     "hostPlants": [
-      { "name": "Thistles" },
-      { "name": "Hollyhock" },
-      { "name": "Malvaceae (mallow family)" }
+      {
+        "name": "Thistles"
+      },
+      {
+        "name": "Hollyhock"
+      },
+      {
+        "name": "Malvaceae (mallow family)"
+      }
     ],
     "nectarPlants": [
-      { "name": "Pentas", "plantId": "pentas" },
-      { "name": "Lantana", "plantId": "lantana" },
-      { "name": "Blanket Flower", "plantId": "blanket-flower" }
+      {
+        "name": "Pentas",
+        "plantId": "pentas"
+      },
+      {
+        "name": "Lantana",
+        "plantId": "lantana"
+      },
+      {
+        "name": "Blanket Flower",
+        "plantId": "blanket-flower"
+      }
     ],
-    "bestSeasons": ["Spring", "Fall"]
+    "bestSeasons": [
+      "Spring",
+      "Fall"
+    ]
   },
   {
     "id": "american-lady",
@@ -408,16 +726,35 @@
       "image": "/images/butterflies/american-lady-caterpillar.jpg"
     },
     "hostPlants": [
-      { "name": "Cudweed (Pseudognaphalium)" },
-      { "name": "Everlasting" },
-      { "name": "Pearly Everlasting" }
+      {
+        "name": "Cudweed (Pseudognaphalium)"
+      },
+      {
+        "name": "Everlasting"
+      },
+      {
+        "name": "Pearly Everlasting"
+      }
     ],
     "nectarPlants": [
-      { "name": "Pentas", "plantId": "pentas" },
-      { "name": "Blanket Flower", "plantId": "blanket-flower" },
-      { "name": "Lantana", "plantId": "lantana" }
+      {
+        "name": "Pentas",
+        "plantId": "pentas"
+      },
+      {
+        "name": "Blanket Flower",
+        "plantId": "blanket-flower"
+      },
+      {
+        "name": "Lantana",
+        "plantId": "lantana"
+      }
     ],
-    "bestSeasons": ["Spring", "Summer", "Fall"]
+    "bestSeasons": [
+      "Spring",
+      "Summer",
+      "Fall"
+    ]
   },
   {
     "id": "red-admiral",
@@ -432,16 +769,35 @@
       "image": "/images/butterflies/red-admiral-caterpillar.jpg"
     },
     "hostPlants": [
-      { "name": "Nettles" },
-      { "name": "False Nettle (Boehmeria)" },
-      { "name": "Pellitory" }
+      {
+        "name": "Nettles"
+      },
+      {
+        "name": "False Nettle (Boehmeria)"
+      },
+      {
+        "name": "Pellitory"
+      }
     ],
     "nectarPlants": [
-      { "name": "Pentas", "plantId": "pentas" },
-      { "name": "Lantana", "plantId": "lantana" },
-      { "name": "Fallen fruit (figs, citrus)", "plantId": "fig" }
+      {
+        "name": "Pentas",
+        "plantId": "pentas"
+      },
+      {
+        "name": "Lantana",
+        "plantId": "lantana"
+      },
+      {
+        "name": "Fallen fruit (figs, citrus)",
+        "plantId": "fig"
+      }
     ],
-    "bestSeasons": ["Spring", "Summer", "Fall"]
+    "bestSeasons": [
+      "Spring",
+      "Summer",
+      "Fall"
+    ]
   },
   {
     "id": "viceroy",
@@ -456,16 +812,35 @@
       "image": "/images/butterflies/viceroy-caterpillar.jpg"
     },
     "hostPlants": [
-      { "name": "Willow" },
-      { "name": "Poplar" },
-      { "name": "Cottonwood" }
+      {
+        "name": "Willow"
+      },
+      {
+        "name": "Poplar"
+      },
+      {
+        "name": "Cottonwood"
+      }
     ],
     "nectarPlants": [
-      { "name": "Lantana", "plantId": "lantana" },
-      { "name": "Pentas", "plantId": "pentas" },
-      { "name": "Blanket Flower", "plantId": "blanket-flower" }
+      {
+        "name": "Lantana",
+        "plantId": "lantana"
+      },
+      {
+        "name": "Pentas",
+        "plantId": "pentas"
+      },
+      {
+        "name": "Blanket Flower",
+        "plantId": "blanket-flower"
+      }
     ],
-    "bestSeasons": ["Spring", "Summer", "Fall"]
+    "bestSeasons": [
+      "Spring",
+      "Summer",
+      "Fall"
+    ]
   },
   {
     "id": "great-southern-white",
@@ -480,19 +855,50 @@
       "image": "/images/butterflies/great-southern-white-caterpillar.jpg"
     },
     "hostPlants": [
-      { "name": "Kale", "plantId": "kale" },
-      { "name": "Collard Greens", "plantId": "collard-greens" },
-      { "name": "Broccoli", "plantId": "broccoli" },
-      { "name": "Arugula", "plantId": "arugula" },
-      { "name": "Radish", "plantId": "radish" },
-      { "name": "Saltwort and native mustards" }
+      {
+        "name": "Kale",
+        "plantId": "kale"
+      },
+      {
+        "name": "Collard Greens",
+        "plantId": "collard-greens"
+      },
+      {
+        "name": "Broccoli",
+        "plantId": "broccoli"
+      },
+      {
+        "name": "Arugula",
+        "plantId": "arugula"
+      },
+      {
+        "name": "Radish",
+        "plantId": "radish"
+      },
+      {
+        "name": "Saltwort and native mustards"
+      }
     ],
     "nectarPlants": [
-      { "name": "Lantana", "plantId": "lantana" },
-      { "name": "Pentas", "plantId": "pentas" },
-      { "name": "Scarlet Sage", "plantId": "scarlet-sage" }
+      {
+        "name": "Lantana",
+        "plantId": "lantana"
+      },
+      {
+        "name": "Pentas",
+        "plantId": "pentas"
+      },
+      {
+        "name": "Scarlet Sage",
+        "plantId": "scarlet-sage"
+      }
     ],
-    "bestSeasons": ["Spring", "Summer", "Fall", "Winter"],
+    "bestSeasons": [
+      "Spring",
+      "Summer",
+      "Fall",
+      "Winter"
+    ],
     "notes": "Caterpillars can strip backyard brassicas — consider row cover over edible crops if you don't want to share."
   },
   {
@@ -508,16 +914,37 @@
       "image": "/images/butterflies/cassius-blue-caterpillar.jpg"
     },
     "hostPlants": [
-      { "name": "Plumbago", "plantId": "plumbago" },
-      { "name": "Legumes (various)" },
-      { "name": "Leadwort" }
+      {
+        "name": "Plumbago",
+        "plantId": "plumbago"
+      },
+      {
+        "name": "Legumes (various)"
+      },
+      {
+        "name": "Leadwort"
+      }
     ],
     "nectarPlants": [
-      { "name": "Plumbago", "plantId": "plumbago" },
-      { "name": "Lantana", "plantId": "lantana" },
-      { "name": "Pentas", "plantId": "pentas" }
+      {
+        "name": "Plumbago",
+        "plantId": "plumbago"
+      },
+      {
+        "name": "Lantana",
+        "plantId": "lantana"
+      },
+      {
+        "name": "Pentas",
+        "plantId": "pentas"
+      }
     ],
-    "bestSeasons": ["Spring", "Summer", "Fall", "Winter"],
+    "bestSeasons": [
+      "Spring",
+      "Summer",
+      "Fall",
+      "Winter"
+    ],
     "notes": "If you grow plumbago, look closely — you almost certainly have Cassius Blues."
   },
   {
@@ -533,16 +960,36 @@
       "image": "/images/butterflies/gray-hairstreak-caterpillar.jpg"
     },
     "hostPlants": [
-      { "name": "Many legumes (beans, peas)" },
-      { "name": "Green Beans", "plantId": "green-beans" },
-      { "name": "Mallows" }
+      {
+        "name": "Many legumes (beans, peas)"
+      },
+      {
+        "name": "Green Beans",
+        "plantId": "green-beans"
+      },
+      {
+        "name": "Mallows"
+      }
     ],
     "nectarPlants": [
-      { "name": "Lantana", "plantId": "lantana" },
-      { "name": "Pentas", "plantId": "pentas" },
-      { "name": "Blanket Flower", "plantId": "blanket-flower" }
+      {
+        "name": "Lantana",
+        "plantId": "lantana"
+      },
+      {
+        "name": "Pentas",
+        "plantId": "pentas"
+      },
+      {
+        "name": "Blanket Flower",
+        "plantId": "blanket-flower"
+      }
     ],
-    "bestSeasons": ["Spring", "Summer", "Fall"]
+    "bestSeasons": [
+      "Spring",
+      "Summer",
+      "Fall"
+    ]
   },
   {
     "id": "long-tailed-skipper",
@@ -557,17 +1004,41 @@
       "image": "/images/butterflies/long-tailed-skipper-caterpillar.jpg"
     },
     "hostPlants": [
-      { "name": "Green Beans", "plantId": "green-beans" },
-      { "name": "Snow Peas", "plantId": "snow-peas" },
-      { "name": "Pigeon Peas", "plantId": "pigeon-peas" },
-      { "name": "Wisteria and other legumes" }
+      {
+        "name": "Green Beans",
+        "plantId": "green-beans"
+      },
+      {
+        "name": "Snow Peas",
+        "plantId": "snow-peas"
+      },
+      {
+        "name": "Pigeon Peas",
+        "plantId": "pigeon-peas"
+      },
+      {
+        "name": "Wisteria and other legumes"
+      }
     ],
     "nectarPlants": [
-      { "name": "Lantana", "plantId": "lantana" },
-      { "name": "Pentas", "plantId": "pentas" },
-      { "name": "Firebush", "plantId": "firebush" }
+      {
+        "name": "Lantana",
+        "plantId": "lantana"
+      },
+      {
+        "name": "Pentas",
+        "plantId": "pentas"
+      },
+      {
+        "name": "Firebush",
+        "plantId": "firebush"
+      }
     ],
-    "bestSeasons": ["Spring", "Summer", "Fall"]
+    "bestSeasons": [
+      "Spring",
+      "Summer",
+      "Fall"
+    ]
   },
   {
     "id": "common-buckeye",
@@ -582,16 +1053,37 @@
       "image": "/images/butterflies/common-buckeye-caterpillar.jpg"
     },
     "hostPlants": [
-      { "name": "Plantains (Plantago)" },
-      { "name": "Snapdragons" },
-      { "name": "Toadflax" },
-      { "name": "Twinflower" }
+      {
+        "name": "Plantains (Plantago)"
+      },
+      {
+        "name": "Snapdragons"
+      },
+      {
+        "name": "Toadflax"
+      },
+      {
+        "name": "Twinflower"
+      }
     ],
     "nectarPlants": [
-      { "name": "Pentas", "plantId": "pentas" },
-      { "name": "Lantana", "plantId": "lantana" },
-      { "name": "Blanket Flower", "plantId": "blanket-flower" }
+      {
+        "name": "Pentas",
+        "plantId": "pentas"
+      },
+      {
+        "name": "Lantana",
+        "plantId": "lantana"
+      },
+      {
+        "name": "Blanket Flower",
+        "plantId": "blanket-flower"
+      }
     ],
-    "bestSeasons": ["Spring", "Summer", "Fall"]
+    "bestSeasons": [
+      "Spring",
+      "Summer",
+      "Fall"
+    ]
   }
 ]

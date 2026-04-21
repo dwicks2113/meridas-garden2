@@ -137,8 +137,10 @@ export default function RecipesPage() {
 
         {/* Success / Error banners */}
         {saveStatus === "success" && (
-          <div className="mb-6 bg-green-50 border border-green-300 text-green-800 rounded-lg p-4 flex items-center gap-2">
-            ✅ Recipe saved successfully!
+          <div className="mb-6 bg-green-50 border border-green-300 text-green-800 rounded-lg p-4">
+            ✅ <strong>Recipe saved!</strong> It&apos;s live in your browser now.
+            The site will rebuild on Vercel in ~1–2 minutes so the new recipe
+            also shows up when anyone else visits.
           </div>
         )}
         {saveStatus === "error" && (

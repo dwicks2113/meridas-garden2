@@ -1,9 +1,22 @@
 import { NextRequest, NextResponse } from "next/server";
-import { readFileSync, writeFileSync } from "fs";
-import { join } from "path";
 import { isAdmin } from "@/lib/adminAuth";
+import { updateRepoJson } from "@/lib/repoStorage";
 
-const journalPath = join(process.cwd(), "src", "data", "journal.json");
+const JOURNAL_REPO_PATH = "src/data/journal.json";
+
+interface JournalEntry {
+  id: string;
+  plantId: string;
+  plantName: string;
+  datePlanted: string;
+  method: string;
+  variety: string;
+  location: string;
+  daysToFruit?: number;
+  notes: string;
+  images: string[];
+  updates: unknown[];
+}
 
 export async function POST(req: NextRequest) {
   if (!isAdmin(req)) {
@@ -11,19 +24,13 @@ export async function POST(req: NextRequest) {
   }
   try {
     const body = await req.json();
-
     const { plantName, plantId, datePlanted, method, variety, location, daysToFruit, notes } = body;
 
     if (!plantName || !datePlanted || !method || !location) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
 
-    // Read existing entries
-    const raw = readFileSync(journalPath, "utf-8");
-    const entries = JSON.parse(raw);
-
-    // Build new entry
-    const newEntry = {
+    const newEntry: JournalEntry = {
       id: `entry-${Date.now()}`,
       plantId: plantId || plantName.toLowerCase().replace(/\s+/g, "-"),
       plantName,
@@ -37,13 +44,17 @@ export async function POST(req: NextRequest) {
       updates: [],
     };
 
-    entries.unshift(newEntry); // add to top
-    writeFileSync(journalPath, JSON.stringify(entries, null, 2));
+    await updateRepoJson<JournalEntry[]>(
+      JOURNAL_REPO_PATH,
+      (entries) => [newEntry, ...entries],
+      `Add journal entry: ${plantName}`
+    );
 
     return NextResponse.json({ success: true, entry: newEntry });
   } catch (err) {
     console.error("Journal save error:", err);
-    return NextResponse.json({ error: "Failed to save entry" }, { status: 500 });
+    const message = err instanceof Error ? err.message : "Failed to save entry";
+    return NextResponse.json({ error: message }, { status: 500 });
   }
 }
 
@@ -56,16 +67,26 @@ export async function DELETE(req: NextRequest) {
     const id = searchParams.get("id");
     if (!id) return NextResponse.json({ error: "Missing id" }, { status: 400 });
 
-    const raw     = readFileSync(journalPath, "utf-8");
-    const entries = JSON.parse(raw) as { id: string }[];
-    const index   = entries.findIndex((e) => e.id === id);
-    if (index === -1) return NextResponse.json({ error: "Entry not found" }, { status: 404 });
+    let found = false;
 
-    entries.splice(index, 1);
-    writeFileSync(journalPath, JSON.stringify(entries, null, 2));
+    await updateRepoJson<JournalEntry[]>(
+      JOURNAL_REPO_PATH,
+      (entries) => {
+        const index = entries.findIndex((e) => e.id === id);
+        if (index === -1) return entries;
+        found = true;
+        const next = [...entries];
+        next.splice(index, 1);
+        return next;
+      },
+      `Delete journal entry: ${id}`
+    );
+
+    if (!found) return NextResponse.json({ error: "Entry not found" }, { status: 404 });
     return NextResponse.json({ success: true });
   } catch (err) {
     console.error("Journal delete error:", err);
-    return NextResponse.json({ error: "Failed to delete entry" }, { status: 500 });
+    const message = err instanceof Error ? err.message : "Failed to delete entry";
+    return NextResponse.json({ error: message }, { status: 500 });
   }
 }

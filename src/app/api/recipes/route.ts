@@ -1,9 +1,27 @@
 import { NextRequest, NextResponse } from "next/server";
-import { readFileSync, writeFileSync } from "fs";
-import { join } from "path";
 import { isAdmin } from "@/lib/adminAuth";
+import { updateRepoJson } from "@/lib/repoStorage";
 
-const recipesPath = join(process.cwd(), "src", "data", "recipes.json");
+const RECIPES_REPO_PATH = "src/data/recipes.json";
+
+interface Recipe {
+  id: string;
+  name: string;
+  type: string;
+  description: string;
+  prepTime: string;
+  steepTime?: string;
+  yield: string;
+  difficulty: string;
+  image: string;
+  plants: string[];
+  plantIds: string[];
+  ingredients: string[];
+  instructions: string[];
+  benefits: string[];
+  caution?: string;
+  storageNotes?: string;
+}
 
 function toArray(value: string | undefined): string[] {
   if (!value || !value.trim()) return [];
@@ -48,7 +66,6 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
 
-    // Parse plants — comma or newline separated
     const plantsArray: string[] = (plants || "")
       .split(/[,\n]/)
       .map((s: string) => s.trim())
@@ -56,44 +73,48 @@ export async function POST(req: NextRequest) {
 
     const plantIdsArray = plantsArray.map((p: string) => toSlug(p));
 
-    const raw = readFileSync(recipesPath, "utf-8");
-    const entries = JSON.parse(raw);
+    let savedRecipe: Recipe | null = null;
 
-    // Generate a unique ID
-    const baseId = toSlug(name) || `recipe-${Date.now()}`;
-    const existingIds = new Set(entries.map((e: { id: string }) => e.id));
-    let newId = baseId;
-    let counter = 2;
-    while (existingIds.has(newId)) {
-      newId = `${baseId}-${counter++}`;
-    }
+    await updateRepoJson<Recipe[]>(
+      RECIPES_REPO_PATH,
+      (entries) => {
+        const baseId = toSlug(name) || `recipe-${Date.now()}`;
+        const existingIds = new Set(entries.map((e) => e.id));
+        let newId = baseId;
+        let counter = 2;
+        while (existingIds.has(newId)) {
+          newId = `${baseId}-${counter++}`;
+        }
 
-    const newRecipe = {
-      id: newId,
-      name: name.trim(),
-      type,
-      description: description.trim(),
-      prepTime: prepTime.trim(),
-      steepTime: steepTime?.trim() || undefined,
-      yield: yieldAmt.trim(),
-      difficulty,
-      image: `/images/recipes/${newId}.jpg`,
-      plants: plantsArray,
-      plantIds: plantIdsArray,
-      ingredients: toArray(ingredients),
-      instructions: toArray(instructions),
-      benefits: toArray(benefits),
-      caution: caution?.trim() || undefined,
-      storageNotes: storageNotes?.trim() || undefined,
-    };
+        const newRecipe: Recipe = {
+          id: newId,
+          name: name.trim(),
+          type,
+          description: description.trim(),
+          prepTime: prepTime.trim(),
+          steepTime: steepTime?.trim() || undefined,
+          yield: yieldAmt.trim(),
+          difficulty,
+          image: `/images/recipes/${newId}.jpg`,
+          plants: plantsArray,
+          plantIds: plantIdsArray,
+          ingredients: toArray(ingredients),
+          instructions: toArray(instructions),
+          benefits: toArray(benefits),
+          caution: caution?.trim() || undefined,
+          storageNotes: storageNotes?.trim() || undefined,
+        };
+        savedRecipe = newRecipe;
+        return [newRecipe, ...entries];
+      },
+      `Add recipe: ${name.trim()}`
+    );
 
-    entries.unshift(newRecipe);
-    writeFileSync(recipesPath, JSON.stringify(entries, null, 2));
-
-    return NextResponse.json({ success: true, recipe: newRecipe });
+    return NextResponse.json({ success: true, recipe: savedRecipe });
   } catch (err) {
     console.error("Recipe save error:", err);
-    return NextResponse.json({ error: "Failed to save recipe" }, { status: 500 });
+    const message = err instanceof Error ? err.message : "Failed to save recipe";
+    return NextResponse.json({ error: message }, { status: 500 });
   }
 }
 
@@ -106,16 +127,28 @@ export async function DELETE(req: NextRequest) {
     const id = searchParams.get("id");
     if (!id) return NextResponse.json({ error: "Missing id" }, { status: 400 });
 
-    const raw     = readFileSync(recipesPath, "utf-8");
-    const entries = JSON.parse(raw) as { id: string }[];
-    const index   = entries.findIndex((e) => e.id === id);
-    if (index === -1) return NextResponse.json({ error: "Recipe not found" }, { status: 404 });
+    let found = false;
+    let deletedName = "";
 
-    entries.splice(index, 1);
-    writeFileSync(recipesPath, JSON.stringify(entries, null, 2));
-    return NextResponse.json({ success: true });
+    await updateRepoJson<Recipe[]>(
+      RECIPES_REPO_PATH,
+      (entries) => {
+        const index = entries.findIndex((e) => e.id === id);
+        if (index === -1) return entries;
+        found = true;
+        deletedName = entries[index].name;
+        const next = [...entries];
+        next.splice(index, 1);
+        return next;
+      },
+      `Delete recipe: ${id}`
+    );
+
+    if (!found) return NextResponse.json({ error: "Recipe not found" }, { status: 404 });
+    return NextResponse.json({ success: true, deletedName });
   } catch (err) {
     console.error("Recipe delete error:", err);
-    return NextResponse.json({ error: "Failed to delete recipe" }, { status: 500 });
+    const message = err instanceof Error ? err.message : "Failed to delete recipe";
+    return NextResponse.json({ error: message }, { status: 500 });
   }
 }
