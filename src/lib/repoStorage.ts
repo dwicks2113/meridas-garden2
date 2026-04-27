@@ -83,6 +83,61 @@ async function ghWrite(
   }
 }
 
+async function ghCreateBinary(
+  repoPath: string,
+  content: Buffer,
+  commitMessage: string
+): Promise<void> {
+  // Used for new binary files (no SHA, file must not yet exist)
+  const url = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${repoPath}`;
+  const res = await fetch(url, {
+    method: "PUT",
+    headers: {
+      Authorization: `Bearer ${TOKEN}`,
+      Accept: "application/vnd.github+json",
+      "Content-Type": "application/json",
+      "X-GitHub-Api-Version": "2022-11-28",
+    },
+    body: JSON.stringify({
+      message: commitMessage,
+      content: content.toString("base64"),
+      branch: BRANCH,
+    }),
+  });
+
+  if (!res.ok) {
+    const body = await res.text();
+    throw new Error(`GitHub create ${repoPath} failed (${res.status}): ${body}`);
+  }
+}
+
+async function ghDelete(
+  repoPath: string,
+  sha: string,
+  commitMessage: string
+): Promise<void> {
+  const url = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${repoPath}`;
+  const res = await fetch(url, {
+    method: "DELETE",
+    headers: {
+      Authorization: `Bearer ${TOKEN}`,
+      Accept: "application/vnd.github+json",
+      "Content-Type": "application/json",
+      "X-GitHub-Api-Version": "2022-11-28",
+    },
+    body: JSON.stringify({
+      message: commitMessage,
+      sha,
+      branch: BRANCH,
+    }),
+  });
+
+  if (!res.ok && res.status !== 404) {
+    const body = await res.text();
+    throw new Error(`GitHub delete ${repoPath} failed (${res.status}): ${body}`);
+  }
+}
+
 /**
  * Read the current JSON contents of a file in the repo. In production this
  * fetches the live committed version via the GitHub API; in dev it reads from
@@ -140,6 +195,53 @@ export async function updateRepoJson<T = unknown>(
   if (JSON.stringify(next) === snapshot) return next;
   writeFileSync(full, JSON.stringify(next, null, 2) + "\n");
   return next;
+}
+
+/**
+ * Commit a new binary file to the repo (e.g. an uploaded photo). Throws if the
+ * file already exists at this path — pick a unique filename per call.
+ *
+ * In dev (no GITHUB_TOKEN), writes to disk via fs.writeFileSync.
+ */
+export async function writeRepoBinary(
+  repoPath: string,
+  content: Buffer,
+  commitMessage: string
+): Promise<void> {
+  if (useGitHub) {
+    await ghCreateBinary(repoPath, content, commitMessage);
+    return;
+  }
+  const full = join(process.cwd(), repoPath);
+  // Ensure parent directories exist
+  const { mkdirSync } = await import("fs");
+  const { dirname } = await import("path");
+  mkdirSync(dirname(full), { recursive: true });
+  writeFileSync(full, content);
+}
+
+/**
+ * Delete a file from the repo (used for photo deletion). Silently ignores
+ * 404s so deleting an already-missing file is a no-op.
+ */
+export async function deleteRepoFile(
+  repoPath: string,
+  commitMessage: string
+): Promise<void> {
+  if (useGitHub) {
+    try {
+      const { sha } = await ghRead(repoPath);
+      await ghDelete(repoPath, sha, commitMessage);
+    } catch (err) {
+      // If the file doesn't exist, treat as success
+      if (err instanceof Error && err.message.includes("404")) return;
+      throw err;
+    }
+    return;
+  }
+  const full = join(process.cwd(), repoPath);
+  const { unlinkSync, existsSync } = await import("fs");
+  if (existsSync(full)) unlinkSync(full);
 }
 
 /**

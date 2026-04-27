@@ -14,6 +14,7 @@ const navLinks = [
   { href: "/recipes", label: "Recipes" },
   { href: "/blog",    label: "Blog"            },
   { href: "/journal", label: "Planting Journal" },
+  { href: "/photos",  label: "Photos"           },
 ];
 
 export default function Header() {
