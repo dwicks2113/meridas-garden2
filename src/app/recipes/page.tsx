@@ -32,6 +32,7 @@ const typeLabels: Record<string, { label: string; emoji: string; color: string }
   "tincture":   { label: "Tincture",   emoji: "🌿", color: "bg-green-100 text-green-800" },
   "salve":      { label: "Salve / Oil", emoji: "🫙", color: "bg-amber-100 text-amber-800" },
   "culinary":   { label: "Culinary",   emoji: "🍽️", color: "bg-orange-100 text-orange-800" },
+  "pets":       { label: "Pets",       emoji: "🐾", color: "bg-rose-100 text-rose-800" },
 };
 
 const difficultyColor: Record<string, string> = {
@@ -191,6 +192,7 @@ export default function RecipesPage() {
                     <option value="tincture">🌿 Tincture</option>
                     <option value="salve">🫙 Salve / Oil</option>
                     <option value="culinary">🍽️ Culinary</option>
+                    <option value="pets">🐾 Pets</option>
                   </select>
                 </div>
 
