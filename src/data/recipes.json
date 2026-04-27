@@ -1,5 +1,59 @@
 [
   {
+    "id": "strong-herbal-flearepelling-dog-shampoo",
+    "name": "🌿🐾 Strong Herbal Flea‑Repelling Dog Shampoo",
+    "type": "salve",
+    "description": "Best for: dogs with recurring flea issues, outdoor dogs, or dogs in warm/humid climates like Florida.",
+    "prepTime": "45 minutes",
+    "steepTime": "20-30 minutes",
+    "yield": "2 cups",
+    "difficulty": "easy",
+    "image": "/images/recipes/strong-herbal-flearepelling-dog-shampoo.jpg",
+    "plants": [
+      "Rosemary",
+      "Peppermint or Spearmint",
+      "Lavender"
+    ],
+    "plantIds": [
+      "rosemary",
+      "peppermint-or-spearmint",
+      "lavender"
+    ],
+    "ingredients": [
+      "2 cups water",
+      "1 tablespoon dried rosemary (strong natural flea repellent)",
+      "1 tablespoon dried peppermint OR spearmint",
+      "1 tablespoon dried lavender (calming + mild repellent)",
+      "½ cup liquid Castile soap (unscented or mild)",
+      "1 tablespoon aloe vera gel (soothes irritated skin)",
+      "Optional: 2–3 drops cedarwood or lemongrass essential oil*",
+      "*Use only if your dog is over 12 weeks old and not sensitive to scents."
+    ],
+    "instructions": [
+      "Make the herbal concentrate:",
+      "1. Bring the 2 cups of water to a boil.",
+      "2. Add rosemary, mint, and lavender.",
+      "3. Turn off heat, cover, and steep 20–30 minutes for maximum strength.",
+      "4. Strain out herbs and let the liquid cool completely.",
+      "Mix the shampoo:",
+      "1. In a bottle or jar, combine the cooled herbal tea with the Castile soap.",
+      "2. Add aloe vera gel and optional essential oil.",
+      "3. Shake gently to blend.",
+      "To Use it:",
+      "1. Wet your dog thoroughly.",
+      "2. Massage shampoo into the coat, especially neck, tail base, and belly.",
+      "3. Let it sit 3–5 minutes so the herbs and soap can work.",
+      "4. Rinse well."
+    ],
+    "benefits": [
+      "-Rosemary + mint create a scent profile fleas avoid.",
+      "-Lavender calms skin and adds mild repellent action.",
+      "-Cedarwood or lemongrass (optional) significantly increase repellent strength.",
+      "-Herbal infusion penetrates the coat better than essential oils alone."
+    ],
+    "caution": "Avoid essential oils for puppies under 12 weeks, pregnant dogs, or dogs with respiratory issues.  Never use this on cats — several of these herbs/oils are unsafe for them.  Store in the fridge for up to 2 weeks."
+  },
+  {
     "id": "lemongrass-ginger-tea",
     "name": "Lemongrass & Ginger Digestive Tea",
     "type": "herbal-tea",
@@ -9,8 +63,14 @@
     "yield": "2 cups",
     "difficulty": "easy",
     "image": "/images/recipes/lemongrass-ginger-tea.jpg",
-    "plants": ["Lemongrass", "Ginger"],
-    "plantIds": ["lemongrass", "ginger"],
+    "plants": [
+      "Lemongrass",
+      "Ginger"
+    ],
+    "plantIds": [
+      "lemongrass",
+      "ginger"
+    ],
     "ingredients": [
       "3 stalks fresh lemongrass (bottom 6 inches, bruised)",
       "1-inch piece fresh ginger root, sliced thin",
@@ -26,7 +86,12 @@
       "Strain into cups. Add honey and lime if desired.",
       "Drink warm for digestive issues or chilled over ice for a refreshing drink."
     ],
-    "benefits": ["Aids digestion", "Reduces bloating and nausea", "Anti-inflammatory", "Calming and stress-reducing"],
+    "benefits": [
+      "Aids digestion",
+      "Reduces bloating and nausea",
+      "Anti-inflammatory",
+      "Calming and stress-reducing"
+    ],
     "caution": "Generally very safe. Avoid large amounts during pregnancy. Ginger may interact with blood thinners — consult your doctor if on medication.",
     "storageNotes": "Make a larger batch and refrigerate for up to 5 days. Reheat or serve cold."
   },
@@ -40,8 +105,12 @@
     "yield": "2 cups",
     "difficulty": "easy",
     "image": "/images/recipes/holy-basil-tea.jpg",
-    "plants": ["Holy Basil"],
-    "plantIds": ["holy-basil"],
+    "plants": [
+      "Holy Basil"
+    ],
+    "plantIds": [
+      "holy-basil"
+    ],
     "ingredients": [
       "10-12 fresh holy basil (tulsi) leaves",
       "2 cups boiling water",
@@ -57,7 +126,13 @@
       "Strain. Add honey, black pepper, and lemon.",
       "Drink 1-2 cups daily for best adaptogenic benefits."
     ],
-    "benefits": ["Stress and anxiety relief", "Immune system support", "Anti-inflammatory", "Blood sugar regulation", "Respiratory support"],
+    "benefits": [
+      "Stress and anxiety relief",
+      "Immune system support",
+      "Anti-inflammatory",
+      "Blood sugar regulation",
+      "Respiratory support"
+    ],
     "caution": "May lower blood sugar — monitor if diabetic. Avoid medicinal doses during pregnancy. May interact with blood thinners.",
     "storageNotes": "Best consumed fresh. Refrigerate leftover tea for up to 2 days."
   },
@@ -71,8 +146,14 @@
     "yield": "1 cup",
     "difficulty": "easy",
     "image": "/images/recipes/turmeric-golden-milk.jpg",
-    "plants": ["Turmeric", "Ginger"],
-    "plantIds": ["turmeric", "ginger"],
+    "plants": [
+      "Turmeric",
+      "Ginger"
+    ],
+    "plantIds": [
+      "turmeric",
+      "ginger"
+    ],
     "ingredients": [
       "1 tsp fresh turmeric root, grated (or 1/2 tsp dried powder)",
       "1/4 tsp fresh ginger, grated",
@@ -90,7 +171,13 @@
       "Adjust sweetness to taste.",
       "Serve immediately. Best enjoyed before bed."
     ],
-    "benefits": ["Powerful anti-inflammatory", "Joint pain relief", "Antioxidant protection", "Aids sleep when taken at night", "Digestive support"],
+    "benefits": [
+      "Powerful anti-inflammatory",
+      "Joint pain relief",
+      "Antioxidant protection",
+      "Aids sleep when taken at night",
+      "Digestive support"
+    ],
     "caution": "Turmeric stains everything it touches — use care with clothing and surfaces. Avoid high doses during pregnancy or if on blood thinners. The black pepper is not optional if you want the benefits.",
     "storageNotes": "Make a turmeric paste ahead of time: 1/4 cup turmeric + enough water to form a paste. Store in fridge 2 weeks, add to milk as needed."
   },
@@ -104,8 +191,12 @@
     "yield": "2 cups",
     "difficulty": "easy",
     "image": "/images/recipes/rosemary-tea.jpg",
-    "plants": ["Rosemary"],
-    "plantIds": ["rosemary"],
+    "plants": [
+      "Rosemary"
+    ],
+    "plantIds": [
+      "rosemary"
+    ],
     "ingredients": [
       "2-3 sprigs fresh rosemary (about 2 tablespoons)",
       "2 cups boiling water",
@@ -119,7 +210,13 @@
       "Strain and add honey and lemon.",
       "Drink in the morning for cognitive benefits."
     ],
-    "benefits": ["Enhances memory and concentration", "Antioxidant rich", "Improves circulation", "Anti-inflammatory", "Mood-lifting aroma"],
+    "benefits": [
+      "Enhances memory and concentration",
+      "Antioxidant rich",
+      "Improves circulation",
+      "Anti-inflammatory",
+      "Mood-lifting aroma"
+    ],
     "caution": "Do not use medicinal amounts during pregnancy. High doses may cause seizures in susceptible individuals. Culinary amounts in tea are generally safe.",
     "storageNotes": "Refrigerate for up to 3 days. Also excellent as a cold-brewed tea — steep in cold water in the fridge overnight."
   },
@@ -133,8 +230,12 @@
     "yield": "4 cups",
     "difficulty": "easy",
     "image": "/images/recipes/hibiscus-tea.jpg",
-    "plants": ["Roselle (Edible Hibiscus)"],
-    "plantIds": ["edible-hibiscus"],
+    "plants": [
+      "Roselle (Edible Hibiscus)"
+    ],
+    "plantIds": [
+      "edible-hibiscus"
+    ],
     "ingredients": [
       "1 cup fresh roselle calyces (the red parts around the seed pod), or 1/2 cup dried",
       "4 cups water",
@@ -152,7 +253,13 @@
       "Serve hot or refrigerate and serve over ice.",
       "Garnish with mint."
     ],
-    "benefits": ["High in vitamin C and antioxidants", "May help lower blood pressure", "Liver protective", "Anti-inflammatory", "Cooling in Florida heat"],
+    "benefits": [
+      "High in vitamin C and antioxidants",
+      "May help lower blood pressure",
+      "Liver protective",
+      "Anti-inflammatory",
+      "Cooling in Florida heat"
+    ],
     "caution": "May lower blood pressure — consult doctor if on blood pressure medication. Avoid large amounts during pregnancy. The sour taste comes from natural acids — dilute for children.",
     "storageNotes": "Refrigerates well for up to 1 week. Concentrate can be made and diluted with water as needed. Excellent frozen into popsicles."
   },
@@ -166,8 +273,12 @@
     "yield": "2 cups",
     "difficulty": "easy",
     "image": "/images/recipes/moringa-tea.jpg",
-    "plants": ["Moringa"],
-    "plantIds": ["moringa"],
+    "plants": [
+      "Moringa"
+    ],
+    "plantIds": [
+      "moringa"
+    ],
     "ingredients": [
       "1 tbsp fresh moringa leaves, loosely packed (or 1 tsp dried powder)",
       "2 cups hot water (not boiling — 170-180°F preserves nutrients)",
@@ -182,7 +293,13 @@
       "Steep 5-7 minutes. Strain if using whole leaves.",
       "Add honey and citrus. Drink 1-2 cups daily."
     ],
-    "benefits": ["Exceptionally high in iron and calcium", "Complete plant protein", "Anti-inflammatory", "Blood sugar regulation", "Energy boosting"],
+    "benefits": [
+      "Exceptionally high in iron and calcium",
+      "Complete plant protein",
+      "Anti-inflammatory",
+      "Blood sugar regulation",
+      "Energy boosting"
+    ],
     "caution": "Avoid very high doses during pregnancy (the roots and bark can cause contractions — leaves are safer in culinary amounts). May interact with thyroid medications.",
     "storageNotes": "Make a large batch of dried moringa powder and store in an airtight jar away from light for up to 6 months."
   },
@@ -196,8 +313,12 @@
     "yield": "1 cup",
     "difficulty": "moderate",
     "image": "/images/recipes/aloe-tincture.jpg",
-    "plants": ["Aloe Vera"],
-    "plantIds": ["aloe-vera"],
+    "plants": [
+      "Aloe Vera"
+    ],
+    "plantIds": [
+      "aloe-vera"
+    ],
     "ingredients": [
       "4-6 large mature aloe vera leaves",
       "1 cup 80-proof vodka or grain alcohol (do NOT use rubbing alcohol)",
@@ -214,7 +335,13 @@
       "Strain through cheesecloth into a dark dropper bottle.",
       "Label with date. Apply topically to burns, sunburns, or irritated skin."
     ],
-    "benefits": ["Treats sunburn and minor burns", "Soothes insect bites", "Anti-inflammatory for skin", "Long shelf life (1 year+)", "More potent than fresh gel"],
+    "benefits": [
+      "Treats sunburn and minor burns",
+      "Soothes insect bites",
+      "Anti-inflammatory for skin",
+      "Long shelf life (1 year+)",
+      "More potent than fresh gel"
+    ],
     "caution": "For external use only. Never consume alcohol-based tinctures internally without medical guidance. Avoid yellow aloin layer — it is a strong laxative and skin irritant. Always do a patch test first.",
     "storageNotes": "Store in a dark glass bottle away from heat and light. Shelf-stable for 1-2 years. Label clearly."
   },
@@ -228,8 +355,12 @@
     "yield": "1 quart spray",
     "difficulty": "moderate",
     "image": "/images/recipes/neem-spray.jpg",
-    "plants": ["Neem"],
-    "plantIds": ["neem"],
+    "plants": [
+      "Neem"
+    ],
+    "plantIds": [
+      "neem"
+    ],
     "ingredients": [
       "2 cups fresh neem leaves, loosely packed",
       "2 cups water",
@@ -245,7 +376,13 @@
       "OIL METHOD: Combine neem oil, dish soap, and water. Shake well before each use.",
       "Reapply every 7 days for 3-4 weeks to break pest cycles."
     ],
-    "benefits": ["Controls aphids, whiteflies, spider mites", "Antifungal properties", "Safe around people and pets when dry", "Biodegrades quickly", "Does not harm beneficial insects when applied correctly"],
+    "benefits": [
+      "Controls aphids, whiteflies, spider mites",
+      "Antifungal properties",
+      "Safe around people and pets when dry",
+      "Biodegrades quickly",
+      "Does not harm beneficial insects when applied correctly"
+    ],
     "caution": "Harmful to fish and aquatic insects — do not apply near water bodies. Apply only in the morning or evening to avoid harming pollinators. Never apply in direct sun — can burn leaves.",
     "storageNotes": "Use leaf infusion within 3-4 days. Neem oil spray can be stored 1 week in the refrigerator. Shake well before each use."
   },
@@ -259,8 +396,14 @@
     "yield": "1 cup",
     "difficulty": "moderate",
     "image": "/images/recipes/turmeric-tincture.jpg",
-    "plants": ["Turmeric", "Ginger"],
-    "plantIds": ["turmeric", "ginger"],
+    "plants": [
+      "Turmeric",
+      "Ginger"
+    ],
+    "plantIds": [
+      "turmeric",
+      "ginger"
+    ],
     "ingredients": [
       "1/2 cup fresh turmeric root, chopped small",
       "1/4 cup fresh ginger root, chopped small",
@@ -279,7 +422,13 @@
       "Pour into a dark dropper bottle.",
       "DOSE: 1-2 dropperfuls (about 1/4 tsp) in water or tea, 2-3 times daily."
     ],
-    "benefits": ["Powerful anti-inflammatory for joints and muscles", "Digestive support", "Antioxidant protection", "Black pepper increases curcumin absorption by 2,000%", "Long shelf life"],
+    "benefits": [
+      "Powerful anti-inflammatory for joints and muscles",
+      "Digestive support",
+      "Antioxidant protection",
+      "Black pepper increases curcumin absorption by 2,000%",
+      "Long shelf life"
+    ],
     "caution": "Avoid during pregnancy. May thin blood — consult doctor before use with blood thinners or blood sugar medications. Turmeric stains — protect surfaces and clothing.",
     "storageNotes": "Alcohol-based tincture is shelf-stable for 3-5 years. ACV version keeps for 1 year. Store in dark glass away from light and heat."
   },
@@ -293,8 +442,14 @@
     "yield": "4 oz (fills a small tin or jar)",
     "difficulty": "moderate",
     "image": "/images/recipes/healing-salve.jpg",
-    "plants": ["Aloe Vera", "Rosemary"],
-    "plantIds": ["aloe-vera", "rosemary"],
+    "plants": [
+      "Aloe Vera",
+      "Rosemary"
+    ],
+    "plantIds": [
+      "aloe-vera",
+      "rosemary"
+    ],
     "ingredients": [
       "1/4 cup aloe vera gel (fresh inner gel)",
       "1/4 cup coconut oil",
@@ -315,7 +470,13 @@
       "Let cool completely undisturbed (1-2 hours) before using or covering.",
       "Apply a thin layer to affected skin as needed."
     ],
-    "benefits": ["Soothes sunburns and minor burns", "Heals dry and cracked skin", "Reduces insect bite inflammation", "Creates protective moisture barrier", "Antimicrobial properties from rosemary and tea tree"],
+    "benefits": [
+      "Soothes sunburns and minor burns",
+      "Heals dry and cracked skin",
+      "Reduces insect bite inflammation",
+      "Creates protective moisture barrier",
+      "Antimicrobial properties from rosemary and tea tree"
+    ],
     "caution": "Do not apply to deep wounds or infected skin. Discontinue if irritation occurs. Avoid near eyes. Always do a patch test on a small skin area first.",
     "storageNotes": "Store in a cool dark place. Shelf life 3-6 months at room temperature, up to 1 year refrigerated. The aloe may cause slight color variation — normal."
   },
@@ -329,8 +490,14 @@
     "yield": "2 oz",
     "difficulty": "moderate",
     "image": "/images/recipes/insect-repellent-salve.jpg",
-    "plants": ["Neem", "Rosemary"],
-    "plantIds": ["neem", "rosemary"],
+    "plants": [
+      "Neem",
+      "Rosemary"
+    ],
+    "plantIds": [
+      "neem",
+      "rosemary"
+    ],
     "ingredients": [
       "2 tbsp neem oil",
       "2 tbsp coconut oil",
@@ -350,7 +517,13 @@
       "Cool completely before use.",
       "Apply a thin layer to exposed skin before going outside."
     ],
-    "benefits": ["Natural mosquito and insect deterrent", "Neem oil compounds repel over 200 insect species", "Rosemary and eucalyptus enhance repellent effect", "Moisturizes skin while protecting", "No DEET or synthetic chemicals"],
+    "benefits": [
+      "Natural mosquito and insect deterrent",
+      "Neem oil compounds repel over 200 insect species",
+      "Rosemary and eucalyptus enhance repellent effect",
+      "Moisturizes skin while protecting",
+      "No DEET or synthetic chemicals"
+    ],
     "caution": "Neem has a strong odor that some find unpleasant — the essential oils help mask it. Do not use on broken skin. Avoid contact with eyes. Test on small skin area first — neem can cause irritation in sensitive individuals. Not recommended for children under 2.",
     "storageNotes": "Store in a cool, dark place. Good for 6 months at room temperature."
   },
@@ -364,8 +537,16 @@
     "yield": "1 pint",
     "difficulty": "easy",
     "image": "/images/recipes/fire-cider.jpg",
-    "plants": ["Ginger", "Holy Basil", "Rosemary"],
-    "plantIds": ["ginger", "holy-basil", "rosemary"],
+    "plants": [
+      "Ginger",
+      "Holy Basil",
+      "Rosemary"
+    ],
+    "plantIds": [
+      "ginger",
+      "holy-basil",
+      "rosemary"
+    ],
     "ingredients": [
       "1/2 cup fresh ginger root, grated",
       "1/4 cup fresh turmeric root, grated",
@@ -390,7 +571,13 @@
       "Bottle in dark glass. Take 1-2 tablespoons daily as a tonic.",
       "Can also be added to salad dressings, smoothies, or taken as a shot."
     ],
-    "benefits": ["Powerful immune system support", "Anti-viral and antibacterial", "Warming and circulation-boosting", "Anti-inflammatory", "Rich in antioxidants and probiotics from raw ACV"],
+    "benefits": [
+      "Powerful immune system support",
+      "Anti-viral and antibacterial",
+      "Warming and circulation-boosting",
+      "Anti-inflammatory",
+      "Rich in antioxidants and probiotics from raw ACV"
+    ],
     "caution": "Very spicy — start with 1 teaspoon and work up. Avoid on empty stomach. Not for young children or those with acid reflux. Consult doctor if on blood thinners.",
     "storageNotes": "Refrigerate after making. Keeps 2-3 months refrigerated. The vinegar acts as a natural preservative."
   },
@@ -404,8 +591,12 @@
     "yield": "4 oz",
     "difficulty": "easy",
     "image": "/images/recipes/lemongrass-body-oil.jpg",
-    "plants": ["Lemongrass"],
-    "plantIds": ["lemongrass"],
+    "plants": [
+      "Lemongrass"
+    ],
+    "plantIds": [
+      "lemongrass"
+    ],
     "ingredients": [
       "4-6 stalks fresh lemongrass, thinly sliced",
       "1/2 cup sweet almond oil or fractionated coconut oil",
@@ -420,7 +611,13 @@
       "Apply to skin after shower while skin is still slightly damp for best absorption.",
       "Also excellent as a massage oil for sore muscles."
     ],
-    "benefits": ["Deep skin moisturizer", "Stress-reducing aroma", "Mild insect-repellent properties", "Muscle tension relief when used as massage oil", "Antifungal and antibacterial properties of lemongrass"],
+    "benefits": [
+      "Deep skin moisturizer",
+      "Stress-reducing aroma",
+      "Mild insect-repellent properties",
+      "Muscle tension relief when used as massage oil",
+      "Antifungal and antibacterial properties of lemongrass"
+    ],
     "caution": "Do not apply to broken or irritated skin. Avoid contact with eyes. Do a patch test before full application — lemongrass can irritate sensitive skin. Not for internal use.",
     "storageNotes": "Store in a dark glass bottle away from heat. Good for 6-12 months. Refrigerate for longer shelf life."
   },
@@ -434,8 +631,14 @@
     "yield": "1 large or 2 small servings",
     "difficulty": "easy",
     "image": "/images/recipes/moringa-smoothie.jpg",
-    "plants": ["Moringa", "Banana"],
-    "plantIds": ["moringa", "banana"],
+    "plants": [
+      "Moringa",
+      "Banana"
+    ],
+    "plantIds": [
+      "moringa",
+      "banana"
+    ],
     "ingredients": [
       "1 cup fresh moringa leaves, loosely packed (or 1 tsp moringa powder)",
       "1 ripe banana (fresh or frozen)",
@@ -455,7 +658,13 @@
       "Pour over ice and drink immediately for maximum nutrition.",
       "The banana and pineapple effectively mask moringa's mild bitter taste."
     ],
-    "benefits": ["Complete plant protein with all essential amino acids", "Exceptionally high in iron, calcium, and vitamin C", "Natural energy booster", "Anti-inflammatory", "Easy daily nutrition from your garden"],
+    "benefits": [
+      "Complete plant protein with all essential amino acids",
+      "Exceptionally high in iron, calcium, and vitamin C",
+      "Natural energy booster",
+      "Anti-inflammatory",
+      "Easy daily nutrition from your garden"
+    ],
     "caution": "Avoid very large amounts during pregnancy (moringa bark and root can stimulate contractions — leaves in culinary amounts are generally safe). May interact with thyroid medication in large doses.",
     "storageNotes": "Drink immediately for best nutrition. Smoothie keeps in refrigerator for up to 24 hours."
   },
@@ -469,8 +678,14 @@
     "yield": "1 pint concentrate",
     "difficulty": "moderate",
     "image": "/images/recipes/passion-fruit-shrub.jpg",
-    "plants": ["Passion Fruit", "Roselle (Edible Hibiscus)"],
-    "plantIds": ["passion-fruit", "edible-hibiscus"],
+    "plants": [
+      "Passion Fruit",
+      "Roselle (Edible Hibiscus)"
+    ],
+    "plantIds": [
+      "passion-fruit",
+      "edible-hibiscus"
+    ],
     "ingredients": [
       "1 cup ripe passion fruit pulp (about 8-10 fruits)",
       "1/2 cup fresh roselle calyces (or 1/4 cup dried)",
@@ -489,7 +704,13 @@
       "TO SERVE: Mix 1-2 oz shrub with 6-8 oz sparkling water over ice.",
       "Also excellent as a cocktail mixer or salad dressing base."
     ],
-    "benefits": ["Rich in vitamin C from roselle", "Probiotics from apple cider vinegar", "Digestive support", "Long shelf life without refrigeration", "Refreshing hydration alternative to soda"],
+    "benefits": [
+      "Rich in vitamin C from roselle",
+      "Probiotics from apple cider vinegar",
+      "Digestive support",
+      "Long shelf life without refrigeration",
+      "Refreshing hydration alternative to soda"
+    ],
     "caution": "High sugar content — use honey for a lower glycemic option. Vinegar-based — avoid if you have acid reflux. The tartness is intentional; dilute to taste.",
     "storageNotes": "Refrigerated shrub keeps 6 months or longer. The vinegar is a natural preservative. Can also be stored at room temperature for 2-3 months."
   },
@@ -503,8 +724,12 @@
     "yield": "1 cup",
     "difficulty": "easy",
     "image": "/images/recipes/acerola-elixir.jpg",
-    "plants": ["Acerola Cherry"],
-    "plantIds": ["acerola"],
+    "plants": [
+      "Acerola Cherry"
+    ],
+    "plantIds": [
+      "acerola"
+    ],
     "ingredients": [
       "1 cup fresh ripe acerola cherries",
       "1/2 cup cold water",
@@ -522,7 +747,13 @@
       "Drink immediately — vitamin C degrades quickly when exposed to light and air.",
       "For maximum potency, prepare and drink fresh daily."
     ],
-    "benefits": ["Extraordinarily high vitamin C content (1,000-4,500 mg per 100g)", "Immune system boost", "Powerful antioxidant", "Skin health and collagen support", "Iron absorption enhancer"],
+    "benefits": [
+      "Extraordinarily high vitamin C content (1,000-4,500 mg per 100g)",
+      "Immune system boost",
+      "Powerful antioxidant",
+      "Skin health and collagen support",
+      "Iron absorption enhancer"
+    ],
     "caution": "Acerola is very high in vitamin C — excessive amounts (more than 1-2 cups) may cause digestive upset or loose stools. Start with small amounts. Cherries are very perishable — use within 24 hours of harvest.",
     "storageNotes": "Fresh elixir is best consumed immediately. Can freeze acerola cherries whole for year-round use — vitamin C is largely preserved when frozen."
   },
@@ -536,8 +767,12 @@
     "yield": "6 cups",
     "difficulty": "easy",
     "image": "/images/recipes/tamarind-agua-fresca.jpg",
-    "plants": ["Tamarind"],
-    "plantIds": ["tamarind"],
+    "plants": [
+      "Tamarind"
+    ],
+    "plantIds": [
+      "tamarind"
+    ],
     "ingredients": [
       "6-8 ripe tamarind pods (or 4 oz tamarind paste/block)",
       "6 cups cold water",
@@ -555,7 +790,13 @@
       "Serve over ice with lime wedges.",
       "Stir before serving as tamarind settles."
     ],
-    "benefits": ["High in tartaric acid (digestive aid)", "Rich in B vitamins and minerals", "Natural cooling drink for hot weather", "Electrolyte content makes it hydrating", "Antioxidant properties"],
+    "benefits": [
+      "High in tartaric acid (digestive aid)",
+      "Rich in B vitamins and minerals",
+      "Natural cooling drink for hot weather",
+      "Electrolyte content makes it hydrating",
+      "Antioxidant properties"
+    ],
     "caution": "High in natural sugars — moderate consumption for diabetics. The very tart flavor is normal — adjust sugar to taste. May act as a mild laxative in large amounts.",
     "storageNotes": "Refrigerates well for up to 5 days. Stir or shake before serving. Can be made as a concentrate and diluted with water as needed."
   },
@@ -569,8 +810,12 @@
     "yield": "1 cup",
     "difficulty": "easy",
     "image": "/images/recipes/nasturtium-pesto.jpg",
-    "plants": ["Nasturtium"],
-    "plantIds": ["nasturtium"],
+    "plants": [
+      "Nasturtium"
+    ],
+    "plantIds": [
+      "nasturtium"
+    ],
     "ingredients": [
       "2 cups fresh nasturtium leaves and flowers, loosely packed",
       "1/4 cup fresh basil leaves",
@@ -591,7 +836,13 @@
       "Taste and adjust seasoning — nasturtium adds its own peppery heat.",
       "Serve immediately on pasta, grilled bread, or as a vegetable dip."
     ],
-    "benefits": ["High in vitamin C from nasturtium", "Natural antibiotic properties in nasturtium", "Rich in antioxidants", "No store-bought ingredients needed when garden is in season", "Unique complex flavor"],
+    "benefits": [
+      "High in vitamin C from nasturtium",
+      "Natural antibiotic properties in nasturtium",
+      "Rich in antioxidants",
+      "No store-bought ingredients needed when garden is in season",
+      "Unique complex flavor"
+    ],
     "caution": "Nasturtium is safe and edible for most people. Those on blood-thinning medications should avoid large quantities. Pregnant women should use in culinary (not medicinal) amounts only.",
     "storageNotes": "Cover with a thin layer of olive oil to prevent browning. Refrigerate up to 5 days. Freeze in ice cube trays for up to 6 months."
   },
@@ -605,8 +856,18 @@
     "yield": "4 servings",
     "difficulty": "moderate",
     "image": "/images/recipes/coconut-lemongrass-soup.jpg",
-    "plants": ["Lemongrass", "Ginger", "Holy Basil", "Pepper"],
-    "plantIds": ["lemongrass", "ginger", "holy-basil", "pepper"],
+    "plants": [
+      "Lemongrass",
+      "Ginger",
+      "Holy Basil",
+      "Pepper"
+    ],
+    "plantIds": [
+      "lemongrass",
+      "ginger",
+      "holy-basil",
+      "pepper"
+    ],
     "ingredients": [
       "3 stalks lemongrass, bruised and cut into 2-inch pieces",
       "1-inch piece fresh ginger, sliced",
@@ -631,7 +892,13 @@
       "Remove lemongrass pieces before serving.",
       "Ladle into bowls. Top with fresh holy basil, scallions, and a squeeze of lime."
     ],
-    "benefits": ["Anti-inflammatory from lemongrass and ginger", "Immune-boosting from holy basil", "Hydrating electrolytes from coconut milk", "Full of vitamins from garden vegetables", "Warm and comforting for cool season"],
+    "benefits": [
+      "Anti-inflammatory from lemongrass and ginger",
+      "Immune-boosting from holy basil",
+      "Hydrating electrolytes from coconut milk",
+      "Full of vitamins from garden vegetables",
+      "Warm and comforting for cool season"
+    ],
     "caution": "Adjust hot pepper amount to your heat preference. Check for coconut milk allergy. Fish sauce contains sodium — reduce if monitoring salt intake.",
     "storageNotes": "Keeps refrigerated for 3 days. Reheat gently — do not boil after adding coconut milk or it may separate."
   }
