@@ -1,5 +1,16 @@
 [
   {
+    "id": "terra-cotta-tool-holders",
+    "name": "Terra Cotta Tool Holders",
+    "category": "general",
+    "description": "Keep Terra Cotta pots in the garden to hold garden tools.",
+    "materials": [],
+    "instructions": [
+      "Add a couple of Terra Cotta pots in your garden areas. Put some garden tools inside, like snippers and/or spades. Place the bottom saucer over the top to keep the tools dry."
+    ],
+    "addedAt": "2026-05-07T23:18:06.319Z"
+  },
+  {
     "id": "strategic-marigold-planting",
     "name": "Strategic Marigold Planting",
     "category": "companion-planting",
