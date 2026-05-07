@@ -1,1 +1,15 @@
-[]
+[
+  {
+    "id": "natural-insect-deterrents",
+    "name": "Natural Insect Deterrents",
+    "category": "pest-control",
+    "description": "Diatomaceous Earth is great for pests, especially slugs and ants. The powder has razor-blade-like molecules that cause tiny cuts on the soft-bellied insects.",
+    "materials": [
+      "Diatomaceous Earth"
+    ],
+    "instructions": [
+      "Make a ring around the base of the plant to keep ground insects at bay. Reapply after rain."
+    ],
+    "addedAt": "2026-05-07T22:56:18.228Z"
+  }
+]
