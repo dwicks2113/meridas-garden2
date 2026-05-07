@@ -1,5 +1,20 @@
 [
   {
+    "id": "lasagna-style-composting",
+    "name": "Lasagna-Style Composting",
+    "category": "soil-fertilizer",
+    "description": "Alternating layers of materials to make quick composted soil without turning the pile.",
+    "materials": [
+      "1-part kitchen scraps (no dairy or meat)",
+      "1-part green grass clippings",
+      "1-part brown material (cardboard, paper, newspaper -- nothing glossy)"
+    ],
+    "instructions": [
+      "Layer your different materials -- like you would make a dish of lasagna. You can add as much or as little to your pile and keep piling it up. The heat from the pile will compost without you turning the pile. Make sure to have it in a shaded area and keep it moist, but not sopping wet. You can use the composted soil in about 3-4 months."
+    ],
+    "addedAt": "2026-05-07T23:00:56.846Z"
+  },
+  {
     "id": "natural-insect-deterrents",
     "name": "Natural Insect Deterrents",
     "category": "pest-control",
