@@ -12,6 +12,7 @@ const navLinks = [
   { href: "/garden-planning", label: "Garden Plans" },
   { href: "/pests", label: "Pests & Diseases" },
   { href: "/recipes", label: "Recipes" },
+  { href: "/hacks",   label: "Garden Hacks"     },
   { href: "/blog",    label: "Blog"            },
   { href: "/journal", label: "Planting Journal" },
   { href: "/photos",  label: "Photos"           },
