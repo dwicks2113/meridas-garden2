@@ -1,5 +1,25 @@
 [
   {
+    "id": "eggshell-seed-starters",
+    "name": "Eggshell Seed Starters",
+    "category": "seed-starting",
+    "description": "Use eggshells for seed starting pots to plant directly in the ground.",
+    "materials": [
+      "eggshells, rinsed",
+      "seed starting potting mix",
+      "egg carton",
+      "seeds"
+    ],
+    "instructions": [
+      "Rinse eggshells with clean water and lay out to dry.",
+      "Poke a hole in the bottom of the eggshell for drainage.",
+      "Fill with seed starting mix.",
+      "Plant seeds.",
+      "Once seedling is of adequate size, bury the entire eggshell with the seedling to give calcium boost."
+    ],
+    "addedAt": "2026-05-07T23:46:16.290Z"
+  },
+  {
     "id": "terra-cotta-tool-holders",
     "name": "Terra Cotta Tool Holders",
     "category": "general",
