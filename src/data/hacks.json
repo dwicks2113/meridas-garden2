@@ -1,5 +1,16 @@
 [
   {
+    "id": "strategic-marigold-planting",
+    "name": "Strategic Marigold Planting",
+    "category": "companion-planting",
+    "description": "Plant around the tomato plants to confuse pests who are trying to find the plants.",
+    "materials": [],
+    "instructions": [
+      "French marigolds are the best. Plant them BEFORE you plant your tomatoes for this to work."
+    ],
+    "addedAt": "2026-05-07T23:04:07.306Z"
+  },
+  {
     "id": "lasagna-style-composting",
     "name": "Lasagna-Style Composting",
     "category": "soil-fertilizer",
