@@ -1,5 +1,21 @@
 [
   {
+    "id": "set-up-new-planting-area",
+    "name": "Set up New Planting Area",
+    "category": "soil-fertilizer",
+    "description": "Use newspapers to set up new planting beds/areas.",
+    "materials": [
+      "Newspapers",
+      "Mulch"
+    ],
+    "instructions": [
+      "Put newspapers down, 4-5 layers thick, on the ground.",
+      "Wet the newspapers.",
+      "Top with mulch. The newspapers will break down and act as weed suppression."
+    ],
+    "addedAt": "2026-05-08T00:29:02.211Z"
+  },
+  {
     "id": "cooking-water-fertilizer",
     "name": "Cooking Water Fertilizer",
     "category": "soil-fertilizer",
