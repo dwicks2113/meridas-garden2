@@ -1,5 +1,42 @@
 [
   {
+    "id": "herbal-flea-spray-for-dogs",
+    "name": "Herbal Flea Spray for Dogs",
+    "type": "pets",
+    "description": "Numerous clinical trials in dogs have shown the potential health benefits of turmeric. It has shown to be a potent anti-inflammatory and is also a good pain reliever. It has even been shown to have a positive effect on cancer cells. If you pet has any inflammatory disease, arthritis or cancer, you may want to give turmeric a try. This whole food recipe, created by Dr. Doug English, an Australian Veterinarian, is a wonderful way to safely incorporate turmeric into your furry friend's holistic healthcare plan.",
+    "prepTime": "10 min.",
+    "steepTime": "10 min",
+    "yield": "1 cup",
+    "difficulty": "easy",
+    "image": "/images/recipes/herbal-flea-spray-for-dogs.jpg",
+    "plants": [
+      "Tumeric",
+      "Black Pepper"
+    ],
+    "plantIds": [
+      "tumeric",
+      "black-pepper"
+    ],
+    "ingredients": [
+      "1/2 cup turmeric powder",
+      "1 cup water, plus 1 cup water in reserve, if needed",
+      "1/3 cup raw/cold pressed/unrefined Coconut/Flaxseed/Linseed/Extra-Virgin Olive Oil",
+      "2-3 teaspoons freshly ground black pepper"
+    ],
+    "instructions": [
+      "Place turmeric and water in pan, stirring over gentle heat until you have a thick paste. This should take about 7-10 minutes and you may need to add additional water along the way.",
+      "Add the freshly ground pepper and oil AT THE END of cooking.",
+      "Stir well (a whisk is ideal) to incorporate the oil and allow to cool.",
+      "A good starting dose is 1/4 teaspoon two to three times daily. Just add to your dog's food."
+    ],
+    "benefits": [
+      "Reduces inflammation and joint pain.",
+      "May have a positive effect for cancer."
+    ],
+    "caution": "Caution for use in dogs with gallbladder stones or bile duct obstruction. Also use with cation in diabetic patients. Stomach ulcers and bleeding disorders are two other situations where turmeric is not recommended. It can occasionally cause stomach upset and might slow blood clotting. These effects are all very mild but if your pet has any of these conditions, then turmeric would not be the best choice for them.",
+    "storageNotes": "The Golden Paste will keep for 2 weeks, refrigerated. Freeze a portion if you think you have too much to use within two weeks."
+  },
+  {
     "id": "strong-herbal-flearepelling-dog-shampoo",
     "name": "🌿🐾 Strong Herbal Flea‑Repelling Dog Shampoo",
     "type": "pets",
