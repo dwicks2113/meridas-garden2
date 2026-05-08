@@ -1,5 +1,23 @@
 [
   {
+    "id": "cooking-water-fertilizer",
+    "name": "Cooking Water Fertilizer",
+    "category": "soil-fertilizer",
+    "description": "Pour cooled cooking water around plants to give them extra boost.",
+    "materials": [
+      "Rice or",
+      "Pasta or",
+      "Vegetables or",
+      "Eggs"
+    ],
+    "instructions": [
+      "Boil your pasta, rice, vegetables, or eggs in unsalted water.",
+      "Once they are done, remove the food from the water and let cool completely.",
+      "Pour cooled water at the base of plants."
+    ],
+    "addedAt": "2026-05-08T00:10:49.750Z"
+  },
+  {
     "id": "eggshell-seed-starters",
     "name": "Eggshell Seed Starters",
     "category": "seed-starting",
