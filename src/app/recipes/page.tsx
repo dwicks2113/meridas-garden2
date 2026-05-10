@@ -355,23 +355,12 @@ export default function RecipesPage() {
                   href={`/recipes/${recipe.id}`}
                   className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 flex flex-col"
                 >
-                  {/* Image */}
-                  <div className="relative h-44 bg-garden-green-pale/30 overflow-hidden">
-                    <img
-                      src={recipe.image}
-                      alt={recipe.name}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      onError={(e) => {
-                        (e.target as HTMLImageElement).src = "/images/placeholder-recipe.jpg";
-                        (e.target as HTMLImageElement).className = "w-full h-full object-cover opacity-30";
-                      }}
-                    />
-                    {/* Type badge */}
-                    <span className={`absolute top-2 left-2 text-xs font-semibold px-2 py-1 rounded-full ${typeInfo.color}`}>
+                  {/* Colored category strip */}
+                  <div className={`flex items-center justify-between gap-2 px-4 py-3 ${typeInfo.color}`}>
+                    <span className="text-sm font-semibold">
                       {typeInfo.emoji} {typeInfo.label}
                     </span>
-                    {/* Difficulty badge */}
-                    <span className={`absolute top-2 right-2 text-xs font-semibold px-2 py-1 rounded-full capitalize ${difficultyColor[recipe.difficulty] || "bg-gray-100 text-gray-700"}`}>
+                    <span className={`text-xs font-semibold px-2 py-1 rounded-full capitalize ${difficultyColor[recipe.difficulty] || "bg-white/70 text-gray-700"}`}>
                       {recipe.difficulty}
                     </span>
                   </div>

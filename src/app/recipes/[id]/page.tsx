@@ -27,6 +27,7 @@ const typeLabels: Record<string, { label: string; emoji: string; bg: string; tex
   "tincture":   { label: "Tincture",   emoji: "🌿", bg: "bg-green-50",  text: "text-green-800" },
   "salve":      { label: "Salve / Oil",emoji: "🫙", bg: "bg-amber-50",  text: "text-amber-800" },
   "culinary":   { label: "Culinary",   emoji: "🍽️", bg: "bg-orange-50", text: "text-orange-800"},
+  "pets":       { label: "Pets",       emoji: "🐾", bg: "bg-rose-50",   text: "text-rose-800"  },
 };
 
 const difficultyColor: Record<string, string> = {
@@ -60,23 +61,13 @@ export default function RecipeDetailPage({ params }: { params: { id: string } })
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         {/* Hero card */}
         <div className="bg-white rounded-2xl shadow-sm overflow-hidden mb-8">
-          {/* Image */}
-          <div className="relative h-56 md:h-72 bg-garden-green-pale/30">
-            <img
-              src={recipe.image}
-              alt={recipe.name}
-              className="w-full h-full object-cover"
-              onError={undefined}
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-            <div className="absolute bottom-0 left-0 p-6">
-              <span className={`text-xs font-semibold px-3 py-1 rounded-full ${typeInfo.bg} ${typeInfo.text} mb-3 inline-block`}>
-                {typeInfo.emoji} {typeInfo.label}
-              </span>
-              <h1 className="text-3xl md:text-4xl font-heading font-bold text-white leading-tight">
-                {recipe.name}
-              </h1>
-            </div>
+          <div className={`px-6 py-8 ${typeInfo.bg}`}>
+            <span className={`inline-block text-xs font-semibold px-3 py-1 rounded-full bg-white/70 ${typeInfo.text} mb-3`}>
+              {typeInfo.emoji} {typeInfo.label}
+            </span>
+            <h1 className="text-3xl md:text-4xl font-heading font-bold text-garden-green-dark leading-tight">
+              {recipe.name}
+            </h1>
           </div>
 
           {/* Meta row */}
